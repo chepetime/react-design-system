@@ -6,7 +6,8 @@
       "outputs": ["dist/**", ".next/**"]
     },
     "storybook": {
-      "dependsOn": ["^dev"]
+      "outputs": [],
+      "cache": false
     },
     "lint": {
       "outputs": []

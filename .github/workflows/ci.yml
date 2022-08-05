@@ -1,4 +1,4 @@
-name: Runs on main branch or on open pull requests that are ready for review
+name: Build
 
 on:
   push:

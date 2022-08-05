@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-custom",
   "version": "0.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "main": "index.js",
   "dependencies": {
     "eslint": "^7.23.0",
     "eslint-config-next": "^12.0.8",
@@ -14,5 +14,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "script": {
+    "clean": "rm -rf .turbo && rm -rf node_modules"
   }
 }

@@ -1,5 +1,8 @@
 <div align="center">
 
+  <a href="https://github.com/chepetime/react-turborepo-dls">
+    <img src="./docs/logo.svg" alt="Logo" width="256" height="256">
+  </a>
   <h3 align="center"><strong>React Turborepo Storybook</strong></h3>
   <p align="center">
     Design Language System built with React, Storybook and Turborepo
@@ -14,7 +17,7 @@
 
 ## 📓 About
 
-> One of two paragraphs of your project and what it does goes here
+This repository contains a coded example of a Design Language System with Turborepo, React, Storybook and NextJs.
 
 <br/>
 
@@ -50,11 +53,11 @@ npm run dev
 
 <br/>
 
-## 🥽 Tests
+<!-- ## 🥽 Tests
 
 Explain how to run the automated tests for this system
 
-<br/>
+<br/> -->
 
 ### Break down into end to end tests
 
@@ -68,14 +71,14 @@ Give an example
 
 ## 🧪 Built With
 
-- [React@18]()
-- [NextJs]()
-- [Storybook]()
-- [Turborepo]()
+- [React@18](https://reactjs.org/)
+- [NextJs](https://nextjs.org/)
+- [Storybook](https://storybook.js.org/)
+- [Turborepo](https://turborepo.org/)
 
 <br/>
 
-## 👥 Contributing
+<!-- ## 👥 Contributing
 
 Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
 
@@ -85,19 +88,19 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-<br/>
+<br/> -->
 
 ## 🤺 Authors
 
 - **José M. Gulias Lugo** - _Main Dev_ - [ChepeTime](https://github.com/ChepeTime)
 
-See also the list of [contributors]() who participated in this project.
-
 <br/>
 
-## 🎩 Acknowledgments
+<!-- ## 🎩 Acknowledgments
 
-> Template
+> Template -->
+
+<br/>
 
 ---
 

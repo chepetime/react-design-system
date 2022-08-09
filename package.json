@@ -32,10 +32,7 @@
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
-    "turbo": "latest",
-    "trim-newlines": ">=3.0.1",
-    "glob-parent": ">=5.1.2",
-    "trim": ">=0.0.3"
+    "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0",

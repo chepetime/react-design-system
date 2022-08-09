@@ -1,0 +1,24 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/.angular": true,
+    "**/.stencil": true,
+    "**/.vscode": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/out": true
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/.next": true,
+    "**/.angular": true,
+    "**/.stencil": true,
+    "**/.vscode": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/out": true
+  }
+}

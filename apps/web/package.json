@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .turbo && rm -rf .next && rm -rf node_modules"
   },
   "dependencies": {
     "next": "12.2.4",

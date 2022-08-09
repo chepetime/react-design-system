@@ -9,12 +9,17 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "ui": "*",
+    "@storybook/addon-a11y": "^6.5.10",
+    "@storybook/addon-storysource": "^6.5.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "storybook-addon-designs": "^6.3.1",
+    "storybook-addon-pseudo-states": "^1.15.1",
+    "storybook-addon-turbo-build": "^1.1.0",
+    "storybook-dark-mode": "^1.1.0",
+    "ui": "*"
   },
   "devDependencies": {
-    "tsconfig": "*",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-docs": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
@@ -24,6 +29,7 @@
     "@vitejs/plugin-react": "^2.0.0",
     "eslint-config-acme": "*",
     "serve": "^14.0.1",
+    "tsconfig": "*",
     "typescript": "^4.7.4",
     "vite": "^3.0.4"
   }

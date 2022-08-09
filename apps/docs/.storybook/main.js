@@ -1,8 +1,27 @@
 const path = require("path");
 
+const stories = ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"];
+
+const addons = [
+  { name: "@storybook/addon-links" },
+  { name: "@storybook/addon-essentials" },
+  { name: "@storybook/addon-docs" },
+  { name: "@storybook/addon-a11y" },
+  { name: "@storybook/addon-storysource" },
+  { name: "storybook-addon-designs" },
+  { name: "storybook-addon-pseudo-states" },
+  {
+    name: "storybook-addon-turbo-build",
+    options: {
+      optimizationLevel: 2,
+    },
+  },
+  { name: "storybook-dark-mode" },
+];
+
 module.exports = {
-  stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  stories,
+  addons,
   framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-vite",

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate:component": "node ./index.js create-component __componentName__=$npm_config_name"
+    "generate:component": "node ./index.js create-component __componentName__=$npm_config_name",
+    "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "author": "",
   "license": "ISC",

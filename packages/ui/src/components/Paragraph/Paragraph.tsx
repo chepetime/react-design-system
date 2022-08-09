@@ -4,7 +4,7 @@ export interface ParagraphProps {
   children?: React.ReactNode;
 }
 
-export default function Paragraph(props: ParagraphProps) {
+export function Paragraph(props: ParagraphProps) {
   return <p>{props.children}</p>;
 }
 

@@ -1,7 +1,9 @@
 {
   "name": "eslint-config-custom",
   "version": "0.0.0",
+  "description": "",
   "license": "MIT",
+  "author": "José M. Gulias Lugo <me@joselugo.dev>",
   "main": "index.js",
   "dependencies": {
     "eslint": "^8.21.0",

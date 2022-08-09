@@ -1,0 +1,14 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "generate:component": "node ./index.js create-component __componentName__=$npm_config_name"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "generate-template-files": "^3.2.1"
+  }
+}

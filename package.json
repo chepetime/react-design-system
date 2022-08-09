@@ -1,28 +1,42 @@
 {
+  "private": true,
   "name": "react-turborepo-dls",
   "version": "0.0.0",
-  "private": true,
+  "description": "Design System with React, Turborepo, Storybook and NextJs",
+  "license": "MIT",
+  "author": "José M. Gulias Lugo <me@joselugo.dev>",
+  "homepage": "https://github.com/chepetime/react-turborepo-dls#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chepetime/react-turborepo-dls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chepetime/react-turborepo-dls/issues"
+  },
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "storybook": "turbo run storybook"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "storybook": "turbo run storybook",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "clean": "turbo run clean && rm -rf node_modules"
-  },
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
   },
-  "dependencies": {},
   "packageManager": "npm@8.11.0"
 }

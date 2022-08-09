@@ -17,7 +17,8 @@
     "storybook-addon-pseudo-states": "^1.15.1",
     "storybook-addon-turbo-build": "^1.1.0",
     "storybook-dark-mode": "^1.1.0",
-    "ui": "*"
+    "ui": "*",
+    "trim": ">=0.0.3"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.10",
@@ -31,6 +32,7 @@
     "serve": "^14.0.1",
     "tsconfig": "*",
     "typescript": "^4.7.4",
-    "vite": "^3.0.4"
+    "vite": "^3.0.4",
+    "trim": ">=0.0.3"
   }
 }

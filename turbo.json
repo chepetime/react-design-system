@@ -17,6 +17,10 @@
     },
     "clean": {
       "cache": false
+    },
+    "token": {
+      "dependsOn": ["^build"],
+      "outputs": ["build/**"]
     }
   }
 }

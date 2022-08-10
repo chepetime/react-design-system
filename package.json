@@ -23,7 +23,8 @@
     "dev": "turbo run dev --parallel",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "storybook": "turbo run storybook"
+    "storybook": "turbo run storybook",
+    "token": "turbo run token"
   },
   "workspaces": [
     "apps/*",

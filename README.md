@@ -47,6 +47,14 @@ npm run storybook
 npm run dev
 ```
 
+### Token Manager (WIP)
+
+Build the Token Manager project, downloads the latest tokens, transforms them into desirable formats and adds them into the desired output. Finally, it builds the React UI project to check for build errors.
+
+```sh
+npm run token
+```
+
 <br/>
 
 ## 🚀 Deployment

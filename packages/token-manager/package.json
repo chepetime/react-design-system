@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "format": "./bin/token-manager --write",
     "test": "jest",
     "preversion": "yarn build && yarn test --ci",

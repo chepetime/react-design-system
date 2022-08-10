@@ -19,6 +19,8 @@
 
 This repository contains a coded example of a Design Language System with Turborepo, React, Storybook and NextJs.
 
+<img src="./docs/devops-diagram.svg" alt="Logo" align="center">
+
 <br/>
 
 ## 📦 Getting Started

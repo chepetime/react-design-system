@@ -25,6 +25,8 @@ This repository contains a coded example of a Design Language System with Turbor
 </div>
 <br/>
 
+<br/>
+
 ## 🏗 Structure
 
 This monorepository contains multiple projects that work together to create an integrated Design Language System.
@@ -63,6 +65,8 @@ This monorepository uses Turborepo to manage dependencies and scripts. The first
 ```sh
 npm Install
 ```
+
+<br/>
 
 ## 🖍 Development
 
@@ -109,11 +113,13 @@ npm run token
 
 <br/>
 
+<!--
+
 ## 🚀 Deployment
 
 <br/>
 
-<!-- ## 🥽 Tests
+ ## 🥽 Tests
 
 Explain how to run the automated tests for this system
 
@@ -159,9 +165,12 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 <!-- ## 🎩 Acknowledgments
 
-> Template -->
+> Template
+
 
 <br/>
+
+ -->
 
 ---
 

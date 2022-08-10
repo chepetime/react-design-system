@@ -13,6 +13,9 @@ coverage
 out/
 build
 
+# react library
+./packages/ui/dist
+
 # misc
 .DS_Store
 *.pem

@@ -15,6 +15,7 @@ build
 
 # react library
 ./packages/ui/dist
+./packages/ui/dist/*
 
 # misc
 .DS_Store

@@ -1,11 +1,16 @@
-import * as React from "react";
+import React from "react";
+import css from "./Button.module.scss";
 
-export interface ButtonProps {
-  children: React.ReactNode;
+export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
+  type?: "main" | "secondary" | "plain";
+  proportion?: "" | "large" | "medium" | "small";
+  children?: React.ReactNode;
 }
 
-export function Button(props: ButtonProps) {
-  return <button>{props.children}</button>;
+export function Button({ children }: ButtonProps) {
+  return (
+    <button type="button" className={css.Button}>
+      {children}
+    </button>
+  );
 }
-
-Button.displayName = "Button";

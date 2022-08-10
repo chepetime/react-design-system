@@ -2,14 +2,11 @@
 @use "./../../styles/mixins";
 
 :root {
-  --button-background-color: #4a72b5;
-  --button-color: #fff;
-  --button-font-size: 1rem;
+  --button-background-color: #{colors.$blue-500};
 }
 
-html.dark {
-  --button-background-color: #fff;
-  --button-color: #4a72b5;
+:global :root body.dark {
+  --button-background-color: #{colors.$amber-500};
 }
 
 .Button {
@@ -34,6 +31,34 @@ html.dark {
   color: #fff;
   border: none;
   border-radius: 0;
-  background: #005eb8;
+  background: var(--button-background-color);
   box-shadow: none;
+}
+
+.Button--secondary {
+  background: #ebeced;
+  color: #121f26;
+}
+
+.Button--plain {
+  background: transparent;
+  color: #005eb8;
+}
+
+.Button--small {
+  font-size: 1rem;
+  min-width: 4.5rem;
+  min-height: 1.75rem;
+}
+
+.Button--medium {
+  font-size: 1rem;
+  min-width: 4.5rem;
+  min-height: 1.75rem;
+}
+
+.Button--large {
+  font-size: 1rem;
+  min-width: 4.5rem;
+  min-height: 1.75rem;
 }

@@ -1,0 +1,13 @@
+@use "./../../styles/colors.scss";
+@use "./../../styles/mixins";
+
+:root {
+}
+
+:global :root body.dark {
+}
+
+.Paragraph {
+  all: revert;
+  box-sizing: border-box;
+}

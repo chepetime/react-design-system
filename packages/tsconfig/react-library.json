@@ -3,9 +3,16 @@
   "display": "React Library",
   "extends": "./base.json",
   "compilerOptions": {
+    "strict": true,
+    "target": "es6",
     "jsx": "react-jsx",
-    "lib": ["ES2015"],
     "module": "ESNext",
-    "target": "es6"
+    "declarationDir": "types",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "lib": ["ES2015"],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }]
   }
 }

@@ -35,28 +35,5 @@ yarn-error.log*
 
 # turbo
 .turbo
-packages/ui/dist/cjs/components/Button/Button.d.ts
-packages/ui/dist/cjs/components/Button/Button.d.ts.map
-packages/ui/dist/cjs/components/Button/Button.test.d.ts
-packages/ui/dist/cjs/components/Button/Button.test.d.ts.map
-packages/ui/dist/cjs/components/Paragraph/Paragraph.d.ts
-packages/ui/dist/cjs/components/Paragraph/Paragraph.d.ts.map
-packages/ui/dist/cjs/components/Switch/Switch.d.ts
-packages/ui/dist/cjs/components/Switch/Switch.d.ts.map
-packages/ui/dist/cjs/index.d.ts
-packages/ui/dist/cjs/index.d.ts.map
-packages/ui/dist/cjs/index.js
-packages/ui/dist/cjs/index.js.map
-packages/ui/dist/esm/components/Button/Button.d.ts
-packages/ui/dist/esm/components/Button/Button.d.ts.map
-packages/ui/dist/esm/components/Button/Button.test.d.ts
-packages/ui/dist/esm/components/Button/Button.test.d.ts.map
-packages/ui/dist/esm/components/Paragraph/Paragraph.d.ts
-packages/ui/dist/esm/components/Paragraph/Paragraph.d.ts.map
-packages/ui/dist/esm/components/Switch/Switch.d.ts
-packages/ui/dist/esm/components/Switch/Switch.d.ts.map
-packages/ui/dist/esm/index.d.ts
-packages/ui/dist/esm/index.d.ts.map
-packages/ui/dist/esm/index.js
-packages/ui/dist/esm/index.js.map
-packages/ui/dist/index.d.ts
+packages/ui/dist
+packages/ui/dist/**/*

@@ -18,7 +18,7 @@
 
 ## 📓 About
 
-This repository contains a coded example of a Design Language System with Turborepo, React, Storybook and NextJs.
+This repository contains a coded example of a Design Language System with Turborepo, React, Storybook and Next.Js.
 
 <div align="center">
   <img src="./docs/devops-diagram.svg" alt="Logo" width="750">
@@ -49,7 +49,7 @@ This monorepository contains multiple projects that work together to create an i
 
 | App directory | Description                                            |
 | ------------- | ------------------------------------------------------ |
-| `apps/web`    | NextJs web app that implements the React UI Library    |
+| `apps/web`    | Next.Js web app that implements the React UI Library   |
 | `apps/docs`   | Storybok instance that implements the React UI Library |
 
 <br/>
@@ -58,7 +58,7 @@ This monorepository contains multiple projects that work together to create an i
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Make sure you have the (Node)[https://nodejs.dev/] LTS version (18.7) installed in your machine. We recommend to use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm).
+Make sure you have the LTS version of [Node](https://nodejs.dev/) (18.7) installed in your machine. We recommend to use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm).
 
 This monorepository uses Turborepo to manage dependencies and scripts. The first step is to install the local node dependencies:
 
@@ -73,7 +73,7 @@ npm Install
 This Turborepo has two main ways to work with components:
 
 - Watch the React UI Library + Storybook App
-- Watch the React UI Library + NextJS App
+- Watch the React UI Library + Next.Js App
 
 ### Development Storybook
 
@@ -83,7 +83,7 @@ To watch changes in the React Library and start the Storybook App, just run:
 npm run storybook
 ```
 
-### Development Next.js App
+### Development Next.Js App
 
 To watch changes in the React Library and start the Next.Js App, just run:
 

@@ -1,0 +1,8 @@
+{
+  "tokenFormat": "FigmaTokens",
+  "figmaFileId": "",
+  "inputFile": "",
+  "transformerOutput": "",
+  "outputDir": "./src/styles/tokens",
+  "platforms": "css,cssAutocomplete,scss,scssMap,less,js,ts,json"
+}

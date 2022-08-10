@@ -1,0 +1,43 @@
+#!/usr/bin/env node
+
+const cmdline = require("commander");
+const fs = require("fs-extra");
+const path = require("path");
+const glob = require("glob");
+
+const { version } = require("../package.json");
+const { runTokenEngine } = require("../build");
+
+cmdline
+  .version(version)
+  .arguments("[PATH...]")
+  .option("--config", "Read token config file")
+  .parse(process.argv);
+
+const globs =
+  cmdline.args.length > 0
+    ? cmdline.args
+    : [path.join(process.cwd(), ".tokens.config.json")];
+
+const files = Promise.all(globs.map(globToPaths)).then((matches) =>
+  matches.reduce((state, match) => [...state, ...match], [])
+);
+
+files.then((paths) =>
+  Promise.all(paths.map((filepath) => readConfigFile(filepath)))
+);
+
+function globToPaths(arg) {
+  return new Promise((resolve, reject) => {
+    glob(arg, (err, files) => (err ? reject(err) : resolve(files)));
+  });
+}
+
+async function readConfigFile(filepath) {
+  try {
+    const json = await fs.readJson(filepath);
+    runTokenEngine(json);
+  } catch (error) {
+    return { filepath, error };
+  }
+}

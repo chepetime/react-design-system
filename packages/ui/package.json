@@ -16,6 +16,9 @@
   },
   "sideEffects": false,
   "types": "./dist/index.d.ts",
+  "dependencies": {
+    "classnames": "^2.3.1"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
@@ -51,8 +54,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "classnames": "^2.3.1"
   }
 }

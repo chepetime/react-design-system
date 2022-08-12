@@ -1,0 +1,13 @@
+@use "./../../styles/colors.scss";
+@use "./../../styles/mixins";
+
+:root {
+}
+
+:global :root .dark {
+}
+
+.__componentName__(pascalCase) {
+  all: revert;
+  box-sizing: border-box;
+}

@@ -3,6 +3,9 @@ const { generateTemplateFilesCommandLine } = require("generate-template-files");
 const REACT_COMPONENTS_TEMPLATE =
   "./../ui/src/components/__componentName__(pascalCase)";
 
+const REACT_STORY_TEMPLATE =
+  "./../../apps/docs/stories/__componentName__(lowerCase)";
+
 generateTemplateFilesCommandLine([
   {
     option: "Create Component",
@@ -14,6 +17,19 @@ generateTemplateFilesCommandLine([
     output: {
       path: REACT_COMPONENTS_TEMPLATE,
       pathAndFileNameDefaultCase: "(kebabCase)",
+      overwrite: true,
+    },
+  },
+  {
+    option: "Create Story",
+    defaultCase: "(kebabCase)",
+    entry: {
+      folderPath: "./templates/component-story",
+    },
+    stringReplacers: ["__componentName__"],
+    output: {
+      path: REACT_STORY_TEMPLATE,
+      pathAndFileNameDefaultCase: "(lowerCase)",
       overwrite: true,
     },
   },

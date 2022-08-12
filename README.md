@@ -136,6 +136,16 @@ Give an example
 <br/>
 -->
 
+## 🧰 Developing (WIP)
+
+### Integration - React (WIP)
+
+### Browser Support (WIP)
+
+### Event Handling (WIP)
+
+### Testing (WIP)
+
 ## 🧪 Built With
 
 - [React@18](https://reactjs.org/)

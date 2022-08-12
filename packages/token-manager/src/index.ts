@@ -1,3 +1,5 @@
+import * as dotenv from "dotenv";
+dotenv.config();
 export interface TokenEngine {
   tokenFormat: "FigmaTokens" | "FigmaStyles";
   figmaFileId: string;
@@ -8,7 +10,8 @@ export interface TokenEngine {
 }
 
 export function runTokenEngine(opts: TokenEngine) {
-  console.log({ runTokenEngine: opts });
+  const FIGMA_API = process.env.FIGMA_API || "";
+  console.log({ runTokenEngine: { ...opts, FIGMA_API } });
 }
 
 /**

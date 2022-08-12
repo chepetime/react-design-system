@@ -9,7 +9,7 @@ export interface ParagraphProps {
 export function Paragraph(props: ParagraphProps) {
   return (
     <div className={classnames(css.Paragraph)}>
-      <p>Paragraph</p>
+      <p>Paragraph component working!</p>
       <div>{props.children}</div>
     </div>
   );

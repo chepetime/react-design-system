@@ -9,7 +9,7 @@ export interface SwitchProps {
 export function Switch(props: SwitchProps) {
   return (
     <div className={classnames(css.Switch)}>
-      <p>Switch</p>
+      <p>Switch component working!</p>
       <div>{props.children}</div>
     </div>
   );

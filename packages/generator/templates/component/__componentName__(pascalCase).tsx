@@ -9,7 +9,7 @@ export interface __componentName__(pascalCase)Props {
 export function __componentName__(pascalCase)(props: __componentName__(pascalCase)Props) {
   return (
     <div className={classnames(css.__componentName__(pascalCase))}>
-      <p>__componentName__(pascalCase)</p>
+      <p>__componentName__(pascalCase) component working!</p>
       <div>{props.children}</div>
     </div>
   );

@@ -10,4 +10,18 @@
 .__componentName__(pascalCase) {
   all: revert;
   box-sizing: border-box;
+
+  background: red;
+
+  @include mixins.respond-to("md") {
+    background-color: cyan;
+  }
+  @include mixins.respond-to("lg") {
+    background-color: green;
+  }
+  @include mixins.feature-to("hover") {
+    &:hover {
+      background-color: pink;
+    }
+  }
 }

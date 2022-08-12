@@ -1,14 +1,14 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Switch } from "ui/src";
+import { Accordion } from "ui/src";
 
 export default {
-  title: "Atoms/Switch",
-  component: Switch,
+  title: "Components/Accordion",
+  component: Accordion,
   argTypes: {
     backgroundColor: { control: "color" },
   },
-} as ComponentMeta<typeof Switch>;
+} as ComponentMeta<typeof Accordion>;
 
 const design = [
   {
@@ -18,8 +18,8 @@ const design = [
   },
 ];
 
-const Template: ComponentStory<typeof Switch> = (args) => (
-  <Switch>{args.children}</Switch>
+const Template: ComponentStory<typeof Accordion> = (args) => (
+  <Accordion>{args.children}</Accordion>
 );
 
 export const Default = Template.bind({});

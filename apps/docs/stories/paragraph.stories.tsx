@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Paragraph } from "ui/src";
 
 export default {
-  title: "Atoms/Paragraph",
+  title: "Content/Paragraph",
   component: Paragraph,
   argTypes: {
     backgroundColor: { control: "color" },

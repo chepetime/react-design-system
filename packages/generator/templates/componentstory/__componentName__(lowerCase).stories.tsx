@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { __componentName__(pascalCase) } from "ui/src";
 
 export default {
-  title: "Atoms/__componentName__(pascalCase)",
+  title: "Components/__componentName__(pascalCase)",
   component: __componentName__(pascalCase),
   argTypes: {
     backgroundColor: { control: "color" },

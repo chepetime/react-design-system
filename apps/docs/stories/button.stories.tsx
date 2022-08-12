@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Button } from "ui/src";
 
 export default {
-  title: "Atoms/Button",
+  title: "Components/Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
@@ -25,7 +25,7 @@ const Template: ComponentStory<typeof Button> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  children: "Hello world!",
+  children: "",
 };
 
 Default.parameters = { design };

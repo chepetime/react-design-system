@@ -25,13 +25,13 @@
 | Component | `Paper`                   | ❌    |                                                                                                     |
 | Component | `Progress`                | ❌    |                                                                                                     |
 | Component | `Stepper`                 | ❌    |                                                                                                     |
-| Component | `Stepper`                 | ❌    |                                                                                                     |
+| Component | `Tooltip`                 | ❌    |                                                                                                     |
+| Component | `Tabs`                    | ❌    |                                                                                                     |
 | Content   |                           |       |                                                                                                     |
 | Content   | `Audio`                   | ❌    |                                                                                                     |
 | Content   | `Caption`                 | ❌    |                                                                                                     |
 | Content   | `CodeBlock`               | ❌    |                                                                                                     |
 | Content   | `Heading`                 | ❌    |                                                                                                     |
-| Content   | `Headline`                | ❌    |                                                                                                     |
 | Content   | `Icon`                    | ❌    |                                                                                                     |
 | Content   | `Link`                    | ❌    |                                                                                                     |
 | Content   | `List`                    | ❌    |                                                                                                     |
@@ -39,9 +39,7 @@
 | Content   | `Picture`                 | ❌    |                                                                                                     |
 | Content   | `Quote`                   | ❌    |                                                                                                     |
 | Content   | `Table`                   | ❌    |                                                                                                     |
-| Content   | `Tabs`                    | ❌    |                                                                                                     |
 | Content   | `Tags`                    | ❌    |                                                                                                     |
-| Content   | `Tooltip`                 | ❌    |                                                                                                     |
 | Content   | `Video`                   | ❌    |                                                                                                     |
 | Form      |                           |       |                                                                                                     |
 | Form      | `Label`                   | ❌    |                                                                                                     |

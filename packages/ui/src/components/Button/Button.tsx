@@ -7,12 +7,7 @@ export interface ButtonProps {
 }
 
 export function Button(props: ButtonProps) {
-  return (
-    <div className={classnames(css.Button)}>
-      <p>Button component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
+  return <button className={classnames(css.Button)}>{props.children}</button>;
 }
 
 Button.displayName = "Button";

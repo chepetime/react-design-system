@@ -5,7 +5,12 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "storybook:dev": {
+    "dev:storybook": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^dev"],
+      "cache": false
+    },
+    "dev:web": {
       "outputs": ["dist/**"],
       "dependsOn": ["^dev"],
       "cache": false
@@ -14,6 +19,8 @@
       "outputs": []
     },
     "dev": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^dev"],
       "cache": false
     },
     "clean": {

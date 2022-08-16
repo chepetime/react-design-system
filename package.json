@@ -1,8 +1,19 @@
 {
-  "private": true,
-  "name": "dex-dls",
+  "private": false,
+  "name": "react-turborepo-dls",
   "version": "0.0.0",
-  "description": "DEX DLS is the Design System for General Electric Vernova",
+  "description": "Design System with React, Turborepo, Storybook and NextJs",
+  "license": "MIT",
+  "author": "José M. Gulias Lugo <me@joselugo.dev>",
+  "homepage": "https://github.com/chepetime/react-turborepo-dls#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chepetime/react-turborepo-dls.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chepetime/react-turborepo-dls/issues"
+  },
+  "main": "",
   "directories": {
     "doc": "docs"
   },

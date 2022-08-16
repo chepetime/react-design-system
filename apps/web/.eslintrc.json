@@ -1,0 +1,3 @@
+{
+  "extends": ["custom", "next/core-web-vitals"]
+}

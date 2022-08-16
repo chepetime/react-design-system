@@ -1,0 +1,64 @@
+@use "./../../styles/colors.scss";
+@use "./../../styles/mixins";
+
+:root {
+  --button-background-color: blue;
+}
+
+:global :root .dark {
+  --button-background-color: red;
+}
+
+.Button {
+  all: revert;
+  -webkit-appearance: none;
+
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+
+  min-width: 5rem;
+  min-height: 2.5rem;
+  margin: 0;
+  padding: 0 1rem;
+
+  cursor: pointer;
+
+  text-align: center;
+  white-space: nowrap;
+
+  color: inherit;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  background: var(--button-background-color);
+  box-shadow: none;
+}
+
+.Button--secondary {
+  background: #ebeced;
+  color: #121f26;
+}
+
+.Button--plain {
+  background: transparent;
+  color: #005eb8;
+}
+
+.Button--small {
+  font-size: 1rem;
+  min-width: 4.5rem;
+  min-height: 1.75rem;
+}
+
+.Button--medium {
+  font-size: 1rem;
+  min-width: 4.5rem;
+  min-height: 1.75rem;
+}
+
+.Button--large {
+  font-size: 1rem;
+  min-width: 4.5rem;
+  min-height: 1.75rem;
+}

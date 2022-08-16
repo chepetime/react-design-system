@@ -1,8 +1,9 @@
 {
-  "name": "docs",
+  "name": "docs-react",
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "storybook:dev": "npm run storybook",
     "storybook": "export SET NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
     "storybook-build": "export SET NODE_OPTIONS=--openssl-legacy-provider && build-storybook --docs",
     "preview-storybook": "serve storybook-static",

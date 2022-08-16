@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { DexButton } from "dex-react/src";
+import { DexButton } from "dex-react";
 
 export default {
   title: "Components/DexButton",

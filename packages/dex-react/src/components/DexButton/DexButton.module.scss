@@ -5,7 +5,7 @@
   --button-background-color: blue;
 }
 
-:global :root body.dark {
+:global :root .dark {
   --button-background-color: red;
 }
 
@@ -35,29 +35,29 @@
   box-shadow: none;
 }
 
-.DexButton--secondary {
+.Button--secondary {
   background: #ebeced;
   color: #121f26;
 }
 
-.DexButton--plain {
+.Button--plain {
   background: transparent;
   color: #005eb8;
 }
 
-.DexButton--small {
+.Button--small {
   font-size: 1rem;
   min-width: 4.5rem;
   min-height: 1.75rem;
 }
 
-.DexButton--medium {
+.Button--medium {
   font-size: 1rem;
   min-width: 4.5rem;
   min-height: 1.75rem;
 }
 
-.DexButton--large {
+.Button--large {
   font-size: 1rem;
   min-width: 4.5rem;
   min-height: 1.75rem;

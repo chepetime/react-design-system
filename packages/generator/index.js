@@ -1,9 +1,9 @@
 const { generateTemplateFilesCommandLine } = require("generate-template-files");
 
 const REACT_COMPONENTS_TEMPLATE =
-  "./../ui/src/components/__componentName__(pascalCase)";
+  "./../dex-react/src/components/__componentName__(pascalCase)";
 
-const REACT_STORY_TEMPLATE = "./../../apps/docs/stories";
+const REACT_STORY_TEMPLATE = "./../../apps/docs-react/stories";
 
 generateTemplateFilesCommandLine([
   {

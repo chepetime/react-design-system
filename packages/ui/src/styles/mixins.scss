@@ -3,8 +3,8 @@
 /**
  * Media Queries for Sized
  *
- * @include respond-to('md') {}
- * @include respond-to('lg') {}
+ * @include mixins.respond-to('md') {}
+ * @include mixins.respond-to('lg') {}
  *
  */
 @mixin respond-to($condition) {
@@ -54,7 +54,7 @@
 /**
  * Media Queries for Features
  *
- * @include feature-to('hover') {}
+ * @include mixins.feature-to('hover') {}
  *
  */
 @mixin feature-to($condition) {

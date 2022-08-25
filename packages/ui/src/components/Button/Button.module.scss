@@ -2,27 +2,39 @@
 @use "./../../styles/mixins";
 
 :root {
-  --button-background-color: blue;
+  --button-background-color: #4cbaea;
+  --button-background-color-hover: #3888ab;
+  --button-disabled-background-color: #cccccc;
 }
 
 :global :root .dark {
-  --button-background-color: red;
+  --button-background-color: #ea4c89;
+  --button-background-color-hover: #a3345f;
+  --button-disabled-background-color: #cccccc;
 }
 
 .Button {
   all: revert;
   -webkit-appearance: none;
 
-  font-size: 1.125rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   font-style: normal;
 
+  width: 100%;
   min-width: 5rem;
   min-height: 2.5rem;
   margin: 0;
   padding: 0 1rem;
 
   cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: color 100ms;
+  text-align: center;
+  vertical-align: baseline;
+  text-decoration: none;
 
   text-align: center;
   white-space: nowrap;
@@ -30,35 +42,38 @@
   color: inherit;
   color: #fff;
   border: none;
-  border-radius: 0;
+  border-radius: 0.5rem;
   background: var(--button-background-color);
   box-shadow: none;
-}
 
-.Button--secondary {
-  background: #ebeced;
-  color: #121f26;
-}
+  transition: all ease-in-out 0.3s;
 
-.Button--plain {
-  background: transparent;
-  color: #005eb8;
-}
+  @include mixins.respond-to("md") {
+    width: auto;
+  }
 
-.Button--small {
-  font-size: 1rem;
-  min-width: 4.5rem;
-  min-height: 1.75rem;
-}
+  /* If device has hover capabilities */
+  @include mixins.feature-to("hover") {
+    &:hover:not(:disabled) {
+      background-color: var(--button-background-color-hover);
+    }
+  }
 
-.Button--medium {
-  font-size: 1rem;
-  min-width: 4.5rem;
-  min-height: 1.75rem;
-}
+  /* Focus */
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
 
-.Button--large {
-  font-size: 1rem;
-  min-width: 4.5rem;
-  min-height: 1.75rem;
+  /* Focus */
+  &:focus-visible {
+    outline: none;
+    box-shadow: hsl(27deg 39% 95%) 0 0 0 2px, hsl(27deg 100% 56%) 0 0 0 4px;
+  }
+
+  &:disabled,
+  &[disabled] {
+    background-color: var(--button-disabled-background-color);
+    color: #666666;
+    pointer-events: none;
+  }
 }

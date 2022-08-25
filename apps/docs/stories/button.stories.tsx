@@ -6,7 +6,7 @@ export default {
   title: "Components/Button",
   component: Button,
   argTypes: {
-    backgroundColor: { control: "color" },
+    disabled: { control: "boolean" },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -19,13 +19,19 @@ const design = [
 ];
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  <Button>{args.children}</Button>
+  <Button {...args}>{args.children}</Button>
 );
 
 export const Default = Template.bind({});
 
 Default.args = {
   children: "Click Me",
+  title: "Title of the button",
+  id: "button_1",
+  name: "click_me",
+  type: "button",
+  disabled: false,
+  tabIndex: 0,
 };
 
 Default.parameters = { design };

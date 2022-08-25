@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { __componentName__(pascalCase) } from "dex-react";
+import { __componentName__(pascalCase) } from "@chepe/ui/src";
 
 export default {
   title: "Components/__componentName__(pascalCase)",

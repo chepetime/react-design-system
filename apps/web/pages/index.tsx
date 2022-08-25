@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-import { Button } from "ui";
+import { Button } from "@chepe/ui";
 
 import ThemeSwitcher from "./../components/ThemeSwitcher";
 import Wrapper from "./../components/Wrapper";

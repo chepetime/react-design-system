@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputCheckbox } from "ui/src";
+import { InputCheckbox } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputCheckbox",

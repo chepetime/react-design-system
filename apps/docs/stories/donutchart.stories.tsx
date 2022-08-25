@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { DonutChart } from "ui/src";
+import { DonutChart } from "@chepe/ui/src";
 
 export default {
   title: "DataViz/DonutChart",

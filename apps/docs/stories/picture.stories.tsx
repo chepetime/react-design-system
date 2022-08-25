@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Picture } from "ui/src";
+import { Picture } from "@chepe/ui/src";
 
 export default {
   title: "Content/Picture",

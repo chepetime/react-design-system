@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { DataTable } from "ui/src";
+import { DataTable } from "@chepe/ui/src";
 
 export default {
   title: "DataViz/DataTable",

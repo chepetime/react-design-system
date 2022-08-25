@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Paper } from "ui/src";
+import { Paper } from "@chepe/ui/src";
 
 export default {
   title: "Components/Paper",

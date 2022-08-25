@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Breadcrumb } from "ui/src";
+import { Breadcrumb } from "@chepe/ui/src";
 
 export default {
   title: "Components/Breadcrumb",

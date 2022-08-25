@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputText } from "ui/src";
+import { InputText } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputText",

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Tooltip } from "ui/src";
+import { Tooltip } from "@chepe/ui/src";
 
 export default {
   title: "Components/Tooltip",

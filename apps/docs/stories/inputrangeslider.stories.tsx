@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputRangeSlider } from "ui/src";
+import { InputRangeSlider } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputRangeSlider",

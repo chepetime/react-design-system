@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Audio } from "ui/src";
+import { Audio } from "@chepe/ui/src";
 
 export default {
   title: "Content/Audio",

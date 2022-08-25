@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Tabs } from "ui/src";
+import { Tabs } from "@chepe/ui/src";
 
 export default {
   title: "Components/Tabs",

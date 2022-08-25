@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Tags } from "ui/src";
+import { Tags } from "@chepe/ui/src";
 
 export default {
   title: "Components/Tags",

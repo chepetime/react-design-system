@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Modal } from "ui/src";
+import { Modal } from "@chepe/ui/src";
 
 export default {
   title: "Components/Modal",

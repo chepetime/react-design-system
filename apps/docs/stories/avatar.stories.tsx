@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Avatar } from "ui/src";
+import { Avatar } from "@chepe/ui/src";
 
 export default {
   title: "Components/Avatar",

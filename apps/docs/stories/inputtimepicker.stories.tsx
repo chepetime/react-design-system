@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputTimePicker } from "ui/src";
+import { InputTimePicker } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputTimePicker",

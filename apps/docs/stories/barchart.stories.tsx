@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { BarChart } from "ui/src";
+import { BarChart } from "@chepe/ui/src";
 
 export default {
   title: "Components/BarChart",

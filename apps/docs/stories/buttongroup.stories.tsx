@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ButtonGroup } from "ui/src";
+import { ButtonGroup } from "@chepe/ui/src";
 
 export default {
   title: "Components/ButtonGroup",

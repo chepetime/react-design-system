@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Spacer } from "ui/src";
+import { Spacer } from "@chepe/ui/src";
 
 export default {
   title: "Layout/Spacer",

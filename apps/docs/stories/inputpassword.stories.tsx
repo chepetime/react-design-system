@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputPassword } from "ui/src";
+import { InputPassword } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputPassword",

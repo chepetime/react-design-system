@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Wrapper } from "ui/src";
+import { Wrapper } from "@chepe/ui/src";
 
 export default {
   title: "Layout/Wrapper",

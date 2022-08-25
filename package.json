@@ -20,15 +20,12 @@
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
-
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint",
-
-    "token": "turbo run token",
-
     "dev": "turbo run dev --parallel",
     "dev:storybook": "turbo run dev:storybook --parallel",
-    "dev:web": "turbo run dev:web --parallel"
+    "dev:web": "turbo run dev:web --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "token": "turbo run token"
   },
   "workspaces": [
     "apps/*",

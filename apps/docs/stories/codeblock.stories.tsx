@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { CodeBlock } from "ui/src";
+import { CodeBlock } from "@chepe/ui/src";
 
 export default {
   title: "Content/CodeBlock",

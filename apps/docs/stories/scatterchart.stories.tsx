@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ScatterChart } from "ui/src";
+import { ScatterChart } from "@chepe/ui/src";
 
 export default {
   title: "DataViz/ScatterChart",

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputDateRangePicker } from "ui/src";
+import { InputDateRangePicker } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputDateRangePicker",

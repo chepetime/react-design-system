@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Table } from "ui/src";
+import { Table } from "@chepe/ui/src";
 
 export default {
   title: "Content/Table",

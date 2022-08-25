@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Label } from "ui/src";
+import { Label } from "@chepe/ui/src";
 
 export default {
   title: "Form/Label",

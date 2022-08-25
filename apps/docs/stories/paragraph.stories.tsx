@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Paragraph } from "ui/src";
+import { Paragraph } from "@chepe/ui/src";
 
 export default {
   title: "Content/Paragraph",

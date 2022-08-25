@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Grid } from "ui/src";
+import { Grid } from "@chepe/ui/src";
 
 export default {
   title: "Layout/Grid",

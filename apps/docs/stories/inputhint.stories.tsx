@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputHint } from "ui/src";
+import { InputHint } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputHint",

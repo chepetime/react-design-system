@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Notification } from "ui/src";
+import { Notification } from "@chepe/ui/src";
 
 export default {
   title: "Components/Notification",

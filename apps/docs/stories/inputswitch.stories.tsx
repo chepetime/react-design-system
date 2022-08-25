@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputSwitch } from "ui/src";
+import { InputSwitch } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputSwitch",

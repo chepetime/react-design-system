@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputRadioButtonGroup } from "ui/src";
+import { InputRadioButtonGroup } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputRadioButtonGroup",

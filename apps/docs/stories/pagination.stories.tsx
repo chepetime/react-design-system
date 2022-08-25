@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Pagination } from "ui/src";
+import { Pagination } from "@chepe/ui/src";
 
 export default {
   title: "Components/Pagination",

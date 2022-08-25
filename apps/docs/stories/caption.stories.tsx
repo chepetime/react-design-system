@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Caption } from "ui/src";
+import { Caption } from "@chepe/ui/src";
 
 export default {
   title: "Content/Caption",

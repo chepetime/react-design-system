@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputSelect } from "ui/src";
+import { InputSelect } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputSelect",

@@ -33,11 +33,8 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "dex-react",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/dex-react/"
-            ),
+            find: "ui",
+            replacement: path.resolve(__dirname, "../../../packages/ui/"),
           },
         ],
       },

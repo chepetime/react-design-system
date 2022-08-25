@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { List } from "ui/src";
+import { List } from "@chepe/ui/src";
 
 export default {
   title: "Content/List",

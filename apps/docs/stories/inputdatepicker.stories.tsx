@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputDatepicker } from "ui/src";
+import { InputDatepicker } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputDatepicker",

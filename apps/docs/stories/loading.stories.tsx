@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Loading } from "ui/src";
+import { Loading } from "@chepe/ui/src";
 
 export default {
   title: "Components/Loading",

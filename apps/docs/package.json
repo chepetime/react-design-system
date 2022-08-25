@@ -18,8 +18,8 @@
     "storybook-addon-pseudo-states": "^1.15.1",
     "storybook-addon-turbo-build": "^1.1.0",
     "storybook-dark-mode": "^1.1.0",
-    "ui": "*",
-    "trim": ">=0.0.3"
+    "@chepe/ui": "*",
+    "trim": ">=1.0.1"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.10",
@@ -28,12 +28,12 @@
     "@storybook/addon-links": "^6.5.10",
     "@storybook/builder-vite": "^0.2.2",
     "@storybook/react": "^6.5.10",
-    "@vitejs/plugin-react": "^2.0.0",
+    "@vitejs/plugin-react": "^2.0.1",
     "eslint-config-acme": "*",
     "serve": "^14.0.1",
     "tsconfig": "*",
     "typescript": "^4.7.4",
-    "vite": "^3.0.4",
-    "trim": ">=0.0.3"
+    "vite": "^3.0.9",
+    "trim": ">=1.0.1"
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputSearch } from "ui/src";
+import { InputSearch } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputSearch",

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputSelectAutocomplete } from "ui/src";
+import { InputSelectAutocomplete } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputSelectAutocomplete",

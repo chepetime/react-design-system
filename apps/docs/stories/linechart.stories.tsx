@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { LineChart } from "ui/src";
+import { LineChart } from "@chepe/ui/src";
 
 export default {
   title: "DataViz/LineChart",

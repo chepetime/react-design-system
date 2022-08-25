@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Icon } from "ui/src";
+import { Icon } from "@chepe/ui/src";
 
 export default {
   title: "Content/Icon",

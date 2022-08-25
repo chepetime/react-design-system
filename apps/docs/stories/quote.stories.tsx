@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Quote } from "ui/src";
+import { Quote } from "@chepe/ui/src";
 
 export default {
   title: "Content/Quote",

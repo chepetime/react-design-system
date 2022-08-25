@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Item } from "ui/src";
+import { Item } from "@chepe/ui/src";
 
 export default {
   title: "Layout/Item",

@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { InputTextarea } from "ui/src";
+import { InputTextarea } from "@chepe/ui/src";
 
 export default {
   title: "Form/InputTextarea",

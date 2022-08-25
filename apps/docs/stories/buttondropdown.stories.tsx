@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ButtonDropdown } from "ui/src";
+import { ButtonDropdown } from "@chepe/ui/src";
 
 export default {
   title: "Components/ButtonDropdown",

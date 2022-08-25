@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Collapse } from "ui/src";
+import { Collapse } from "@chepe/ui/src";
 
 export default {
   title: "Components/Collapse",

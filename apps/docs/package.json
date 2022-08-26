@@ -32,7 +32,7 @@
     "eslint-config-acme": "*",
     "serve": "^14.0.1",
     "tsconfig": "*",
-    "typescript": "^4.7.4",
+    "typescript": "^4.8.2",
     "vite": "^3.0.9",
     "trim": ">=1.0.1"
   }

@@ -1,5 +1,5 @@
-@use "./../../styles/colors.scss";
-@use "./../../styles/mixins";
+// // @use "./../../styles/colors.scss";
+@use "./../../styles" as styles;
 
 :root {
 }
@@ -13,13 +13,13 @@
 
   background: red;
 
-  @include mixins.respond-to("md") {
+  @include styles.respond-to("md") {
     background-color: cyan;
   }
-  @include mixins.respond-to("lg") {
+  @include styles.respond-to("lg") {
     background-color: green;
   }
-  @include mixins.feature-to("hover") {
+  @include styles.feature-to("hover") {
     &:hover {
       background-color: pink;
     }

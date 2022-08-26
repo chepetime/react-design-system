@@ -1,9 +1,3 @@
-/**
- * Variables
- */
-
-// Breakpoints
-
 $breakpoint-in: "1px";
 $breakpoint-xs: "428px";
 $breakpoint-sm: "744px";
@@ -12,4 +6,5 @@ $breakpoint-lg: "1280px";
 $breakpoint-xl: "1440px";
 $breakpoint-2xl: "1920px";
 
-// Breakpoints - Device
+$smallest_breakpoint: $breakpoint-in;
+$largest_breakpoint: $breakpoint-2xl;

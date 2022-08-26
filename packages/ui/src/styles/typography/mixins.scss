@@ -1,0 +1,129 @@
+@use "./constants" as constants;
+
+/* Font Styles */
+
+/* Default paragraph */
+@mixin default-text-style {
+  @include font-body-m;
+  color: #000;
+  font-weight: constants.$font-weight-normal;
+  font-family: constants.$font-family-base;
+}
+
+/* Small text in paragraph */
+@mixin font-body-m {
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+
+/* Small text in paragraph */
+@mixin font-body-s {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+/* Regular text in paragraph */
+@mixin font-body-n {
+  font-size: $base-size;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+/* Heading H1 */
+@mixin font-heading-h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Heading H2 */
+@mixin font-heading-h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Heading H3 */
+@mixin font-heading-h3 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Heading H4 */
+@mixin font-heading-h4 {
+  font-size: 3rem;
+  line-height: 1;
+}
+/* Heading H5 */
+@mixin font-heading-h5 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Heading H6 */
+@mixin font-heading-h6 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+/* Label */
+@mixin font-label {
+  @include font-body-m;
+  font-weight: 500;
+}
+
+/* Inline Code */
+@mixin font-code-inline {
+  font-size: 1rem;
+}
+
+/* Code Block */
+@mixin font-code-block {
+  font-size: 1rem;
+}
+
+/* Helper */
+@mixin font($font-size) {
+  @if $font-size == body-s {
+    @include font-body-s;
+  }
+  @if $font-size == body-m {
+    @include font-body-m;
+  }
+  @if $font-size == font-body-s {
+    @include font-body-s;
+  }
+  @if $font-size == font-body-m {
+    @include font-body-m;
+  }
+  @if $font-size == font-heading-h1 {
+    @include font-heading-h1;
+  }
+  @if $font-size == font-heading-h2 {
+    @include font-heading-h2;
+  }
+  @if $font-size == font-heading-h3 {
+    @include font-heading-h3;
+  }
+  @if $font-size == font-heading-h4 {
+    @include font-heading-h4;
+  }
+  @if $font-size == font-heading-h5 {
+    @include font-heading-h5;
+  }
+  @if $font-size == font-heading-h6 {
+    @include font-heading-h6;
+  }
+  @if $font-size == font-label {
+    @include font-label;
+  }
+  @if $font-size == font-panel-header {
+    @include font-panel-header;
+  }
+  @if $font-size == font-code-inline {
+    @include font-code-inline;
+  }
+  @if $font-size == font-code-block {
+    @include font-code-block;
+  }
+}

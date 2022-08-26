@@ -1,0 +1,25 @@
+@use "../typography" as typography;
+
+/**
+ * Styles reset
+ * @include styles-reset;
+ */
+@mixin styles-reset {
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  all: initial;
+  box-sizing: border-box;
+  @include typography.default-text-style;
+}
+
+/**
+ * Button reset
+ * @include button-reset;
+ */
+@mixin button-reset {
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+}

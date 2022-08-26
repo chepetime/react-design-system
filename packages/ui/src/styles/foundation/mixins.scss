@@ -1,51 +1,50 @@
-@use "./variables.scss";
+@use "./breakpoints" as breakpoints;
 
 /**
  * Media Queries for Sized
  *
  * @include mixins.respond-to('md') {}
  * @include mixins.respond-to('lg') {}
- *
  */
 @mixin respond-to($condition) {
   @if $condition == "in" {
-    @media only screen and (min-width: variables.$breakpoint-in) {
+    @media only screen and (min-width: breakpoints.$breakpoint-in) {
       @content;
     }
   }
 
   @if $condition == "xs" {
-    @media only screen and (min-width: variables.$breakpoint-xs) {
+    @media only screen and (min-width: breakpoints.$breakpoint-xs) {
       @content;
     }
   }
 
   @if $condition == "sm" {
-    @media only screen and (min-width: variables.$breakpoint-sm) {
+    @media only screen and (min-width: breakpoints.$breakpoint-sm) {
       @content;
     }
   }
 
   @if $condition == "md" {
-    @media only screen and (min-width: variables.$breakpoint-md) {
+    @media only screen and (min-width: breakpoints.$breakpoint-md) {
       @content;
     }
   }
 
   @if $condition == "lg" {
-    @media only screen and (min-width: variables.$breakpoint-lg) {
+    @media only screen and (min-width: breakpoints.$breakpoint-lg) {
       @content;
     }
   }
 
   @if $condition == "xl" {
-    @media only screen and (min-width: variables.$breakpoint-xl) {
+    @media only screen and (min-width: breakpoints.$breakpoint-xl) {
       @content;
     }
   }
 
   @if $condition == "2xl" {
-    @media only screen and (min-width: variables.$breakpoint-2xl) {
+    @media only screen and (min-width: breakpoints.$breakpoint-2xl) {
       @content;
     }
   }
@@ -55,7 +54,6 @@
  * Media Queries for Features
  *
  * @include mixins.feature-to('hover') {}
- *
  */
 @mixin feature-to($condition) {
   // Does the primary input mechanism allow the user to hover over elements?
@@ -93,35 +91,3 @@
  * @include input-placeholder() {}
  *
  */
-@mixin input-placeholder() {
-  &::input-placeholder {
-    @content;
-  }
-
-  &::placeholder {
-    @content;
-  }
-
-  &:input-placeholder {
-    @content;
-  }
-
-  &:placeholder {
-    @content;
-  }
-}
-
-/**
- * Button reset
- *
- * @include button-reset;
- *
- */
-@mixin button-reset {
-  font: inherit;
-  padding: 0;
-  cursor: pointer;
-  color: inherit;
-  border: none;
-  background-color: transparent;
-}

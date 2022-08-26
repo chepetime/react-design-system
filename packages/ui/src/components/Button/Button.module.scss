@@ -1,5 +1,5 @@
-@use "./../../styles/colors.scss";
-@use "./../../styles/mixins";
+// @use "./../../styles/colors.scss";
+@use "./../../styles" as styles;
 
 :root {
   --button-background-color: #4cbaea;
@@ -14,6 +14,8 @@
 }
 
 .Button {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
   all: revert;
   -webkit-appearance: none;
 
@@ -48,12 +50,12 @@
 
   transition: all ease-in-out 0.3s;
 
-  @include mixins.respond-to("md") {
+  @include styles.respond-to("md") {
     width: auto;
   }
 
-  /* If device has hover capabilities */
-  @include mixins.feature-to("hover") {
+  /* Hover only If device has hover capabilities */
+  @include styles.feature-to("hover") {
     &:hover:not(:disabled) {
       background-color: var(--button-background-color-hover);
     }
@@ -70,6 +72,7 @@
     box-shadow: hsl(27deg 39% 95%) 0 0 0 2px, hsl(27deg 100% 56%) 0 0 0 4px;
   }
 
+  /* Disabled */
   &:disabled,
   &[disabled] {
     background-color: var(--button-disabled-background-color);

@@ -1,0 +1,772 @@
+{
+  "document": {
+    "id": "0:0",
+    "name": "Document",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "0:1",
+        "name": "Page 1",
+        "type": "CANVAS",
+        "children": [
+          {
+            "id": "5:3",
+            "name": "MacBook Pro 16\" - 1",
+            "type": "FRAME",
+            "blendMode": "PASS_THROUGH",
+            "children": [
+              {
+                "id": "5:4",
+                "name": "Rectangle 1",
+                "type": "RECTANGLE",
+                "blendMode": "PASS_THROUGH",
+                "absoluteBoundingBox": {
+                  "x": 68,
+                  "y": 733,
+                  "width": 200,
+                  "height": 300
+                },
+                "absoluteRenderBounds": {
+                  "x": 68,
+                  "y": 733,
+                  "width": 200,
+                  "height": 300
+                },
+                "constraints": { "vertical": "TOP", "horizontal": "LEFT" },
+                "fills": [
+                  {
+                    "blendMode": "NORMAL",
+                    "type": "SOLID",
+                    "color": {
+                      "r": 0.8980392217636108,
+                      "g": 0.24313725531101227,
+                      "b": 0.24313725531101227,
+                      "a": 1
+                    }
+                  }
+                ],
+                "strokes": [],
+                "strokeWeight": 1,
+                "strokeAlign": "INSIDE",
+                "effects": []
+              }
+            ],
+            "absoluteBoundingBox": {
+              "x": -32,
+              "y": 633,
+              "width": 1728,
+              "height": 1117
+            },
+            "absoluteRenderBounds": {
+              "x": -32,
+              "y": 633,
+              "width": 1728,
+              "height": 1117
+            },
+            "constraints": { "vertical": "TOP", "horizontal": "LEFT" },
+            "clipsContent": true,
+            "background": [
+              {
+                "blendMode": "NORMAL",
+                "type": "SOLID",
+                "color": { "r": 1, "g": 1, "b": 1, "a": 1 }
+              }
+            ],
+            "fills": [
+              {
+                "blendMode": "NORMAL",
+                "type": "SOLID",
+                "color": { "r": 1, "g": 1, "b": 1, "a": 1 }
+              }
+            ],
+            "strokes": [],
+            "strokeWeight": 1,
+            "strokeAlign": "INSIDE",
+            "backgroundColor": { "r": 1, "g": 1, "b": 1, "a": 1 },
+            "effects": []
+          }
+        ],
+        "backgroundColor": {
+          "r": 0.9607843160629272,
+          "g": 0.9607843160629272,
+          "b": 0.9607843160629272,
+          "a": 1
+        },
+        "prototypeStartNodeID": null,
+        "flowStartingPoints": [],
+        "prototypeDevice": {
+          "type": "PRESET",
+          "size": { "width": 1728, "height": 1117 },
+          "presetIdentifier": "APPLE_MACBOOK_PRO_16IN_SILVER",
+          "rotation": "NONE"
+        }
+      }
+    ]
+  },
+  "components": {},
+  "componentSets": {},
+  "schemaVersion": 0,
+  "styles": {
+    "5:114": {
+      "key": "e6bbe354a6b1d50de836010bf21968a8ac573956",
+      "name": "button/primary/background",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:115": {
+      "key": "7226b3a1f7bb80cdb11da633f66200cbd869663c",
+      "name": "button/ghost/outline",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:116": {
+      "key": "19ae749db2a9bc463d2aa8ace55a0957afab356d",
+      "name": "button/ghost/text",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:117": {
+      "key": "5cbcd0724c2601def365e6925b0ba631a61aacd8",
+      "name": "fg/default",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:118": {
+      "key": "3999366e711c883791df6e6e3bd0eb7ee96b9d9d",
+      "name": "fg/muted",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:119": {
+      "key": "edf646c82b2a2a8476e05f1bb635638982b4ead5",
+      "name": "fg/subtle",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:120": {
+      "key": "dad17698f702b32e39cde0ab6b3886f012719dc4",
+      "name": "bg/default",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:121": {
+      "key": "6977791b5c6719a4b92dd3afb950c6bf4530b2ae",
+      "name": "bg/muted",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:122": {
+      "key": "6606af634fdb7f167a50ed6b21aa1a0d1537ae21",
+      "name": "bg/subtle",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:123": {
+      "key": "8494d7d67448babda28efdc7f2a495bb03cc1ec9",
+      "name": "accent/default",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:124": {
+      "key": "ba9bbe42e20e62a8e037eba4511353eec5e3724e",
+      "name": "shadows/default",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:125": {
+      "key": "db496dd7c8bef17b47e0139485124fcf4df78986",
+      "name": "colors/black",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:126": {
+      "key": "a8f93dbffa335c6466c1a496c835c03f018f1f15",
+      "name": "colors/white",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:127": {
+      "key": "06772613a3ab33fdac5188448bc63b8d57a3751f",
+      "name": "colors/gray/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:128": {
+      "key": "9beaf64afa36cc11a31a369a82c5a6032793792e",
+      "name": "colors/gray/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:129": {
+      "key": "b3ab41045f968d4797ba0f993232fd48173dbf7a",
+      "name": "colors/gray/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:130": {
+      "key": "cc19f61198b294d9738eb4e2599e26daf39b9b73",
+      "name": "colors/gray/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:131": {
+      "key": "e03a1bbeff65e541195e51f4ab6762b1703a82c1",
+      "name": "colors/gray/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:132": {
+      "key": "43e4ab3d0e29767761812229e5d77e7a948dca1b",
+      "name": "colors/gray/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:133": {
+      "key": "e15df0a1734f4c30e75ea362eeae38e1723dbc5f",
+      "name": "colors/gray/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:134": {
+      "key": "0cc096ea76a79768d080c453ae83119c5dbfd51e",
+      "name": "colors/gray/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:135": {
+      "key": "08879854a9fa8ac27c4af4ce3cba6af02d790fa0",
+      "name": "colors/gray/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:136": {
+      "key": "f6a783e083034c81b5d787e87dc28a91ec42b08c",
+      "name": "colors/red/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:137": {
+      "key": "23898d9b53fdf61af0a440786f2fe358f48a9622",
+      "name": "colors/red/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:138": {
+      "key": "58acebb3dc5ce2c03f43ea3108d1689396d33e5c",
+      "name": "colors/red/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:139": {
+      "key": "79d3575d314a4ab8c6f4c2168bf97adeadf03f8b",
+      "name": "colors/red/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:140": {
+      "key": "5d4181b5b35a670027bbb2fa294d5aa54f5a663f",
+      "name": "colors/red/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:141": {
+      "key": "a25a07f93f275e6e60f2fcfcef74a2c91723ad19",
+      "name": "colors/red/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:142": {
+      "key": "d15eb2a712d549c9c0e03288cd8053f90b6e0e88",
+      "name": "colors/red/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:143": {
+      "key": "0979dcb20febac878af1d4da976eb96dea1a887c",
+      "name": "colors/red/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:144": {
+      "key": "b1b23c4231300ed70d6c884425c70d9d34d5e53a",
+      "name": "colors/red/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:145": {
+      "key": "5ea66e3e9e6e7b9a28bac5b652790f6740b9b3e9",
+      "name": "colors/orange/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:146": {
+      "key": "c550b5728df5daafa519b93e5f6f3d189dc6d96a",
+      "name": "colors/orange/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:147": {
+      "key": "dcff8997daa270b0b7a7018eff7d8f75b3f15285",
+      "name": "colors/orange/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:148": {
+      "key": "84ad93ad88af8f10bcc6e4ac800f3451954485d2",
+      "name": "colors/orange/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:149": {
+      "key": "7de88c2fba8b113d2bee9b8761896159a243bb33",
+      "name": "colors/orange/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:150": {
+      "key": "4665cce3df9021b674696ee9a1dd928f7654c8aa",
+      "name": "colors/orange/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:151": {
+      "key": "ff9439a9f35d40d1750b9a7ca8fe73186b15b46e",
+      "name": "colors/orange/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:152": {
+      "key": "50ae3f6d059b5df90f02be1f8b36adb2a51b4004",
+      "name": "colors/orange/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:153": {
+      "key": "163d5eadfa1fcf787ea439194f142b6ecfce3012",
+      "name": "colors/orange/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:154": {
+      "key": "0ddc6122c5dd99941e68fdfe0294ec529ee8c189",
+      "name": "colors/yellow/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:155": {
+      "key": "7209998f4523070f8364e4c485c35110aeb9216a",
+      "name": "colors/yellow/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:156": {
+      "key": "35a5ab0d5318db9fb61010e54d42d993b1dd9cd9",
+      "name": "colors/yellow/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:157": {
+      "key": "697d0c2a40bb1fb1e501f86559596782dc8bb68b",
+      "name": "colors/yellow/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:158": {
+      "key": "66ebc9d9fc93c96805989e37d3f2634f3f4e64f2",
+      "name": "colors/yellow/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:159": {
+      "key": "a3577c76a38e79d36bcb29fe2f68936676dd4371",
+      "name": "colors/yellow/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:160": {
+      "key": "6733b383cce4229505c8665e5c9c285a4ea2ae57",
+      "name": "colors/yellow/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:161": {
+      "key": "d92ad027b3c514ad2ed5038ded9601e15376d29d",
+      "name": "colors/yellow/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:162": {
+      "key": "178069bd9cdb36fe448d7f0ffcf21545e7047f08",
+      "name": "colors/yellow/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:163": {
+      "key": "4d8ccb5a2b7b14738ca1e9b5681e2c5106fcd5ae",
+      "name": "colors/green/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:164": {
+      "key": "3a68caace22e0ac867559631e30f2818bf50eecc",
+      "name": "colors/green/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:165": {
+      "key": "c7fcc888451b56ae409979cfe57b7ab8cece5c5d",
+      "name": "colors/green/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:166": {
+      "key": "d5feeb52397b5923986272a6854ab0fbbcbe1ebc",
+      "name": "colors/green/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:167": {
+      "key": "f5467b2fe0694de9f0754d2374a1681ae1c277b9",
+      "name": "colors/green/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:168": {
+      "key": "c1f024991984e08b8e176b506b63605dc1e65aae",
+      "name": "colors/green/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:169": {
+      "key": "15dcb4c0a5af77bbaa677b71c8d16e2d8bcff52f",
+      "name": "colors/green/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:170": {
+      "key": "0140a684c5fef33e1411a537f7a8d8c9009bd5ea",
+      "name": "colors/green/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:171": {
+      "key": "4639c2293509c5634149f7cafc584bdea54a1848",
+      "name": "colors/green/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:172": {
+      "key": "6414e88a8e6c890aa261da3468f38199944ce00c",
+      "name": "colors/teal/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:173": {
+      "key": "18bd2a019ec2587a47dfd92819194382907d16f9",
+      "name": "colors/teal/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:174": {
+      "key": "1afa2c7a90cef70e74ca0472c6e897ecf19469fd",
+      "name": "colors/teal/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:175": {
+      "key": "64b6e245333219f6c170d015303f872ccf41f6db",
+      "name": "colors/teal/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:176": {
+      "key": "ea7e5b671aef3a2184750392f5dcfa6b69ac6764",
+      "name": "colors/teal/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:177": {
+      "key": "9b58b5841f58d1a9fc195246854486dcb75c50a0",
+      "name": "colors/teal/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:178": {
+      "key": "1d4418092f48318ef71994f1bd305ef52f8a594f",
+      "name": "colors/teal/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:179": {
+      "key": "7fad7dbc311e4f82484cc7553653e1d042a93788",
+      "name": "colors/teal/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:180": {
+      "key": "77cab393715eb5f4ed519ac8a2086d6d9fac27af",
+      "name": "colors/teal/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:181": {
+      "key": "dc2d1368174873a0e477f43ba4b09f6f314ffe0a",
+      "name": "colors/blue/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:182": {
+      "key": "2c123c8080187d0bb055c0d477b230bf5e0f466b",
+      "name": "colors/blue/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:183": {
+      "key": "7f8a6af05baabf990effc2b030e6d13680d274b7",
+      "name": "colors/blue/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:184": {
+      "key": "8746d0a164fd8a0a6c4a9d669baf6a0a73d07952",
+      "name": "colors/blue/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:185": {
+      "key": "969ff2f308d3467c42bd162d8b87c98ff566015e",
+      "name": "colors/blue/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:186": {
+      "key": "340ccdfd024649b3a7baa583af74bb4758c07f80",
+      "name": "colors/blue/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:187": {
+      "key": "4a44b898752093ef6fc6199ee9bea1facb3619e5",
+      "name": "colors/blue/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:188": {
+      "key": "37088da8687b86e860056ff64b2b54b0cec8dd4a",
+      "name": "colors/blue/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:189": {
+      "key": "b6db32a8805457e9113baeaae3f7fb0e05006c42",
+      "name": "colors/blue/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:190": {
+      "key": "bc4b42a60e2d2c72ff1603f3609eb47929719347",
+      "name": "colors/indigo/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:191": {
+      "key": "7f8cfcb795a6c70ba5bcb6094cd0c04ad3af1be8",
+      "name": "colors/indigo/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:192": {
+      "key": "8719ed98e9e61f35fb95dd57842677ed85c807d9",
+      "name": "colors/indigo/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:193": {
+      "key": "41d14c705693f4f9633dbb3be989d7d845c0acc3",
+      "name": "colors/indigo/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:194": {
+      "key": "886bd949d86c52189f7117b9d8445d802e6de0f5",
+      "name": "colors/indigo/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:195": {
+      "key": "3a65d92186b9b3714aa447a3557a99367d345c11",
+      "name": "colors/indigo/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:196": {
+      "key": "a83e35f79b13d2897da29668e9c60eb1d7215ac5",
+      "name": "colors/indigo/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:197": {
+      "key": "c1961721457005143bf8db68991e83bd47a2caf1",
+      "name": "colors/indigo/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:198": {
+      "key": "e5eb9d5f4943243f95debe5d7bb550de58ac5cf1",
+      "name": "colors/indigo/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:199": {
+      "key": "09af4b9874124acdfbd0b4cac6b5ba4e5afdba0a",
+      "name": "colors/purple/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:200": {
+      "key": "60a90917fa537d5145656e363495fea17b774f39",
+      "name": "colors/purple/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:201": {
+      "key": "dd719079b15a3702026ce9ed473d3dffa9e5dcf8",
+      "name": "colors/purple/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:202": {
+      "key": "bcdd80ffa9d7ecbdb7d7be2fcf7991aa8279a194",
+      "name": "colors/purple/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:203": {
+      "key": "5f0acdb206b1e79689cc94fb6f596ae94ceb1967",
+      "name": "colors/purple/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:204": {
+      "key": "45de7e8b04737ad1d33ee0826c2c57fe6adc2118",
+      "name": "colors/purple/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:205": {
+      "key": "2d653db70eb4d1840314911fd819b2ea81204c73",
+      "name": "colors/purple/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:206": {
+      "key": "35ab3904013fc327e88e93fc74bb6118b93ac969",
+      "name": "colors/purple/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:207": {
+      "key": "de3077e0592b086fc8fdf27d18c350d9487900c8",
+      "name": "colors/purple/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:208": {
+      "key": "2e898583d10ccda4d50c4998a24c8c0395a70b72",
+      "name": "colors/pink/100",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:209": {
+      "key": "74b291cf832e42ad3baf247f318bc7e555605863",
+      "name": "colors/pink/200",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:210": {
+      "key": "f3d62d2ccec2b54329d8f56c0a578eab2f1cee23",
+      "name": "colors/pink/300",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:211": {
+      "key": "0d0c5b12c504cc516dfbac22b2022e5afd63e909",
+      "name": "colors/pink/400",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:212": {
+      "key": "15393fdb93ea4fc6e222627b1b77929ce0dbf30a",
+      "name": "colors/pink/500",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:213": {
+      "key": "68929435a124d7ba64d8481f8081e3f1432d8735",
+      "name": "colors/pink/600",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:214": {
+      "key": "ee0a7ee76ff0d998f8066a3ef43deeec157fa838",
+      "name": "colors/pink/700",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:215": {
+      "key": "41f8de46fc963833d5d916bbada71d1d0ff1c50b",
+      "name": "colors/pink/800",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:216": {
+      "key": "6a14a2444834f973022a8eb4c366ba680d35114c",
+      "name": "colors/pink/900",
+      "styleType": "FILL",
+      "description": ""
+    },
+    "5:217": {
+      "key": "89c0be71069fb0a2d15958e64f5f291afaecd95a",
+      "name": "typography/H1/Bold",
+      "styleType": "TEXT",
+      "description": ""
+    },
+    "5:218": {
+      "key": "7c9d2a2fcd44497d60f772673988e3f211649f67",
+      "name": "typography/H1/Regular",
+      "styleType": "TEXT",
+      "description": ""
+    },
+    "5:219": {
+      "key": "33447939e68c804ba9796f385b77ba11ca36f19a",
+      "name": "typography/H2/Bold",
+      "styleType": "TEXT",
+      "description": ""
+    },
+    "5:220": {
+      "key": "5e0e3ab4743ae9f84d4428f40920275081a7c7f4",
+      "name": "typography/H2/Regular",
+      "styleType": "TEXT",
+      "description": ""
+    },
+    "5:221": {
+      "key": "d0da805cffcad30643aa4dd34fc69393134c0bc9",
+      "name": "typography/Body",
+      "styleType": "TEXT",
+      "description": ""
+    },
+    "5:222": {
+      "key": "b78f8b5413f9fba689b08224b5ec4fa1deff5325",
+      "name": "boxShadow/default",
+      "styleType": "EFFECT",
+      "description": ""
+    }
+  },
+  "name": "FigmaAPIDemo",
+  "lastModified": "2022-09-14T06:25:05Z",
+  "thumbnailUrl": "https://s3-alpha-sig.figma.com/thumbnails/3f6550c2-0a2e-4ab9-9e08-c370dd98872a?Expires=1664150400&Signature=InWZeiLIMOxy9VKowadSuuWOvxogxBCZkAZmxriLvPjTmCrwnMNvPGItTSoc3B1ytsf-6DC75Ud2m98PRqErq6Ug3gRYFK04~j3FrhDhH7MzFcNnjioW84fCsrPzTvoNYOgZMdV~qeQZxiUfp7un78IPvZaAy6a31kjUmY9~h1RoKHMiMu69YL7KMHtyjeyFkTfw0y79YLe876FUqwc-qZgKKmbcEKCX1LydCz6UDq4OjVSZWyFqqq0Pl7cyDqdA0xPIJkleBF3Pj5V-Fpuvra4wjY7a9z7V81kwQVqnZYaen2oN8RIBqnk8PjdcN~594LSodHwjSCD4N9BOopdT8g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+  "version": "2336819322",
+  "role": "owner",
+  "editorType": "figma",
+  "linkAccess": "org_view"
+}

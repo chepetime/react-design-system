@@ -38,7 +38,7 @@ This monorepository contains multiple projects that work together to create an i
 | Package directory               | Description                                                          |
 | ------------------------------- | -------------------------------------------------------------------- |
 | `packages/eslint-config-custom` | Shared Eslint configuration for all packages                         |
-| `packages/tsconfig`             | Shared Typescript configuration for all packages                     |
+| `packages/ts-config-custom`     | Shared Typescript configuration for all packages                     |
 | `packages/ui`                   | React based component library                                        |
 | `packages/generator`            | Terminal tool that creates Components for the React UI Library (WIP) |
 | `packages/token-manager`        | Terminal tool that manages design tokens (WIP)                       |

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "tsconfig",
+  "name": "ts-config-custom",
   "version": "0.0.0",
   "main": "index.js",
   "files": [

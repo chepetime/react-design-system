@@ -7,12 +7,12 @@ import Wrapper from "./../components/Wrapper";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div>
       <ThemeSwitcher />
       <Wrapper>
         <Button>Click me</Button>
       </Wrapper>
-    </>
+    </div>
   );
 };
 

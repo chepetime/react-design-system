@@ -16,18 +16,9 @@
 
 <br/>
 
-## Getting Started
-
-Welcome to chepe DLS, chepe's Design Language System for products, digital experiences and brand.
-
-- [Figma File Demo](https://www.figma.com/file/VgZTsIrH0uIGxTgAHFmlja/chepe-Design-Tokens-Demo?node-id=0%3A1&t=i5KbPMlzHdXPVssq-1)
-- [Chromatic Invite](https://www.chromatic.com/start?inviteToken=407c0fa9348d44f5990ca673bda82e20&appId=63cb088b050236561c70fbc6)
-
-<br/>
-
 ## Structure
 
-This monorepository contains multiple projects that work together to create an integrated Design Language System.
+This monorepo contains multiple projects that work together to create an integrated Design Language System.
 
 <div align="center">
   <img src="./docs/stack@2x.png" alt="chepe DLS" width="750">

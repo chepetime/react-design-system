@@ -4,6 +4,7 @@
 node_modules
 .pnp
 .pnp.js
+.env
 
 # testing
 coverage
@@ -14,8 +15,8 @@ out/
 build
 
 # react library
-./packages/ui/dist
-./packages/ui/dist/*
+./packages/chepe-ui/dist
+./packages/chepe-ui/dist/*
 
 # misc
 .DS_Store

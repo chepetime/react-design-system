@@ -5,11 +5,9 @@ const stories = ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"];
 const addons = [
   { name: "@storybook/addon-links" },
   { name: "@storybook/addon-essentials" },
-  { name: "@storybook/addon-docs" },
   { name: "@storybook/addon-a11y" },
   { name: "@storybook/addon-storysource" },
   { name: "storybook-addon-designs" },
-  { name: "storybook-addon-pseudo-states" },
   {
     name: "storybook-addon-turbo-build",
     options: {
@@ -17,6 +15,7 @@ const addons = [
     },
   },
   { name: "storybook-dark-mode" },
+  { name: "@storybook/preset-scss" },
 ];
 
 module.exports = {
@@ -33,8 +32,30 @@ module.exports = {
       resolve: {
         alias: [
           {
-            find: "ui",
-            replacement: path.resolve(__dirname, "../../../packages/ui/"),
+            find: "@chepe/ui",
+            replacement: path.resolve(
+              __dirname,
+              "./../../../packages/ui/"
+            ),
+          },
+          {
+            find: "@chepe/icons",
+            replacement: path.resolve(
+              __dirname,
+              "./../../../packages/icons/"
+            ),
+          },
+          {
+            find: "@chepe/tokens",
+            replacement: path.resolve(
+              __dirname,
+              "./../../../packages/tokens/"
+            ),
+          },
+          {
+            // this is required for the SCSS modules
+            find: /^~(.*)$/,
+            replacement: "$1",
           },
         ],
       },

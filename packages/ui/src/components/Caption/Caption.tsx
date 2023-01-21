@@ -8,7 +8,7 @@ export interface CaptionProps {
 
 export function Caption(props: CaptionProps) {
   return (
-    <div className={classnames(css.Caption)}>
+    <div {...props} className={classnames(css.Caption)}>
       <p>Caption component working!</p>
       <div>{props.children}</div>
     </div>

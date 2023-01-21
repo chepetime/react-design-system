@@ -8,7 +8,7 @@ export interface ContainerProps {
 
 export function Container(props: ContainerProps) {
   return (
-    <div className={classnames(css.Container)}>
+    <div {...props} className={classnames(css.Container)}>
       <p>Container component working!</p>
       <div>{props.children}</div>
     </div>

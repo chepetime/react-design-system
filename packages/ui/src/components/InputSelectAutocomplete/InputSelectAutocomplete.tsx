@@ -8,7 +8,7 @@ export interface InputSelectAutocompleteProps {
 
 export function InputSelectAutocomplete(props: InputSelectAutocompleteProps) {
   return (
-    <div className={classnames(css.InputSelectAutocomplete)}>
+    <div {...props} className={classnames(css.InputSelectAutocomplete)}>
       <p>InputSelectAutocomplete component working!</p>
       <div>{props.children}</div>
     </div>

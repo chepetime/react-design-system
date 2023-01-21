@@ -8,7 +8,7 @@ export interface AlertProps {
 
 export function Alert(props: AlertProps) {
   return (
-    <div className={classnames(css.Alert)}>
+    <div {...props} className={classnames(css.Alert)}>
       <p>Alert component working!</p>
       <div>{props.children}</div>
     </div>

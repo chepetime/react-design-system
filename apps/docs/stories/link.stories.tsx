@@ -1,31 +1,19 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Link } from "@chepe/ui/src";
+import { Link, LinkProps } from "@chepe/ui/src";
 
 export default {
-  title: "Content/Link",
+  title: "Components/Link",
   component: Link,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof Link>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof Link> = (args) => (
-  <Link>{args.children}</Link>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "",
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: LinkProps) => <Link>{args.children}</Link>,
+  args: {},
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

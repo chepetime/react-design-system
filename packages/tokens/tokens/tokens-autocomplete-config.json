@@ -1,0 +1,1234 @@
+{
+	"--accent-default": {
+		"prefix": "--accent-default",
+		"body": [
+			"var(--accent-default)"
+		],
+		"description": "Value: #5a67d8\\nUnder accent category."
+	},
+	"--bg-default": {
+		"prefix": "--bg-default",
+		"body": [
+			"var(--bg-default)"
+		],
+		"description": "Value: #1a202c\\nUnder bg category."
+	},
+	"--bg-muted": {
+		"prefix": "--bg-muted",
+		"body": [
+			"var(--bg-muted)"
+		],
+		"description": "Value: #4a5568\\nUnder bg category."
+	},
+	"--bg-subtle": {
+		"prefix": "--bg-subtle",
+		"body": [
+			"var(--bg-subtle)"
+		],
+		"description": "Value: #718096\\nUnder bg category."
+	},
+	"--border-radius-button-ghost": {
+		"prefix": "--border-radius-button-ghost",
+		"body": [
+			"var(--border-radius-button-ghost)"
+		],
+		"description": "Value: 0.5rem\\nUnder borderRadius category."
+	},
+	"--border-radius-card": {
+		"prefix": "--border-radius-card",
+		"body": [
+			"var(--border-radius-card)"
+		],
+		"description": "Value: 0.25rem\\nUnder borderRadius category."
+	},
+	"--border-radius-lg": {
+		"prefix": "--border-radius-lg",
+		"body": [
+			"var(--border-radius-lg)"
+		],
+		"description": "Value: 0.5rem\\nUnder borderRadius category."
+	},
+	"--border-radius-sm": {
+		"prefix": "--border-radius-sm",
+		"body": [
+			"var(--border-radius-sm)"
+		],
+		"description": "Value: 0.25rem\\nUnder borderRadius category."
+	},
+	"--border-radius-xl": {
+		"prefix": "--border-radius-xl",
+		"body": [
+			"var(--border-radius-xl)"
+		],
+		"description": "Value: 1rem\\nUnder borderRadius category."
+	},
+	"--border-width-button-ghost": {
+		"prefix": "--border-width-button-ghost",
+		"body": [
+			"var(--border-width-button-ghost)"
+		],
+		"description": "Value: 0.25rem\\nUnder borderWidth category."
+	},
+	"--border-width-lg": {
+		"prefix": "--border-width-lg",
+		"body": [
+			"var(--border-width-lg)"
+		],
+		"description": "Value: 0.5rem\\nUnder borderWidth category."
+	},
+	"--border-width-md": {
+		"prefix": "--border-width-md",
+		"body": [
+			"var(--border-width-md)"
+		],
+		"description": "Value: 0.25rem\\nUnder borderWidth category."
+	},
+	"--border-width-none": {
+		"prefix": "--border-width-none",
+		"body": [
+			"var(--border-width-none)"
+		],
+		"description": "Value: 0rem\\nUnder borderWidth category."
+	},
+	"--border-width-sm": {
+		"prefix": "--border-width-sm",
+		"body": [
+			"var(--border-width-sm)"
+		],
+		"description": "Value: 0.125rem\\nUnder borderWidth category."
+	},
+	"--border-width-xs": {
+		"prefix": "--border-width-xs",
+		"body": [
+			"var(--border-width-xs)"
+		],
+		"description": "Value: 0.0625rem\\nUnder borderWidth category."
+	},
+	"--box-shadow-default": {
+		"prefix": "--box-shadow-default",
+		"body": [
+			"var(--box-shadow-default)"
+		],
+		"description": "Value: (0.3125rem 0.3125rem 0.3125rem 0.1875rem #f7fafc26, inset 0.25rem 0.25rem 0.3125rem 0.375rem #00000033)\\nUnder boxShadow category."
+	},
+	"--button-ghost-outline": {
+		"prefix": "--button-ghost-outline",
+		"body": [
+			"var(--button-ghost-outline)"
+		],
+		"description": "Value: #ffffff\\nUnder button category."
+	},
+	"--button-ghost-text": {
+		"prefix": "--button-ghost-text",
+		"body": [
+			"var(--button-ghost-text)"
+		],
+		"description": "Value: #ffffff\\nUnder button category."
+	},
+	"--button-primary-background": {
+		"prefix": "--button-primary-background",
+		"body": [
+			"var(--button-primary-background)"
+		],
+		"description": "Value: #63b3ed\\nUnder button category."
+	},
+	"--colors-black": {
+		"prefix": "--colors-black",
+		"body": [
+			"var(--colors-black)"
+		],
+		"description": "Value: #000000\\nUnder colors category."
+	},
+	"--colors-blue-100": {
+		"prefix": "--colors-blue-100",
+		"body": [
+			"var(--colors-blue-100)"
+		],
+		"description": "Value: #ebf8ff\\nUnder colors category."
+	},
+	"--colors-blue-200": {
+		"prefix": "--colors-blue-200",
+		"body": [
+			"var(--colors-blue-200)"
+		],
+		"description": "Value: #bee3f8\\nUnder colors category."
+	},
+	"--colors-blue-300": {
+		"prefix": "--colors-blue-300",
+		"body": [
+			"var(--colors-blue-300)"
+		],
+		"description": "Value: #90cdf4\\nUnder colors category."
+	},
+	"--colors-blue-400": {
+		"prefix": "--colors-blue-400",
+		"body": [
+			"var(--colors-blue-400)"
+		],
+		"description": "Value: #63b3ed\\nUnder colors category."
+	},
+	"--colors-blue-500": {
+		"prefix": "--colors-blue-500",
+		"body": [
+			"var(--colors-blue-500)"
+		],
+		"description": "Value: #4299e1\\nUnder colors category."
+	},
+	"--colors-blue-600": {
+		"prefix": "--colors-blue-600",
+		"body": [
+			"var(--colors-blue-600)"
+		],
+		"description": "Value: #3182ce\\nUnder colors category."
+	},
+	"--colors-blue-700": {
+		"prefix": "--colors-blue-700",
+		"body": [
+			"var(--colors-blue-700)"
+		],
+		"description": "Value: #2b6cb0\\nUnder colors category."
+	},
+	"--colors-blue-800": {
+		"prefix": "--colors-blue-800",
+		"body": [
+			"var(--colors-blue-800)"
+		],
+		"description": "Value: #2c5282\\nUnder colors category."
+	},
+	"--colors-blue-900": {
+		"prefix": "--colors-blue-900",
+		"body": [
+			"var(--colors-blue-900)"
+		],
+		"description": "Value: #2a4365\\nUnder colors category."
+	},
+	"--colors-gray-100": {
+		"prefix": "--colors-gray-100",
+		"body": [
+			"var(--colors-gray-100)"
+		],
+		"description": "Value: #f7fafc\\nUnder colors category."
+	},
+	"--colors-gray-200": {
+		"prefix": "--colors-gray-200",
+		"body": [
+			"var(--colors-gray-200)"
+		],
+		"description": "Value: #edf2f7\\nUnder colors category."
+	},
+	"--colors-gray-300": {
+		"prefix": "--colors-gray-300",
+		"body": [
+			"var(--colors-gray-300)"
+		],
+		"description": "Value: #e2e8f0\\nUnder colors category."
+	},
+	"--colors-gray-400": {
+		"prefix": "--colors-gray-400",
+		"body": [
+			"var(--colors-gray-400)"
+		],
+		"description": "Value: #cbd5e0\\nUnder colors category."
+	},
+	"--colors-gray-500": {
+		"prefix": "--colors-gray-500",
+		"body": [
+			"var(--colors-gray-500)"
+		],
+		"description": "Value: #a0aec0\\nUnder colors category."
+	},
+	"--colors-gray-600": {
+		"prefix": "--colors-gray-600",
+		"body": [
+			"var(--colors-gray-600)"
+		],
+		"description": "Value: #718096\\nUnder colors category."
+	},
+	"--colors-gray-700": {
+		"prefix": "--colors-gray-700",
+		"body": [
+			"var(--colors-gray-700)"
+		],
+		"description": "Value: #4a5568\\nUnder colors category."
+	},
+	"--colors-gray-800": {
+		"prefix": "--colors-gray-800",
+		"body": [
+			"var(--colors-gray-800)"
+		],
+		"description": "Value: #2d3748\\nUnder colors category."
+	},
+	"--colors-gray-900": {
+		"prefix": "--colors-gray-900",
+		"body": [
+			"var(--colors-gray-900)"
+		],
+		"description": "Value: #1a202c\\nUnder colors category."
+	},
+	"--colors-green-100": {
+		"prefix": "--colors-green-100",
+		"body": [
+			"var(--colors-green-100)"
+		],
+		"description": "Value: #f0fff4\\nUnder colors category."
+	},
+	"--colors-green-200": {
+		"prefix": "--colors-green-200",
+		"body": [
+			"var(--colors-green-200)"
+		],
+		"description": "Value: #c6f6d5\\nUnder colors category."
+	},
+	"--colors-green-300": {
+		"prefix": "--colors-green-300",
+		"body": [
+			"var(--colors-green-300)"
+		],
+		"description": "Value: #9ae6b4\\nUnder colors category."
+	},
+	"--colors-green-400": {
+		"prefix": "--colors-green-400",
+		"body": [
+			"var(--colors-green-400)"
+		],
+		"description": "Value: #68d391\\nUnder colors category."
+	},
+	"--colors-green-500": {
+		"prefix": "--colors-green-500",
+		"body": [
+			"var(--colors-green-500)"
+		],
+		"description": "Value: #48bb78\\nUnder colors category."
+	},
+	"--colors-green-600": {
+		"prefix": "--colors-green-600",
+		"body": [
+			"var(--colors-green-600)"
+		],
+		"description": "Value: #38a169\\nUnder colors category."
+	},
+	"--colors-green-700": {
+		"prefix": "--colors-green-700",
+		"body": [
+			"var(--colors-green-700)"
+		],
+		"description": "Value: #2f855a\\nUnder colors category."
+	},
+	"--colors-green-800": {
+		"prefix": "--colors-green-800",
+		"body": [
+			"var(--colors-green-800)"
+		],
+		"description": "Value: #276749\\nUnder colors category."
+	},
+	"--colors-green-900": {
+		"prefix": "--colors-green-900",
+		"body": [
+			"var(--colors-green-900)"
+		],
+		"description": "Value: #22543d\\nUnder colors category."
+	},
+	"--colors-indigo-100": {
+		"prefix": "--colors-indigo-100",
+		"body": [
+			"var(--colors-indigo-100)"
+		],
+		"description": "Value: #ebf4ff\\nUnder colors category."
+	},
+	"--colors-indigo-200": {
+		"prefix": "--colors-indigo-200",
+		"body": [
+			"var(--colors-indigo-200)"
+		],
+		"description": "Value: #c3dafe\\nUnder colors category."
+	},
+	"--colors-indigo-300": {
+		"prefix": "--colors-indigo-300",
+		"body": [
+			"var(--colors-indigo-300)"
+		],
+		"description": "Value: #a3bffa\\nUnder colors category."
+	},
+	"--colors-indigo-400": {
+		"prefix": "--colors-indigo-400",
+		"body": [
+			"var(--colors-indigo-400)"
+		],
+		"description": "Value: #7f9cf5\\nUnder colors category."
+	},
+	"--colors-indigo-500": {
+		"prefix": "--colors-indigo-500",
+		"body": [
+			"var(--colors-indigo-500)"
+		],
+		"description": "Value: #667eea\\nUnder colors category."
+	},
+	"--colors-indigo-600": {
+		"prefix": "--colors-indigo-600",
+		"body": [
+			"var(--colors-indigo-600)"
+		],
+		"description": "Value: #5a67d8\\nUnder colors category."
+	},
+	"--colors-indigo-700": {
+		"prefix": "--colors-indigo-700",
+		"body": [
+			"var(--colors-indigo-700)"
+		],
+		"description": "Value: #4c51bf\\nUnder colors category."
+	},
+	"--colors-indigo-800": {
+		"prefix": "--colors-indigo-800",
+		"body": [
+			"var(--colors-indigo-800)"
+		],
+		"description": "Value: #434190\\nUnder colors category."
+	},
+	"--colors-indigo-900": {
+		"prefix": "--colors-indigo-900",
+		"body": [
+			"var(--colors-indigo-900)"
+		],
+		"description": "Value: #3c366b\\nUnder colors category."
+	},
+	"--colors-orange-100": {
+		"prefix": "--colors-orange-100",
+		"body": [
+			"var(--colors-orange-100)"
+		],
+		"description": "Value: #fffaf0\\nUnder colors category."
+	},
+	"--colors-orange-200": {
+		"prefix": "--colors-orange-200",
+		"body": [
+			"var(--colors-orange-200)"
+		],
+		"description": "Value: #feebc8\\nUnder colors category."
+	},
+	"--colors-orange-300": {
+		"prefix": "--colors-orange-300",
+		"body": [
+			"var(--colors-orange-300)"
+		],
+		"description": "Value: #fbd38d\\nUnder colors category."
+	},
+	"--colors-orange-400": {
+		"prefix": "--colors-orange-400",
+		"body": [
+			"var(--colors-orange-400)"
+		],
+		"description": "Value: #f6ad55\\nUnder colors category."
+	},
+	"--colors-orange-500": {
+		"prefix": "--colors-orange-500",
+		"body": [
+			"var(--colors-orange-500)"
+		],
+		"description": "Value: #ed8936\\nUnder colors category."
+	},
+	"--colors-orange-600": {
+		"prefix": "--colors-orange-600",
+		"body": [
+			"var(--colors-orange-600)"
+		],
+		"description": "Value: #dd6b20\\nUnder colors category."
+	},
+	"--colors-orange-700": {
+		"prefix": "--colors-orange-700",
+		"body": [
+			"var(--colors-orange-700)"
+		],
+		"description": "Value: #c05621\\nUnder colors category."
+	},
+	"--colors-orange-800": {
+		"prefix": "--colors-orange-800",
+		"body": [
+			"var(--colors-orange-800)"
+		],
+		"description": "Value: #9c4221\\nUnder colors category."
+	},
+	"--colors-orange-900": {
+		"prefix": "--colors-orange-900",
+		"body": [
+			"var(--colors-orange-900)"
+		],
+		"description": "Value: #7b341e\\nUnder colors category."
+	},
+	"--colors-pink-100": {
+		"prefix": "--colors-pink-100",
+		"body": [
+			"var(--colors-pink-100)"
+		],
+		"description": "Value: #fff5f7\\nUnder colors category."
+	},
+	"--colors-pink-200": {
+		"prefix": "--colors-pink-200",
+		"body": [
+			"var(--colors-pink-200)"
+		],
+		"description": "Value: #fed7e2\\nUnder colors category."
+	},
+	"--colors-pink-300": {
+		"prefix": "--colors-pink-300",
+		"body": [
+			"var(--colors-pink-300)"
+		],
+		"description": "Value: #fbb6ce\\nUnder colors category."
+	},
+	"--colors-pink-400": {
+		"prefix": "--colors-pink-400",
+		"body": [
+			"var(--colors-pink-400)"
+		],
+		"description": "Value: #f687b3\\nUnder colors category."
+	},
+	"--colors-pink-500": {
+		"prefix": "--colors-pink-500",
+		"body": [
+			"var(--colors-pink-500)"
+		],
+		"description": "Value: #ed64a6\\nUnder colors category."
+	},
+	"--colors-pink-600": {
+		"prefix": "--colors-pink-600",
+		"body": [
+			"var(--colors-pink-600)"
+		],
+		"description": "Value: #d53f8c\\nUnder colors category."
+	},
+	"--colors-pink-700": {
+		"prefix": "--colors-pink-700",
+		"body": [
+			"var(--colors-pink-700)"
+		],
+		"description": "Value: #b83280\\nUnder colors category."
+	},
+	"--colors-pink-800": {
+		"prefix": "--colors-pink-800",
+		"body": [
+			"var(--colors-pink-800)"
+		],
+		"description": "Value: #97266d\\nUnder colors category."
+	},
+	"--colors-pink-900": {
+		"prefix": "--colors-pink-900",
+		"body": [
+			"var(--colors-pink-900)"
+		],
+		"description": "Value: #702459\\nUnder colors category."
+	},
+	"--colors-purple-100": {
+		"prefix": "--colors-purple-100",
+		"body": [
+			"var(--colors-purple-100)"
+		],
+		"description": "Value: #faf5ff\\nUnder colors category."
+	},
+	"--colors-purple-200": {
+		"prefix": "--colors-purple-200",
+		"body": [
+			"var(--colors-purple-200)"
+		],
+		"description": "Value: #e9d8fd\\nUnder colors category."
+	},
+	"--colors-purple-300": {
+		"prefix": "--colors-purple-300",
+		"body": [
+			"var(--colors-purple-300)"
+		],
+		"description": "Value: #d6bcfa\\nUnder colors category."
+	},
+	"--colors-purple-400": {
+		"prefix": "--colors-purple-400",
+		"body": [
+			"var(--colors-purple-400)"
+		],
+		"description": "Value: #b794f4\\nUnder colors category."
+	},
+	"--colors-purple-500": {
+		"prefix": "--colors-purple-500",
+		"body": [
+			"var(--colors-purple-500)"
+		],
+		"description": "Value: #9f7aea\\nUnder colors category."
+	},
+	"--colors-purple-600": {
+		"prefix": "--colors-purple-600",
+		"body": [
+			"var(--colors-purple-600)"
+		],
+		"description": "Value: #805ad5\\nUnder colors category."
+	},
+	"--colors-purple-700": {
+		"prefix": "--colors-purple-700",
+		"body": [
+			"var(--colors-purple-700)"
+		],
+		"description": "Value: #6b46c1\\nUnder colors category."
+	},
+	"--colors-purple-800": {
+		"prefix": "--colors-purple-800",
+		"body": [
+			"var(--colors-purple-800)"
+		],
+		"description": "Value: #553c9a\\nUnder colors category."
+	},
+	"--colors-purple-900": {
+		"prefix": "--colors-purple-900",
+		"body": [
+			"var(--colors-purple-900)"
+		],
+		"description": "Value: #44337a\\nUnder colors category."
+	},
+	"--colors-red-100": {
+		"prefix": "--colors-red-100",
+		"body": [
+			"var(--colors-red-100)"
+		],
+		"description": "Value: #fff5f5\\nUnder colors category."
+	},
+	"--colors-red-200": {
+		"prefix": "--colors-red-200",
+		"body": [
+			"var(--colors-red-200)"
+		],
+		"description": "Value: #fed7d7\\nUnder colors category."
+	},
+	"--colors-red-300": {
+		"prefix": "--colors-red-300",
+		"body": [
+			"var(--colors-red-300)"
+		],
+		"description": "Value: #feb2b2\\nUnder colors category."
+	},
+	"--colors-red-400": {
+		"prefix": "--colors-red-400",
+		"body": [
+			"var(--colors-red-400)"
+		],
+		"description": "Value: #fc8181\\nUnder colors category."
+	},
+	"--colors-red-500": {
+		"prefix": "--colors-red-500",
+		"body": [
+			"var(--colors-red-500)"
+		],
+		"description": "Value: #f56565\\nUnder colors category."
+	},
+	"--colors-red-600": {
+		"prefix": "--colors-red-600",
+		"body": [
+			"var(--colors-red-600)"
+		],
+		"description": "Value: #e53e3e\\nUnder colors category."
+	},
+	"--colors-red-700": {
+		"prefix": "--colors-red-700",
+		"body": [
+			"var(--colors-red-700)"
+		],
+		"description": "Value: #c53030\\nUnder colors category."
+	},
+	"--colors-red-800": {
+		"prefix": "--colors-red-800",
+		"body": [
+			"var(--colors-red-800)"
+		],
+		"description": "Value: #9b2c2c\\nUnder colors category."
+	},
+	"--colors-red-900": {
+		"prefix": "--colors-red-900",
+		"body": [
+			"var(--colors-red-900)"
+		],
+		"description": "Value: #742a2a\\nUnder colors category."
+	},
+	"--colors-teal-100": {
+		"prefix": "--colors-teal-100",
+		"body": [
+			"var(--colors-teal-100)"
+		],
+		"description": "Value: #e6fffa\\nUnder colors category."
+	},
+	"--colors-teal-200": {
+		"prefix": "--colors-teal-200",
+		"body": [
+			"var(--colors-teal-200)"
+		],
+		"description": "Value: #b2f5ea\\nUnder colors category."
+	},
+	"--colors-teal-300": {
+		"prefix": "--colors-teal-300",
+		"body": [
+			"var(--colors-teal-300)"
+		],
+		"description": "Value: #81e6d9\\nUnder colors category."
+	},
+	"--colors-teal-400": {
+		"prefix": "--colors-teal-400",
+		"body": [
+			"var(--colors-teal-400)"
+		],
+		"description": "Value: #4fd1c5\\nUnder colors category."
+	},
+	"--colors-teal-500": {
+		"prefix": "--colors-teal-500",
+		"body": [
+			"var(--colors-teal-500)"
+		],
+		"description": "Value: #38b2ac\\nUnder colors category."
+	},
+	"--colors-teal-600": {
+		"prefix": "--colors-teal-600",
+		"body": [
+			"var(--colors-teal-600)"
+		],
+		"description": "Value: #319795\\nUnder colors category."
+	},
+	"--colors-teal-700": {
+		"prefix": "--colors-teal-700",
+		"body": [
+			"var(--colors-teal-700)"
+		],
+		"description": "Value: #2c7a7b\\nUnder colors category."
+	},
+	"--colors-teal-800": {
+		"prefix": "--colors-teal-800",
+		"body": [
+			"var(--colors-teal-800)"
+		],
+		"description": "Value: #285e61\\nUnder colors category."
+	},
+	"--colors-teal-900": {
+		"prefix": "--colors-teal-900",
+		"body": [
+			"var(--colors-teal-900)"
+		],
+		"description": "Value: #234e52\\nUnder colors category."
+	},
+	"--colors-white": {
+		"prefix": "--colors-white",
+		"body": [
+			"var(--colors-white)"
+		],
+		"description": "Value: #ffffff\\nUnder colors category."
+	},
+	"--colors-yellow-100": {
+		"prefix": "--colors-yellow-100",
+		"body": [
+			"var(--colors-yellow-100)"
+		],
+		"description": "Value: #fffff0\\nUnder colors category."
+	},
+	"--colors-yellow-200": {
+		"prefix": "--colors-yellow-200",
+		"body": [
+			"var(--colors-yellow-200)"
+		],
+		"description": "Value: #fefcbf\\nUnder colors category."
+	},
+	"--colors-yellow-300": {
+		"prefix": "--colors-yellow-300",
+		"body": [
+			"var(--colors-yellow-300)"
+		],
+		"description": "Value: #faf089\\nUnder colors category."
+	},
+	"--colors-yellow-400": {
+		"prefix": "--colors-yellow-400",
+		"body": [
+			"var(--colors-yellow-400)"
+		],
+		"description": "Value: #f6e05e\\nUnder colors category."
+	},
+	"--colors-yellow-500": {
+		"prefix": "--colors-yellow-500",
+		"body": [
+			"var(--colors-yellow-500)"
+		],
+		"description": "Value: #ecc94b\\nUnder colors category."
+	},
+	"--colors-yellow-600": {
+		"prefix": "--colors-yellow-600",
+		"body": [
+			"var(--colors-yellow-600)"
+		],
+		"description": "Value: #d69e2e\\nUnder colors category."
+	},
+	"--colors-yellow-700": {
+		"prefix": "--colors-yellow-700",
+		"body": [
+			"var(--colors-yellow-700)"
+		],
+		"description": "Value: #b7791f\\nUnder colors category."
+	},
+	"--colors-yellow-800": {
+		"prefix": "--colors-yellow-800",
+		"body": [
+			"var(--colors-yellow-800)"
+		],
+		"description": "Value: #975a16\\nUnder colors category."
+	},
+	"--colors-yellow-900": {
+		"prefix": "--colors-yellow-900",
+		"body": [
+			"var(--colors-yellow-900)"
+		],
+		"description": "Value: #744210\\nUnder colors category."
+	},
+	"--fg-default": {
+		"prefix": "--fg-default",
+		"body": [
+			"var(--fg-default)"
+		],
+		"description": "Value: #ffffff\\nUnder fg category."
+	},
+	"--fg-muted": {
+		"prefix": "--fg-muted",
+		"body": [
+			"var(--fg-muted)"
+		],
+		"description": "Value: #e2e8f0\\nUnder fg category."
+	},
+	"--fg-subtle": {
+		"prefix": "--fg-subtle",
+		"body": [
+			"var(--fg-subtle)"
+		],
+		"description": "Value: #a0aec0\\nUnder fg category."
+	},
+	"--font-families-body": {
+		"prefix": "--font-families-body",
+		"body": [
+			"var(--font-families-body)"
+		],
+		"description": "Value: Roboto\\nUnder fontFamilies category."
+	},
+	"--font-families-heading": {
+		"prefix": "--font-families-heading",
+		"body": [
+			"var(--font-families-heading)"
+		],
+		"description": "Value: Inter\\nUnder fontFamilies category."
+	},
+	"--font-sizes-body": {
+		"prefix": "--font-sizes-body",
+		"body": [
+			"var(--font-sizes-body)"
+		],
+		"description": "Value: 16\\nUnder fontSizes category."
+	},
+	"--font-sizes-card-content": {
+		"prefix": "--font-sizes-card-content",
+		"body": [
+			"var(--font-sizes-card-content)"
+		],
+		"description": "Value: 10.4\\nUnder fontSizes category."
+	},
+	"--font-sizes-card-title": {
+		"prefix": "--font-sizes-card-title",
+		"body": [
+			"var(--font-sizes-card-title)"
+		],
+		"description": "Value: 13.6\\nUnder fontSizes category."
+	},
+	"--font-sizes-h1": {
+		"prefix": "--font-sizes-h1",
+		"body": [
+			"var(--font-sizes-h1)"
+		],
+		"description": "Value: 48.829\\nUnder fontSizes category."
+	},
+	"--font-sizes-h2": {
+		"prefix": "--font-sizes-h2",
+		"body": [
+			"var(--font-sizes-h2)"
+		],
+		"description": "Value: 39.063\\nUnder fontSizes category."
+	},
+	"--font-sizes-h3": {
+		"prefix": "--font-sizes-h3",
+		"body": [
+			"var(--font-sizes-h3)"
+		],
+		"description": "Value: 31.25\\nUnder fontSizes category."
+	},
+	"--font-sizes-h4": {
+		"prefix": "--font-sizes-h4",
+		"body": [
+			"var(--font-sizes-h4)"
+		],
+		"description": "Value: 25\\nUnder fontSizes category."
+	},
+	"--font-sizes-h5": {
+		"prefix": "--font-sizes-h5",
+		"body": [
+			"var(--font-sizes-h5)"
+		],
+		"description": "Value: 20\\nUnder fontSizes category."
+	},
+	"--font-sizes-h6": {
+		"prefix": "--font-sizes-h6",
+		"body": [
+			"var(--font-sizes-h6)"
+		],
+		"description": "Value: 16\\nUnder fontSizes category."
+	},
+	"--font-sizes-sm": {
+		"prefix": "--font-sizes-sm",
+		"body": [
+			"var(--font-sizes-sm)"
+		],
+		"description": "Value: 13.6\\nUnder fontSizes category."
+	},
+	"--font-sizes-xs": {
+		"prefix": "--font-sizes-xs",
+		"body": [
+			"var(--font-sizes-xs)"
+		],
+		"description": "Value: 10.4\\nUnder fontSizes category."
+	},
+	"--font-weights-body-bold": {
+		"prefix": "--font-weights-body-bold",
+		"body": [
+			"var(--font-weights-body-bold)"
+		],
+		"description": "Value: Bold\\nUnder fontWeights category."
+	},
+	"--font-weights-body-regular": {
+		"prefix": "--font-weights-body-regular",
+		"body": [
+			"var(--font-weights-body-regular)"
+		],
+		"description": "Value: Regular\\nUnder fontWeights category."
+	},
+	"--font-weights-heading-bold": {
+		"prefix": "--font-weights-heading-bold",
+		"body": [
+			"var(--font-weights-heading-bold)"
+		],
+		"description": "Value: Bold\\nUnder fontWeights category."
+	},
+	"--font-weights-heading-regular": {
+		"prefix": "--font-weights-heading-regular",
+		"body": [
+			"var(--font-weights-heading-regular)"
+		],
+		"description": "Value: Regular\\nUnder fontWeights category."
+	},
+	"--letter-spacing-decreased": {
+		"prefix": "--letter-spacing-decreased",
+		"body": [
+			"var(--letter-spacing-decreased)"
+		],
+		"description": "Value: -5%\\nUnder letterSpacing category."
+	},
+	"--letter-spacing-default": {
+		"prefix": "--letter-spacing-default",
+		"body": [
+			"var(--letter-spacing-default)"
+		],
+		"description": "Value: 0rem\\nUnder letterSpacing category."
+	},
+	"--letter-spacing-increased": {
+		"prefix": "--letter-spacing-increased",
+		"body": [
+			"var(--letter-spacing-increased)"
+		],
+		"description": "Value: 150%\\nUnder letterSpacing category."
+	},
+	"--line-heights-body": {
+		"prefix": "--line-heights-body",
+		"body": [
+			"var(--line-heights-body)"
+		],
+		"description": "Value: 140%\\nUnder lineHeights category."
+	},
+	"--line-heights-heading": {
+		"prefix": "--line-heights-heading",
+		"body": [
+			"var(--line-heights-heading)"
+		],
+		"description": "Value: 110%\\nUnder lineHeights category."
+	},
+	"--opacity-high": {
+		"prefix": "--opacity-high",
+		"body": [
+			"var(--opacity-high)"
+		],
+		"description": "Value: 90%\\nUnder opacity category."
+	},
+	"--opacity-low": {
+		"prefix": "--opacity-low",
+		"body": [
+			"var(--opacity-low)"
+		],
+		"description": "Value: 10%\\nUnder opacity category."
+	},
+	"--opacity-md": {
+		"prefix": "--opacity-md",
+		"body": [
+			"var(--opacity-md)"
+		],
+		"description": "Value: 50%\\nUnder opacity category."
+	},
+	"--shadows-default": {
+		"prefix": "--shadows-default",
+		"body": [
+			"var(--shadows-default)"
+		],
+		"description": "Value: #f7fafc\\nUnder shadows category."
+	},
+	"--sizing-lg": {
+		"prefix": "--sizing-lg",
+		"body": [
+			"var(--sizing-lg)"
+		],
+		"description": "Value: 0.84375rem\\nUnder sizing category."
+	},
+	"--sizing-md": {
+		"prefix": "--sizing-md",
+		"body": [
+			"var(--sizing-md)"
+		],
+		"description": "Value: 0.5625rem\\nUnder sizing category."
+	},
+	"--sizing-scale": {
+		"prefix": "--sizing-scale",
+		"body": [
+			"var(--sizing-scale)"
+		],
+		"description": "Value: 0.09375rem\\nUnder sizing category."
+	},
+	"--sizing-sm": {
+		"prefix": "--sizing-sm",
+		"body": [
+			"var(--sizing-sm)"
+		],
+		"description": "Value: 0.375rem\\nUnder sizing category."
+	},
+	"--sizing-xl": {
+		"prefix": "--sizing-xl",
+		"body": [
+			"var(--sizing-xl)"
+		],
+		"description": "Value: 1.265625rem\\nUnder sizing category."
+	},
+	"--sizing-xs": {
+		"prefix": "--sizing-xs",
+		"body": [
+			"var(--sizing-xs)"
+		],
+		"description": "Value: 0.25rem\\nUnder sizing category."
+	},
+	"--spacing-lg": {
+		"prefix": "--spacing-lg",
+		"body": [
+			"var(--spacing-lg)"
+		],
+		"description": "Value: 2rem\\nUnder spacing category."
+	},
+	"--spacing-md": {
+		"prefix": "--spacing-md",
+		"body": [
+			"var(--spacing-md)"
+		],
+		"description": "Value: 1rem\\nUnder spacing category."
+	},
+	"--spacing-scale": {
+		"prefix": "--spacing-scale",
+		"body": [
+			"var(--spacing-scale)"
+		],
+		"description": "Value: 0.125rem\\nUnder spacing category."
+	},
+	"--spacing-sm": {
+		"prefix": "--spacing-sm",
+		"body": [
+			"var(--spacing-sm)"
+		],
+		"description": "Value: 0.5rem\\nUnder spacing category."
+	},
+	"--spacing-xl": {
+		"prefix": "--spacing-xl",
+		"body": [
+			"var(--spacing-xl)"
+		],
+		"description": "Value: 4rem\\nUnder spacing category."
+	},
+	"--spacing-xs": {
+		"prefix": "--spacing-xs",
+		"body": [
+			"var(--spacing-xs)"
+		],
+		"description": "Value: 0.25rem\\nUnder spacing category."
+	},
+	"--typography-body-font-family": {
+		"prefix": "--typography-body-font-family",
+		"body": [
+			"var(--typography-body-font-family)"
+		],
+		"description": "Value: Roboto\\nUnder typography category."
+	},
+	"--typography-body-font-size": {
+		"prefix": "--typography-body-font-size",
+		"body": [
+			"var(--typography-body-font-size)"
+		],
+		"description": "Value: 16\\nUnder typography category."
+	},
+	"--typography-body-font-weight": {
+		"prefix": "--typography-body-font-weight",
+		"body": [
+			"var(--typography-body-font-weight)"
+		],
+		"description": "Value: Regular\\nUnder typography category."
+	},
+	"--typography-body-line-height": {
+		"prefix": "--typography-body-line-height",
+		"body": [
+			"var(--typography-body-line-height)"
+		],
+		"description": "Value: 110%\\nUnder typography category."
+	},
+	"--typography-h1-bold-font-family": {
+		"prefix": "--typography-h1-bold-font-family",
+		"body": [
+			"var(--typography-h1-bold-font-family)"
+		],
+		"description": "Value: Inter\\nUnder typography category."
+	},
+	"--typography-h1-bold-font-size": {
+		"prefix": "--typography-h1-bold-font-size",
+		"body": [
+			"var(--typography-h1-bold-font-size)"
+		],
+		"description": "Value: 48.829\\nUnder typography category."
+	},
+	"--typography-h1-bold-font-weight": {
+		"prefix": "--typography-h1-bold-font-weight",
+		"body": [
+			"var(--typography-h1-bold-font-weight)"
+		],
+		"description": "Value: Bold\\nUnder typography category."
+	},
+	"--typography-h1-bold-letter-spacing": {
+		"prefix": "--typography-h1-bold-letter-spacing",
+		"body": [
+			"var(--typography-h1-bold-letter-spacing)"
+		],
+		"description": "Value: -5%\\nUnder typography category."
+	},
+	"--typography-h1-bold-line-height": {
+		"prefix": "--typography-h1-bold-line-height",
+		"body": [
+			"var(--typography-h1-bold-line-height)"
+		],
+		"description": "Value: 110%\\nUnder typography category."
+	},
+	"--typography-h1-regular-font-family": {
+		"prefix": "--typography-h1-regular-font-family",
+		"body": [
+			"var(--typography-h1-regular-font-family)"
+		],
+		"description": "Value: Inter\\nUnder typography category."
+	},
+	"--typography-h1-regular-font-size": {
+		"prefix": "--typography-h1-regular-font-size",
+		"body": [
+			"var(--typography-h1-regular-font-size)"
+		],
+		"description": "Value: 48.829\\nUnder typography category."
+	},
+	"--typography-h1-regular-font-weight": {
+		"prefix": "--typography-h1-regular-font-weight",
+		"body": [
+			"var(--typography-h1-regular-font-weight)"
+		],
+		"description": "Value: Regular\\nUnder typography category."
+	},
+	"--typography-h1-regular-letter-spacing": {
+		"prefix": "--typography-h1-regular-letter-spacing",
+		"body": [
+			"var(--typography-h1-regular-letter-spacing)"
+		],
+		"description": "Value: -5%\\nUnder typography category."
+	},
+	"--typography-h1-regular-line-height": {
+		"prefix": "--typography-h1-regular-line-height",
+		"body": [
+			"var(--typography-h1-regular-line-height)"
+		],
+		"description": "Value: 110%\\nUnder typography category."
+	},
+	"--typography-h2-bold-font-family": {
+		"prefix": "--typography-h2-bold-font-family",
+		"body": [
+			"var(--typography-h2-bold-font-family)"
+		],
+		"description": "Value: Inter\\nUnder typography category."
+	},
+	"--typography-h2-bold-font-size": {
+		"prefix": "--typography-h2-bold-font-size",
+		"body": [
+			"var(--typography-h2-bold-font-size)"
+		],
+		"description": "Value: 39.063\\nUnder typography category."
+	},
+	"--typography-h2-bold-font-weight": {
+		"prefix": "--typography-h2-bold-font-weight",
+		"body": [
+			"var(--typography-h2-bold-font-weight)"
+		],
+		"description": "Value: Bold\\nUnder typography category."
+	},
+	"--typography-h2-bold-letter-spacing": {
+		"prefix": "--typography-h2-bold-letter-spacing",
+		"body": [
+			"var(--typography-h2-bold-letter-spacing)"
+		],
+		"description": "Value: -5%\\nUnder typography category."
+	},
+	"--typography-h2-bold-line-height": {
+		"prefix": "--typography-h2-bold-line-height",
+		"body": [
+			"var(--typography-h2-bold-line-height)"
+		],
+		"description": "Value: 110%\\nUnder typography category."
+	},
+	"--typography-h2-regular-font-family": {
+		"prefix": "--typography-h2-regular-font-family",
+		"body": [
+			"var(--typography-h2-regular-font-family)"
+		],
+		"description": "Value: Inter\\nUnder typography category."
+	},
+	"--typography-h2-regular-font-size": {
+		"prefix": "--typography-h2-regular-font-size",
+		"body": [
+			"var(--typography-h2-regular-font-size)"
+		],
+		"description": "Value: 39.063\\nUnder typography category."
+	},
+	"--typography-h2-regular-font-weight": {
+		"prefix": "--typography-h2-regular-font-weight",
+		"body": [
+			"var(--typography-h2-regular-font-weight)"
+		],
+		"description": "Value: Regular\\nUnder typography category."
+	},
+	"--typography-h2-regular-letter-spacing": {
+		"prefix": "--typography-h2-regular-letter-spacing",
+		"body": [
+			"var(--typography-h2-regular-letter-spacing)"
+		],
+		"description": "Value: -5%\\nUnder typography category."
+	},
+	"--typography-h2-regular-line-height": {
+		"prefix": "--typography-h2-regular-line-height",
+		"body": [
+			"var(--typography-h2-regular-line-height)"
+		],
+		"description": "Value: 110%\\nUnder typography category."
+	}
+}

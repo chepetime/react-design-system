@@ -8,7 +8,7 @@ export interface QuoteProps {
 
 export function Quote(props: QuoteProps) {
   return (
-    <div className={classnames(css.Quote)}>
+    <div {...props} className={classnames(css.Quote)}>
       <p>Quote component working!</p>
       <div>{props.children}</div>
     </div>

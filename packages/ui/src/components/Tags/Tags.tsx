@@ -8,7 +8,7 @@ export interface TagsProps {
 
 export function Tags(props: TagsProps) {
   return (
-    <div className={classnames(css.Tags)}>
+    <div {...props} className={classnames(css.Tags)}>
       <p>Tags component working!</p>
       <div>{props.children}</div>
     </div>

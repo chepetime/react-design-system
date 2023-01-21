@@ -1,22 +1,23 @@
-// @use "./../../styles/colors.scss";
 @use "./../../styles" as styles;
+@use "~@chepe/tokens/tokens/tokens.scss" as tokens;
 
 :root {
-  --button-background-color: #4cbaea;
-  --button-background-color-hover: #3888ab;
-  --button-disabled-background-color: #cccccc;
+  --button-background-color: #{tokens.$button-primary-background};
+  --button-background-color-hover: #{styles.$gray-800};
+  --button-disabled-background-color: #{styles.$gray-300};
 }
 
 :global :root .dark {
-  --button-background-color: #ea4c89;
-  --button-background-color-hover: #a3345f;
-  --button-disabled-background-color: #cccccc;
+  --button-background-color: #{styles.$pink-500};
+  --button-background-color-hover: #{styles.$pink-800};
+  --button-disabled-background-color: #{styles.$gray-500};
 }
 
 .Button {
   @include styles.styles-reset;
   @include styles.text-wrapping;
   all: revert;
+
   -webkit-appearance: none;
 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
@@ -42,13 +43,13 @@
   white-space: nowrap;
 
   color: inherit;
-  color: #fff;
+  color: #000;
   border: none;
   border-radius: 0.5rem;
   background: var(--button-background-color);
   box-shadow: none;
 
-  transition: all ease-in-out 0.3s;
+  transition: background ease-in-out 0.3s;
 
   @include styles.respond-to("md") {
     width: auto;
@@ -62,14 +63,8 @@
   }
 
   /* Focus */
-  &:focus:not(:focus-visible) {
-    outline: none;
-  }
-
-  /* Focus */
   &:focus-visible {
-    outline: none;
-    box-shadow: hsl(27deg 39% 95%) 0 0 0 2px, hsl(27deg 100% 56%) 0 0 0 4px;
+    text-decoration: underline;
   }
 
   /* Disabled */

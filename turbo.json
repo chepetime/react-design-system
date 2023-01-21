@@ -5,30 +5,39 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**"]
     },
-    "dev:storybook": {
-      "outputs": ["dist/**"],
-      "dependsOn": ["^dev"],
+    "storybook": {
       "cache": false
     },
-    "dev:web": {
-      "outputs": ["dist/**"],
-      "dependsOn": ["^dev"],
+    "storybook-build": {
+      "cache": false,
+      "outputs": ["build/**"]
+    },
+    "storybook-test": {
+      "cache": false
+    },
+    "dev": {
+      "cache": false
+    },
+    "web": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "test": {
       "cache": false
     },
     "lint": {
       "outputs": []
     },
-    "dev": {
-      "outputs": ["dist/**"],
-      "dependsOn": ["^dev"],
-      "cache": false
-    },
     "clean": {
       "cache": false
     },
-    "token": {
-      "dependsOn": ["^build"],
-      "outputs": ["build/**"]
+    "generate:component": {
+      "cache": false
+    },
+    "token-engine:fetch": {
+      "cache": false,
+      "dependsOn": ["build"],
+      "outputs": ["tokens/**"]
     }
   }
 }

@@ -8,7 +8,7 @@ export interface ChipProps {
 
 export function Chip(props: ChipProps) {
   return (
-    <div className={classnames(css.Chip)}>
+    <div {...props} className={classnames(css.Chip)}>
       <p>Chip component working!</p>
       <div>{props.children}</div>
     </div>

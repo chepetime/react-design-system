@@ -1,7 +1,7 @@
 @use "./breakpoints" as breakpoints;
 
 /**
- * Media Queries for Sized
+ * Media Queries for Breakpoints
  *
  * @include mixins.respond-to('md') {}
  * @include mixins.respond-to('lg') {}
@@ -84,10 +84,3 @@
     }
   }
 }
-
-/**
- * Input Placeholder
- *
- * @include input-placeholder() {}
- *
- */

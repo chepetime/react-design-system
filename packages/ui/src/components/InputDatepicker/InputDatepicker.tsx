@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useRef, MutableRefObject } from "react";
 import classnames from "classnames";
 import css from "./InputDatepicker.module.scss";
 
@@ -8,7 +8,7 @@ export interface InputDatepickerProps {
 
 export function InputDatepicker(props: InputDatepickerProps) {
   return (
-    <div className={classnames(css.InputDatepicker)}>
+    <div {...props} className={classnames(css.InputDatepicker)}>
       <p>InputDatepicker component working!</p>
       <div>{props.children}</div>
     </div>

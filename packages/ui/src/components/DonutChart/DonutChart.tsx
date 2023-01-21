@@ -8,7 +8,7 @@ export interface DonutChartProps {
 
 export function DonutChart(props: DonutChartProps) {
   return (
-    <div className={classnames(css.DonutChart)}>
+    <div {...props} className={classnames(css.DonutChart)}>
       <p>DonutChart component working!</p>
       <div>{props.children}</div>
     </div>

@@ -8,7 +8,7 @@ export interface InputTimePickerProps {
 
 export function InputTimePicker(props: InputTimePickerProps) {
   return (
-    <div className={classnames(css.InputTimePicker)}>
+    <div {...props} className={classnames(css.InputTimePicker)}>
       <p>InputTimePicker component working!</p>
       <div>{props.children}</div>
     </div>

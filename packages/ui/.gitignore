@@ -9,8 +9,12 @@
 /coverage
 
 # production
-./dist/*
-./dist/*
+dist/
+dist/*
+dist/**/*
+dist/index.d.ts
+dist/esm
+dist/cjs
 
 # misc
 .DS_Store

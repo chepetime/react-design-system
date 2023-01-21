@@ -8,7 +8,7 @@ export interface InputRangeSliderProps {
 
 export function InputRangeSlider(props: InputRangeSliderProps) {
   return (
-    <div className={classnames(css.InputRangeSlider)}>
+    <div {...props} className={classnames(css.InputRangeSlider)}>
       <p>InputRangeSlider component working!</p>
       <div>{props.children}</div>
     </div>

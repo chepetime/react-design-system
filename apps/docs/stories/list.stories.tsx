@@ -1,31 +1,19 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { List } from "@chepe/ui/src";
+import { List, ListProps } from "@chepe/ui/src";
 
 export default {
-  title: "Content/List",
+  title: "Components/List",
   component: List,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof List>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof List> = (args) => (
-  <List>{args.children}</List>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "",
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: ListProps) => <List>{args.children}</List>,
+  args: {},
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

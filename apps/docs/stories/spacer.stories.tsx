@@ -1,31 +1,19 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Spacer } from "@chepe/ui/src";
+import { Spacer, SpacerProps } from "@chepe/ui/src";
 
 export default {
-  title: "Layout/Spacer",
+  title: "Components/Spacer",
   component: Spacer,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof Spacer>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof Spacer> = (args) => (
-  <Spacer>{args.children}</Spacer>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "",
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: SpacerProps) => <Spacer>{args.children}</Spacer>,
+  args: {},
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

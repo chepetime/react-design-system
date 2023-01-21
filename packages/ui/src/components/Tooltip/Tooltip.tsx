@@ -8,7 +8,7 @@ export interface TooltipProps {
 
 export function Tooltip(props: TooltipProps) {
   return (
-    <div className={classnames(css.Tooltip)}>
+    <div {...props} className={classnames(css.Tooltip)}>
       <p>Tooltip component working!</p>
       <div>{props.children}</div>
     </div>

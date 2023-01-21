@@ -6,7 +6,7 @@
  */
 @mixin styles-reset {
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-  all: initial;
+  all: revert;
   box-sizing: border-box;
   @include typography.default-text-style;
 }

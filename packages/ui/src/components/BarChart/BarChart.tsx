@@ -8,7 +8,7 @@ export interface BarChartProps {
 
 export function BarChart(props: BarChartProps) {
   return (
-    <div className={classnames(css.BarChart)}>
+    <div {...props} className={classnames(css.BarChart)}>
       <p>BarChart component working!</p>
       <div>{props.children}</div>
     </div>

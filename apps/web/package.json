@@ -1,31 +1,57 @@
 {
+  "private": true,
   "name": "web",
   "version": "0.1.0",
-  "private": true,
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "clean": "rm -rf .turbo && rm -rf .next && rm -rf node_modules",
-    "dev:web": "npm run dev"
+    "build": "react-scripts build",
+    "clean": "rm -rf .turbo && rm -rf build && rm -rf node_modules",
+    "dev": "react-scripts start",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "dependencies": {
-    "next": "12.3.1",
-    "next-transpile-modules": "^9.0.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "ts-config-custom": "*",
+    "@chepe/icons": "*",
+    "@chepe/tokens": "*",
     "@chepe/ui": "*",
-    "use-dark-mode": "^2.3.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.42.1",
+    "web-vitals": "^3.1.1"
   },
   "devDependencies": {
-    "@types/node": "18.7.23",
-    "@types/react": "18.0.21",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1",
-    "ts-config-custom": "*",
-    "typescript": "4.8.4"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.2.6",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.9.4",
+    "typescript-plugin-css-modules": "^4.1.1"
+  },
+  "keywords": [],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   }
 }

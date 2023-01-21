@@ -8,7 +8,7 @@ export interface StepperProps {
 
 export function Stepper(props: StepperProps) {
   return (
-    <div className={classnames(css.Stepper)}>
+    <div {...props} className={classnames(css.Stepper)}>
       <p>Stepper component working!</p>
       <div>{props.children}</div>
     </div>

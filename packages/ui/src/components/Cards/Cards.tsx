@@ -8,7 +8,7 @@ export interface CardsProps {
 
 export function Cards(props: CardsProps) {
   return (
-    <div className={classnames(css.Cards)}>
+    <div {...props} className={classnames(css.Cards)}>
       <p>Cards component working!</p>
       <div>{props.children}</div>
     </div>

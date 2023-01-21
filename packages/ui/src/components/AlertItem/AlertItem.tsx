@@ -8,7 +8,7 @@ export interface AlertItemProps {
 
 export function AlertItem(props: AlertItemProps) {
   return (
-    <div className={classnames(css.AlertItem)}>
+    <div {...props} className={classnames(css.AlertItem)}>
       <p>AlertItem component working!</p>
       <div>{props.children}</div>
     </div>

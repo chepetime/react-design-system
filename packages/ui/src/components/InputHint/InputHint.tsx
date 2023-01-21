@@ -8,9 +8,8 @@ export interface InputHintProps {
 
 export function InputHint(props: InputHintProps) {
   return (
-    <div className={classnames(css.InputHint)}>
-      <p>InputHint component working!</p>
-      <div>{props.children}</div>
+    <div {...props} className={classnames(css.InputHint)}>
+      <span>{props.children}</span>
     </div>
   );
 }

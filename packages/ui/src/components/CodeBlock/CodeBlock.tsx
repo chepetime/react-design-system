@@ -8,7 +8,7 @@ export interface CodeBlockProps {
 
 export function CodeBlock(props: CodeBlockProps) {
   return (
-    <div className={classnames(css.CodeBlock)}>
+    <div {...props} className={classnames(css.CodeBlock)}>
       <p>CodeBlock component working!</p>
       <div>{props.children}</div>
     </div>

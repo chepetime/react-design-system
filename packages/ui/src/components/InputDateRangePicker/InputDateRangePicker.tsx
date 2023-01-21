@@ -8,7 +8,7 @@ export interface InputDateRangePickerProps {
 
 export function InputDateRangePicker(props: InputDateRangePickerProps) {
   return (
-    <div className={classnames(css.InputDateRangePicker)}>
+    <div {...props} className={classnames(css.InputDateRangePicker)}>
       <p>InputDateRangePicker component working!</p>
       <div>{props.children}</div>
     </div>

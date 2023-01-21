@@ -8,7 +8,7 @@ export interface PaginationProps {
 
 export function Pagination(props: PaginationProps) {
   return (
-    <div className={classnames(css.Pagination)}>
+    <div {...props} className={classnames(css.Pagination)}>
       <p>Pagination component working!</p>
       <div>{props.children}</div>
     </div>

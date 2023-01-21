@@ -8,7 +8,7 @@ export interface CollapseProps {
 
 export function Collapse(props: CollapseProps) {
   return (
-    <div className={classnames(css.Collapse)}>
+    <div {...props} className={classnames(css.Collapse)}>
       <p>Collapse component working!</p>
       <div>{props.children}</div>
     </div>

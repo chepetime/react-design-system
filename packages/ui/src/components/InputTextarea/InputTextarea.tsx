@@ -8,7 +8,7 @@ export interface InputTextareaProps {
 
 export function InputTextarea(props: InputTextareaProps) {
   return (
-    <div className={classnames(css.InputTextarea)}>
+    <div {...props} className={classnames(css.InputTextarea)}>
       <p>InputTextarea component working!</p>
       <div>{props.children}</div>
     </div>

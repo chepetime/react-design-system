@@ -8,7 +8,7 @@ export interface AudioProps {
 
 export function Audio(props: AudioProps) {
   return (
-    <div className={classnames(css.Audio)}>
+    <div {...props} className={classnames(css.Audio)}>
       <p>Audio component working!</p>
       <div>{props.children}</div>
     </div>

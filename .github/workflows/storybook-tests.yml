@@ -1,0 +1,75 @@
+name: "Storybook Tests"
+
+on: push
+
+env:
+  COMMIT_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
+  BRANCH: ${{ github.event_name == 'pull_request' && format('refs/heads/{0}', github.event.pull_request.head.ref) || github.ref }}
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        node-version: [18.x]
+        os: ["ubuntu-latest"]
+
+    timeout-minutes: 60
+
+    name: Test ${{ matrix.node }} on ${{ matrix.os }}
+    if: github.event_name != 'pull_request' || !github.event.pull_request.draft
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Prepare repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ env.BRANCH }}
+          fetch-depth: 0
+
+      - name: Cache node_modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-nodemodules
+        with:
+          path: |
+            node_modules
+            **/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-
+
+      - name: Cache turbo build setup
+        uses: actions/cache@v3
+        with:
+          path: |
+            .turbo
+            **/.turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-turbo-
+
+      - name: Set up Node v${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install other dependencies
+        run: npm instal -d esbuild@0.13.4
+
+      - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci --omit=optional
+
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+
+      - name: Build Component Library
+        run: npm run build
+
+      - name: Build Storybook
+        run: npm run storybook-build --quiet
+
+      - name: Serve Storybook and run tests
+        run: |
+          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "npx http-server apps/docs/storybook-static --port 6006 --silent" \
+            "npx wait-on http-get://127.0.0.1:6006 && npm run storybook-test"

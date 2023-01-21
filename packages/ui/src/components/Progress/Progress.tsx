@@ -8,7 +8,7 @@ export interface ProgressProps {
 
 export function Progress(props: ProgressProps) {
   return (
-    <div className={classnames(css.Progress)}>
+    <div {...props} className={classnames(css.Progress)}>
       <p>Progress component working!</p>
       <div>{props.children}</div>
     </div>

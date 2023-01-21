@@ -8,7 +8,7 @@ export interface VideoProps {
 
 export function Video(props: VideoProps) {
   return (
-    <div className={classnames(css.Video)}>
+    <div {...props} className={classnames(css.Video)}>
       <p>Video component working!</p>
       <div>{props.children}</div>
     </div>

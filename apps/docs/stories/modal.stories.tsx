@@ -1,31 +1,19 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Modal } from "@chepe/ui/src";
+import { Modal, ModalProps } from "@chepe/ui/src";
 
 export default {
   title: "Components/Modal",
   component: Modal,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof Modal>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof Modal> = (args) => (
-  <Modal>{args.children}</Modal>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "",
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: ModalProps) => <Modal>{args.children}</Modal>,
+  args: {},
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

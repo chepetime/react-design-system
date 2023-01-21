@@ -1,0 +1,13 @@
+@use "./../../styles" as styles;
+@use "./../../styles/tokens/tokens.scss" as tokens;
+
+:root {
+}
+
+:global :root .dark {
+}
+
+.Toast {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+}

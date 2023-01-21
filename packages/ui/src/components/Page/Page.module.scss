@@ -1,0 +1,22 @@
+@use "./../../styles" as styles;
+
+:root {
+  --page-background-color: #{styles.$gray-100};
+  --page-text-color: #{styles.$gray-900};
+}
+
+:global :root .dark {
+  --page-background-color: #{styles.$gray-900};
+  --page-text-color: #{styles.$gray-100};
+}
+
+.Page {
+  @include styles.styles-reset;
+
+  min-height: 100vh;
+
+  overflow: auto;
+
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
+}

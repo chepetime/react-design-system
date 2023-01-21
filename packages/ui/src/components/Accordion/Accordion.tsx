@@ -8,7 +8,7 @@ export interface AccordionProps {
 
 export function Accordion(props: AccordionProps) {
   return (
-    <div className={classnames(css.Accordion)}>
+    <div {...props} className={classnames(css.Accordion)}>
       <p>Accordion component working!</p>
       <div>{props.children}</div>
     </div>

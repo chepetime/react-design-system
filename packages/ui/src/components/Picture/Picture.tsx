@@ -8,7 +8,7 @@ export interface PictureProps {
 
 export function Picture(props: PictureProps) {
   return (
-    <div className={classnames(css.Picture)}>
+    <div {...props} className={classnames(css.Picture)}>
       <p>Picture component working!</p>
       <div>{props.children}</div>
     </div>

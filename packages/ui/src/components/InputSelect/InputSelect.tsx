@@ -8,7 +8,7 @@ export interface InputSelectProps {
 
 export function InputSelect(props: InputSelectProps) {
   return (
-    <div className={classnames(css.InputSelect)}>
+    <div {...props} className={classnames(css.InputSelect)}>
       <p>InputSelect component working!</p>
       <div>{props.children}</div>
     </div>

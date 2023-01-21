@@ -1,31 +1,21 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Heading } from "@chepe/ui/src";
+import { Heading, HeadingProps } from "@chepe/ui/src";
 
 export default {
-  title: "Content/Heading",
+  title: "Components/Heading",
   component: Heading,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof Heading>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof Heading> = (args) => (
-  <Heading>{args.children}</Heading>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "",
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: HeadingProps) => <Heading>{args.children}</Heading>,
+  args: {
+    children: "Tittle",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

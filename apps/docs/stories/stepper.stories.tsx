@@ -1,31 +1,19 @@
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Stepper } from "@chepe/ui/src";
+import { Stepper, StepperProps } from "@chepe/ui/src";
 
 export default {
   title: "Components/Stepper",
   component: Stepper,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof Stepper>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof Stepper> = (args) => (
-  <Stepper>{args.children}</Stepper>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "",
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: StepperProps) => <Stepper>{args.children}</Stepper>,
+  args: {},
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

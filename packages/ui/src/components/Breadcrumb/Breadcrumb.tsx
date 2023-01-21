@@ -8,7 +8,7 @@ export interface BreadcrumbProps {
 
 export function Breadcrumb(props: BreadcrumbProps) {
   return (
-    <div className={classnames(css.Breadcrumb)}>
+    <div {...props} className={classnames(css.Breadcrumb)}>
       <p>Breadcrumb component working!</p>
       <div>{props.children}</div>
     </div>

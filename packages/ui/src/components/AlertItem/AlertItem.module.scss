@@ -1,23 +1,26 @@
-// @use "./../../styles/colors.scss";
 @use "./../../styles" as styles;
 
 :root {
+  --alertitem-background-color: #{styles.$pink-500};
 }
 
 :global :root .dark {
+  --alertitem-background-color: #{styles.$indigo-500};
 }
 
 .AlertItem {
-  all: revert;
-  box-sizing: border-box;
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
 
-  background: red;
+  background: var(--alertitem-background-color);
+
+  font-size: 1rem;
 
   @include styles.respond-to("md") {
-    background-color: cyan;
+    font-size: 1.5rem;
   }
   @include styles.respond-to("lg") {
-    background-color: green;
+    font-size: 2rem;
   }
   @include styles.feature-to("hover") {
     &:hover {

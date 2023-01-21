@@ -8,7 +8,7 @@ export interface TabsProps {
 
 export function Tabs(props: TabsProps) {
   return (
-    <div className={classnames(css.Tabs)}>
+    <div {...props} className={classnames(css.Tabs)}>
       <p>Tabs component working!</p>
       <div>{props.children}</div>
     </div>

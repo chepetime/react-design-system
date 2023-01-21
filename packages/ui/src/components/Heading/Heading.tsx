@@ -7,12 +7,7 @@ export interface HeadingProps {
 }
 
 export function Heading(props: HeadingProps) {
-  return (
-    <div className={classnames(css.Heading)}>
-      <p>Heading component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
+  return <h1 className={classnames(css.Heading)}>{props.children}</h1>;
 }
 
 Heading.displayName = "Heading";

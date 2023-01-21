@@ -1,31 +1,31 @@
-# @chepe/ui
+# chepe UI
 
-## About
+> UI Component Library made in React
 
-[GitHub](https://github.com/chepetime/react-turborepo-dls)
-
-## Install
+## Getting Started
 
 ```sh
-npm i --save @chepe/ui
+npm install
 ```
 
-## Use
-
-```jsx
-import { Button } from "@chepe/ui";
-
-export default function Section() {
-  return (
-    <div>
-      <Button>Hello World!</Button>
-    </div>
-  );
-}
+```sh
+npm run build
 ```
 
-<br />
+## Tools
+
+- Rollup
+- React 18
+- Typescript
+- SASS
+- ESlint
+- StyleLint
+- Jest (WIP)
+
+## 🤺 Authors
+
+- [jose.lugo](mailto:me@joselugo.dev) - [GitHub](https://github.com/chepetime) (Sr. Design Technologist)
 
 ---
 
-Made by [@chepetime](https://github.com/chepetime) in Mexico City 🇲🇽
+Made by [@chepetime](https://github.com/chepetime)at  Mexico City 🇲🇽

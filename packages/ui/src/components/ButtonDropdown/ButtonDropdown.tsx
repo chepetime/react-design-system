@@ -8,7 +8,7 @@ export interface ButtonDropdownProps {
 
 export function ButtonDropdown(props: ButtonDropdownProps) {
   return (
-    <div className={classnames(css.ButtonDropdown)}>
+    <div {...props} className={classnames(css.ButtonDropdown)}>
       <p>ButtonDropdown component working!</p>
       <div>{props.children}</div>
     </div>

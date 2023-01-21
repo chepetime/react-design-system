@@ -1,0 +1,51 @@
+# Maintenance Tasks
+
+## Update Node Dps
+
+```sh
+npm outdated
+```
+
+```sh
+npx npm-check-updates -u
+```
+
+## Pretty format the packages
+
+```sh
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./apps/web
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./apps/docs
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./config/eslint-config-custom
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./config/ts-config-custom
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./packages/chepe-icons
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./packages/chepe-tokens
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./packages/chepe-ui
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+cd ./tools/generator
+npx prettier-package-json --write ./package.json
+npx npm-check-updates -u
+cd ./../../
+
+```

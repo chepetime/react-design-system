@@ -8,7 +8,7 @@ export interface DividerProps {
 
 export function Divider(props: DividerProps) {
   return (
-    <div className={classnames(css.Divider)}>
+    <div {...props} className={classnames(css.Divider)}>
       <p>Divider component working!</p>
       <div>{props.children}</div>
     </div>

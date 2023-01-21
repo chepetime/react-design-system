@@ -1,0 +1,16 @@
+{
+  "tokenFormat": "FigmaTokens",
+  "figmaFileId": "",
+  "inputFile": "./tokens/figma-tokens.json",
+  "outputDir": "./tokens",
+  "platforms": [
+    "css",
+    "cssAutocomplete",
+    "scss",
+    "scssMap",
+    "less",
+    "js",
+    "ts",
+    "json"
+  ]
+}

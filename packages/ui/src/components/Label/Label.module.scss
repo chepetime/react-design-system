@@ -1,27 +1,17 @@
-// @use "./../../styles/colors.scss";
 @use "./../../styles" as styles;
 
 :root {
+  --label-background-color: #{styles.$pink-500};
 }
 
 :global :root .dark {
+  --label-background-color: #{styles.$indigo-500};
 }
 
 .Label {
-  all: revert;
-  box-sizing: border-box;
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
 
-  background: red;
-
-  @include styles.respond-to("md") {
-    background-color: cyan;
-  }
-  @include styles.respond-to("lg") {
-    background-color: green;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
-  }
+  font-size: 1rem;
+  display: block;
 }

@@ -8,7 +8,7 @@ export interface AvatarProps {
 
 export function Avatar(props: AvatarProps) {
   return (
-    <div className={classnames(css.Avatar)}>
+    <div {...props} className={classnames(css.Avatar)}>
       <p>Avatar component working!</p>
       <div>{props.children}</div>
     </div>

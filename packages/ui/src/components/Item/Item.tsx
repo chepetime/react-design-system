@@ -8,7 +8,7 @@ export interface ItemProps {
 
 export function Item(props: ItemProps) {
   return (
-    <div className={classnames(css.Item)}>
+    <div {...props} className={classnames(css.Item)}>
       <p>Item component working!</p>
       <div>{props.children}</div>
     </div>

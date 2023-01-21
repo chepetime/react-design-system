@@ -7,12 +7,7 @@ export interface WrapperProps {
 }
 
 export function Wrapper(props: WrapperProps) {
-  return (
-    <div className={classnames(css.Wrapper)}>
-      <p>Wrapper component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
+  return <div className={classnames(css.Wrapper)}>{props.children}</div>;
 }
 
 Wrapper.displayName = "Wrapper";

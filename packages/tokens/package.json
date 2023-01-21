@@ -1,0 +1,23 @@
+{
+  "name": "@chepe/tokens",
+  "version": "1.0.0",
+  "description": "> UI Design Tokens in css, js, ts, json, sass and less",
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "files": [
+    "tokens/figma-tokens.json",
+    "tokens/tokens-autocomplete-config.json",
+    "tokens/tokens.css",
+    "tokens/tokens.js",
+    "tokens/tokens.json",
+    "tokens/tokens.less",
+    "tokens/tokens.scss",
+    "tokens/tokens.ts",
+    "tokens/tokensMap.scss"
+  ],
+  "devDependencies": {
+    "token-transformer": "^0.0.29"
+  },
+  "keywords": []
+}

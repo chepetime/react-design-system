@@ -8,7 +8,7 @@ export interface InputSearchProps {
 
 export function InputSearch(props: InputSearchProps) {
   return (
-    <div className={classnames(css.InputSearch)}>
+    <div {...props} className={classnames(css.InputSearch)}>
       <p>InputSearch component working!</p>
       <div>{props.children}</div>
     </div>

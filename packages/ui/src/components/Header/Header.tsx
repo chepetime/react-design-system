@@ -8,7 +8,7 @@ export interface HeaderProps {
 
 export function Header(props: HeaderProps) {
   return (
-    <div className={classnames(css.Header)}>
+    <div {...props} className={classnames(css.Header)}>
       <p>Header component working!</p>
       <div>{props.children}</div>
     </div>

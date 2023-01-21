@@ -8,7 +8,7 @@ export interface IconProps {
 
 export function Icon(props: IconProps) {
   return (
-    <div className={classnames(css.Icon)}>
+    <div {...props} className={classnames(css.Icon)}>
       <p>Icon component working!</p>
       <div>{props.children}</div>
     </div>

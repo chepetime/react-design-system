@@ -2,16 +2,19 @@ import * as React from "react";
 import classnames from "classnames";
 import css from "./Label.module.scss";
 
-export interface LabelProps {
+export interface LabelProps extends React.ComponentPropsWithRef<"label"> {
+  disabled?: boolean;
+  readOnly?: boolean;
+  for?: string;
+  htmlFor?: string;
   children?: React.ReactNode;
 }
 
-export function Label(props: LabelProps) {
+export function Label({ for: htmlFor = "", ...props }: LabelProps) {
   return (
-    <div className={classnames(css.Label)}>
-      <p>Label component working!</p>
-      <div>{props.children}</div>
-    </div>
+    <label htmlFor={htmlFor} {...props} className={classnames(css.Label)}>
+      {props.children}
+    </label>
   );
 }
 

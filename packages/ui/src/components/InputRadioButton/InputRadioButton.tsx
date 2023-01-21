@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useRef, MutableRefObject } from "react";
 import classnames from "classnames";
 import css from "./InputRadioButton.module.scss";
 
@@ -8,7 +8,7 @@ export interface InputRadioButtonProps {
 
 export function InputRadioButton(props: InputRadioButtonProps) {
   return (
-    <div className={classnames(css.InputRadioButton)}>
+    <div {...props} className={classnames(css.InputRadioButton)}>
       <p>InputRadioButton component working!</p>
       <div>{props.children}</div>
     </div>

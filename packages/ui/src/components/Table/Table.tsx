@@ -8,7 +8,7 @@ export interface TableProps {
 
 export function Table(props: TableProps) {
   return (
-    <div className={classnames(css.Table)}>
+    <div {...props} className={classnames(css.Table)}>
       <p>Table component working!</p>
       <div>{props.children}</div>
     </div>

@@ -8,7 +8,7 @@ export interface ScatterChartProps {
 
 export function ScatterChart(props: ScatterChartProps) {
   return (
-    <div className={classnames(css.ScatterChart)}>
+    <div {...props} className={classnames(css.ScatterChart)}>
       <p>ScatterChart component working!</p>
       <div>{props.children}</div>
     </div>

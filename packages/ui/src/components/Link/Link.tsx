@@ -8,7 +8,7 @@ export interface LinkProps {
 
 export function Link(props: LinkProps) {
   return (
-    <div className={classnames(css.Link)}>
+    <div {...props} className={classnames(css.Link)}>
       <p>Link component working!</p>
       <div>{props.children}</div>
     </div>

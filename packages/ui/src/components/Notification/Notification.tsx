@@ -8,7 +8,7 @@ export interface NotificationProps {
 
 export function Notification(props: NotificationProps) {
   return (
-    <div className={classnames(css.Notification)}>
+    <div {...props} className={classnames(css.Notification)}>
       <p>Notification component working!</p>
       <div>{props.children}</div>
     </div>

@@ -8,7 +8,7 @@ export interface DataTableProps {
 
 export function DataTable(props: DataTableProps) {
   return (
-    <div className={classnames(css.DataTable)}>
+    <div {...props} className={classnames(css.DataTable)}>
       <p>DataTable component working!</p>
       <div>{props.children}</div>
     </div>

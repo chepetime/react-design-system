@@ -8,7 +8,7 @@ export interface ModalProps {
 
 export function Modal(props: ModalProps) {
   return (
-    <div className={classnames(css.Modal)}>
+    <div {...props} className={classnames(css.Modal)}>
       <p>Modal component working!</p>
       <div>{props.children}</div>
     </div>

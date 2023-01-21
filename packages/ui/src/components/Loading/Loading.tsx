@@ -8,7 +8,7 @@ export interface LoadingProps {
 
 export function Loading(props: LoadingProps) {
   return (
-    <div className={classnames(css.Loading)}>
+    <div {...props} className={classnames(css.Loading)}>
       <p>Loading component working!</p>
       <div>{props.children}</div>
     </div>

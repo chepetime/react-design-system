@@ -8,7 +8,7 @@ export interface ListProps {
 
 export function List(props: ListProps) {
   return (
-    <div className={classnames(css.List)}>
+    <div {...props} className={classnames(css.List)}>
       <p>List component working!</p>
       <div>{props.children}</div>
     </div>

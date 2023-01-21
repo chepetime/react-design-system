@@ -7,12 +7,7 @@ export interface SpacerProps {
 }
 
 export function Spacer(props: SpacerProps) {
-  return (
-    <div className={classnames(css.Spacer)}>
-      <p>Spacer component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
+  return <div {...props} className={classnames(css.Spacer)} />;
 }
 
 Spacer.displayName = "Spacer";

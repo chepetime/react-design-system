@@ -8,7 +8,7 @@ export interface LineChartProps {
 
 export function LineChart(props: LineChartProps) {
   return (
-    <div className={classnames(css.LineChart)}>
+    <div {...props} className={classnames(css.LineChart)}>
       <p>LineChart component working!</p>
       <div>{props.children}</div>
     </div>

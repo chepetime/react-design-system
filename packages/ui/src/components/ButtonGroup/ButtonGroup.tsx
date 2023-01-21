@@ -8,7 +8,7 @@ export interface ButtonGroupProps {
 
 export function ButtonGroup(props: ButtonGroupProps) {
   return (
-    <div className={classnames(css.ButtonGroup)}>
+    <div {...props} className={classnames(css.ButtonGroup)}>
       <p>ButtonGroup component working!</p>
       <div>{props.children}</div>
     </div>

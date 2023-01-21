@@ -1,27 +1,36 @@
-// @use "./../../styles/colors.scss";
+@use "sass:math";
 @use "./../../styles" as styles;
 
-:root {
-}
-
-:global :root .dark {
-}
+$grid-columns: 12;
 
 .Grid {
-  all: revert;
-  box-sizing: border-box;
+  @include styles.styles-reset;
+  display: flex;
+  width: 100%;
+}
 
-  background: red;
+.Grid--gap-sm {
+  gap: 1rem;
+}
+.Grid--gap-md {
+  gap: 1.5rem;
+}
+.Grid--gap-lg {
+  gap: 2rem;
+}
+.Grid--gap-none {
+  gap: 0;
+}
 
-  @include styles.respond-to("md") {
-    background-color: cyan;
-  }
-  @include styles.respond-to("lg") {
-    background-color: green;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+.Container {
+}
+
+.Item {
+}
+
+/* Columns */
+@for $i from 1 to $grid-columns + 1 {
+  .Columns--#{$i} {
+    flex-basis: math.div($i, 12) * 100%;
   }
 }

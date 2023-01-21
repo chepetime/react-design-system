@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
         <div className="ThemeSwitcher__Content">
           <h1 className="ThemeSwitcher__Title">
             <ReactIcon fill="#fff" />
-            chepe DLS Demo
+            Design System Demo
           </h1>
           <div>
             <span>Change theme to</span>

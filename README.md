@@ -7,7 +7,7 @@
     Implementation of chepe's Design Language System using React and Turborepo
   </p>
 
-[![Build UI](https://github.com/chepetime/react-turborepo-dls-ops/actions/workflows/ci.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls-ops/actions/workflows/ci.yml) [![Storybook Tests](https://github.com/chepetime/react-turborepo-dls-ops/actions/workflows/storybook-tests.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls-ops/actions/workflows/storybook-tests.yml)
+[![Build UI](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml) [![Storybook Tests](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml)
 [![Storyboook](https://img.shields.io/badge/Storybook-main-ff69b4)](https://main--63cb088b050236561c70fbc6.chromatic.com)
 [![Chromatic](https://img.shields.io/badge/Chromatic-main-fc5220)](https://chromatic.com/library?appId=63cb088b050236561c70fbc6&branch=main)
 

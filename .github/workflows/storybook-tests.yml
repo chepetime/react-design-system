@@ -15,7 +15,7 @@ jobs:
 
     timeout-minutes: 60
 
-    name: Test ${{ matrix.node }} on ${{ matrix.os }}
+    name: Node ${{ matrix.node }} on ${{ matrix.os }}
     if: github.event_name != 'pull_request' || !github.event.pull_request.draft
     runs-on: ${{ matrix.os }}
 
@@ -52,12 +52,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Install other dependencies
-        run: npm instal -d esbuild@0.13.4
-
       - name: Install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: npm ci --omit=optional
+        run: npm ci
 
       - name: Install Playwright
         run: npx playwright install --with-deps

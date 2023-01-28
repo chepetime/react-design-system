@@ -6,13 +6,15 @@ export interface PictureProps {
   children?: React.ReactNode;
 }
 
-export function Picture(props: PictureProps) {
-  return (
-    <div {...props} className={classnames(css.Picture)}>
-      <p>Picture component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Picture = React.forwardRef<HTMLDivElement, PictureProps>(
+  (props: PictureProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Picture)} ref={ref}>
+        <p>Picture component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Picture.displayName = "Picture";

@@ -6,8 +6,12 @@ export interface WrapperProps {
   children?: React.ReactNode;
 }
 
-export function Wrapper(props: WrapperProps) {
-  return <div className={classnames(css.Wrapper)}>{props.children}</div>;
-}
+export const Wrapper = React.forwardRef<HTMLDivElement, WrapperProps>(
+  (props: WrapperProps, ref: React.Ref<HTMLDivElement>) => {
+    return (<div className={classnames(css.Wrapper)} ref={ref}>
+      {props.children}
+    </div>);
+  }
+)
 
 Wrapper.displayName = "Wrapper";

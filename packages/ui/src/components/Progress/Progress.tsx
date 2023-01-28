@@ -6,13 +6,15 @@ export interface ProgressProps {
   children?: React.ReactNode;
 }
 
-export function Progress(props: ProgressProps) {
-  return (
-    <div {...props} className={classnames(css.Progress)}>
-      <p>Progress component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Progress = React.forwardRef<HTMLDivElement, ProgressProps>(
+  (props: ProgressProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Progress)} ref={ref}>
+        <p>Progress component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Progress.displayName = "Progress";

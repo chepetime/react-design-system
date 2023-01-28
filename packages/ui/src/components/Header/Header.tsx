@@ -6,13 +6,15 @@ export interface HeaderProps {
   children?: React.ReactNode;
 }
 
-export function Header(props: HeaderProps) {
-  return (
-    <div {...props} className={classnames(css.Header)}>
-      <p>Header component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Header = React.forwardRef<HTMLDivElement, HeaderProps>(
+  (props: HeaderProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Header)} ref={ref}>
+        <p>Header component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Header.displayName = "Header";

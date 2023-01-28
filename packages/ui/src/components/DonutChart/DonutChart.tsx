@@ -6,13 +6,15 @@ export interface DonutChartProps {
   children?: React.ReactNode;
 }
 
-export function DonutChart(props: DonutChartProps) {
-  return (
-    <div {...props} className={classnames(css.DonutChart)}>
-      <p>DonutChart component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const DonutChart = React.forwardRef<HTMLDivElement, DonutChartProps>(
+  (props: DonutChartProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.DonutChart)} ref={ref}>
+        <p>DonutChart component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 DonutChart.displayName = "DonutChart";

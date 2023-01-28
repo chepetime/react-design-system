@@ -6,13 +6,15 @@ export interface ButtonDropdownProps {
   children?: React.ReactNode;
 }
 
-export function ButtonDropdown(props: ButtonDropdownProps) {
-  return (
-    <div {...props} className={classnames(css.ButtonDropdown)}>
-      <p>ButtonDropdown component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const ButtonDropdown = React.forwardRef<HTMLDivElement, ButtonDropdownProps>(
+  (props: ButtonDropdownProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.ButtonDropdown)} ref={ref}>
+        <p>ButtonDropdown component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 ButtonDropdown.displayName = "ButtonDropdown";

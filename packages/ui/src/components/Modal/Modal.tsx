@@ -6,13 +6,15 @@ export interface ModalProps {
   children?: React.ReactNode;
 }
 
-export function Modal(props: ModalProps) {
-  return (
-    <div {...props} className={classnames(css.Modal)}>
-      <p>Modal component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Modal = React.forwardRef<HTMLDivElement, ModalProps>(
+  (props: ModalProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Modal)} ref={ref}>
+        <p>Modal component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Modal.displayName = "Modal";

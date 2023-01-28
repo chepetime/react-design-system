@@ -6,13 +6,15 @@ export interface LineChartProps {
   children?: React.ReactNode;
 }
 
-export function LineChart(props: LineChartProps) {
-  return (
-    <div {...props} className={classnames(css.LineChart)}>
-      <p>LineChart component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const LineChart = React.forwardRef<HTMLDivElement, LineChartProps>(
+  (props: LineChartProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.LineChart)} ref={ref}>
+        <p>LineChart component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 LineChart.displayName = "LineChart";

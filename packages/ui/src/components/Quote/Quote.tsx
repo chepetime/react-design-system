@@ -6,13 +6,15 @@ export interface QuoteProps {
   children?: React.ReactNode;
 }
 
-export function Quote(props: QuoteProps) {
-  return (
-    <div {...props} className={classnames(css.Quote)}>
-      <p>Quote component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Quote = React.forwardRef<HTMLDivElement, QuoteProps>(
+  (props: QuoteProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Quote)} ref={ref}>
+        <p>Quote component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Quote.displayName = "Quote";

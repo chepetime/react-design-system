@@ -6,8 +6,13 @@ import {
   inputEvents,
   autoCompleteOptionsTypes,
   inputModeOptionsTypes,
-} from "../../types/input.types";
+} from "./../../types/input.types";
 
+/**
+ * Props for the InputText component
+ * Extends React.ComponentPropsWithRef<"input"> to include all the standard input props
+ * children?: React.ReactNode - optional children to be rendered within the button
+ */
 export interface InputTextProps
   extends inputEvents,
     React.ComponentPropsWithRef<"input"> {
@@ -28,6 +33,9 @@ export interface InputTextProps
   value?: string | string[] | number;
 }
 
+/**
+ * A functional React component for an input
+ */
 export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
   (
     {
@@ -37,22 +45,20 @@ export const InputText = React.forwardRef<HTMLInputElement, InputTextProps>(
       inputmode = "text",
       name,
       type = "text",
-
       onKeyDown,
       onKeyUp,
       onChange,
       onBlur,
       onFocus,
-
       ...props
     }: InputTextProps,
     ref
   ) => {
     return (
       <input
+        ref={ref}
         {...props}
         className={classnames(css.InputText)}
-        ref={ref}
         id={name}
         name={name}
         type={type}

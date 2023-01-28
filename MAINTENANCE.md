@@ -31,15 +31,15 @@ cd ./config/ts-config-custom
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
-cd ./packages/chepe-icons
+cd ./packages/icons
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
-cd ./packages/chepe-tokens
+cd ./packages/tokens
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
-cd ./packages/chepe-ui
+cd ./packages/ui
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../

@@ -6,13 +6,15 @@ export interface CollapseProps {
   children?: React.ReactNode;
 }
 
-export function Collapse(props: CollapseProps) {
-  return (
-    <div {...props} className={classnames(css.Collapse)}>
-      <p>Collapse component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Collapse = React.forwardRef<HTMLDivElement, CollapseProps>(
+  (props: CollapseProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Collapse)} ref={ref}>
+        <p>Collapse component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Collapse.displayName = "Collapse";

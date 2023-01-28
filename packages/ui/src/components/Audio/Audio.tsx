@@ -6,13 +6,15 @@ export interface AudioProps {
   children?: React.ReactNode;
 }
 
-export function Audio(props: AudioProps) {
-  return (
-    <div {...props} className={classnames(css.Audio)}>
-      <p>Audio component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Audio = React.forwardRef<HTMLDivElement, AudioProps>(
+  (props: AudioProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Audio)} ref={ref}>
+        <p>Audio component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Audio.displayName = "Audio";

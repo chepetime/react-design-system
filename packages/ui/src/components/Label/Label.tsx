@@ -10,12 +10,22 @@ export interface LabelProps extends React.ComponentPropsWithRef<"label"> {
   children?: React.ReactNode;
 }
 
-export function Label({ for: htmlFor = "", ...props }: LabelProps) {
-  return (
-    <label htmlFor={htmlFor} {...props} className={classnames(css.Label)}>
-      {props.children}
-    </label>
-  );
-}
+export const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
+  (
+    { for: htmlFor = "", ...props }: LabelProps,
+    ref: React.Ref<HTMLLabelElement>
+  ) => {
+    return (
+      <label
+        htmlFor={htmlFor}
+        {...props}
+        className={classnames(css.Label)}
+        ref={ref}
+      >
+        {props.children}
+      </label>
+    );
+  }
+);
 
 Label.displayName = "Label";

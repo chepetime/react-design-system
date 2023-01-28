@@ -6,13 +6,15 @@ export interface ScatterChartProps {
   children?: React.ReactNode;
 }
 
-export function ScatterChart(props: ScatterChartProps) {
-  return (
-    <div {...props} className={classnames(css.ScatterChart)}>
-      <p>ScatterChart component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const ScatterChart = React.forwardRef<HTMLDivElement, ScatterChartProps>(
+  (props: ScatterChartProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.ScatterChart)} ref={ref}>
+        <p>ScatterChart component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 ScatterChart.displayName = "ScatterChart";

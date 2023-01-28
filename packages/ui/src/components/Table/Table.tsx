@@ -6,13 +6,15 @@ export interface TableProps {
   children?: React.ReactNode;
 }
 
-export function Table(props: TableProps) {
-  return (
-    <div {...props} className={classnames(css.Table)}>
-      <p>Table component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Table = React.forwardRef<HTMLDivElement, TableProps>(
+  (props: TableProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Table)} ref={ref}>
+        <p>Table component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Table.displayName = "Table";

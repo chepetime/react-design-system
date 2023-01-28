@@ -6,13 +6,15 @@ export interface StepperProps {
   children?: React.ReactNode;
 }
 
-export function Stepper(props: StepperProps) {
-  return (
-    <div {...props} className={classnames(css.Stepper)}>
-      <p>Stepper component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Stepper = React.forwardRef<HTMLDivElement, StepperProps>(
+  (props: StepperProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Stepper)} ref={ref}>
+        <p>Stepper component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Stepper.displayName = "Stepper";

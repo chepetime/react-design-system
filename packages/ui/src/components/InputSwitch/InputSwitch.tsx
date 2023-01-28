@@ -6,7 +6,7 @@ import {
   inputEvents,
   autoCompleteOptionsTypes,
   inputModeOptionsTypes,
-} from "../../types/input.types";
+} from "./../../types/input.types";
 
 export interface InputSwitchProps
   extends inputEvents,

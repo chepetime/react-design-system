@@ -6,8 +6,15 @@ export interface HeadingProps {
   children?: React.ReactNode;
 }
 
-export function Heading(props: HeadingProps) {
-  return <h1 className={classnames(css.Heading)}>{props.children}</h1>;
-}
+export const Heading = React.forwardRef<HTMLDivElement, HeadingProps>(
+  (props: HeadingProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Heading)} ref={ref}>
+        <p>Heading component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Heading.displayName = "Heading";

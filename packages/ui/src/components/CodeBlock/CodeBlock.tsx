@@ -6,13 +6,15 @@ export interface CodeBlockProps {
   children?: React.ReactNode;
 }
 
-export function CodeBlock(props: CodeBlockProps) {
-  return (
-    <div {...props} className={classnames(css.CodeBlock)}>
-      <p>CodeBlock component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const CodeBlock = React.forwardRef<HTMLDivElement, CodeBlockProps>(
+  (props: CodeBlockProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.CodeBlock)} ref={ref}>
+        <p>CodeBlock component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 CodeBlock.displayName = "CodeBlock";

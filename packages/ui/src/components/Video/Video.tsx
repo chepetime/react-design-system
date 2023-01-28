@@ -6,13 +6,15 @@ export interface VideoProps {
   children?: React.ReactNode;
 }
 
-export function Video(props: VideoProps) {
-  return (
-    <div {...props} className={classnames(css.Video)}>
-      <p>Video component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Video = React.forwardRef<HTMLDivElement, VideoProps>(
+  (props: VideoProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Video)} ref={ref}>
+        <p>Video component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Video.displayName = "Video";

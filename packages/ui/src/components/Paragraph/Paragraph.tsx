@@ -6,13 +6,15 @@ export interface ParagraphProps {
   children?: React.ReactNode;
 }
 
-export function Paragraph(props: ParagraphProps) {
-  return (
-    <div {...props} className={classnames(css.Paragraph)}>
-      <p>Paragraph component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Paragraph = React.forwardRef<HTMLDivElement, ParagraphProps>(
+  (props: ParagraphProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Paragraph)} ref={ref}>
+        <p>Paragraph component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Paragraph.displayName = "Paragraph";

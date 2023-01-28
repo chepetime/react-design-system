@@ -6,13 +6,15 @@ export interface CaptionProps {
   children?: React.ReactNode;
 }
 
-export function Caption(props: CaptionProps) {
-  return (
-    <div {...props} className={classnames(css.Caption)}>
-      <p>Caption component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Caption = React.forwardRef<HTMLDivElement, CaptionProps>(
+  (props: CaptionProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Caption)} ref={ref}>
+        <p>Caption component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Caption.displayName = "Caption";

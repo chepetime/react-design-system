@@ -6,13 +6,15 @@ export interface ContainerProps {
   children?: React.ReactNode;
 }
 
-export function Container(props: ContainerProps) {
-  return (
-    <div {...props} className={classnames(css.Container)}>
-      <p>Container component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
+  (props: ContainerProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Container)} ref={ref}>
+        <p>Container component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Container.displayName = "Container";

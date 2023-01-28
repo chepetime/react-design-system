@@ -1,36 +1,30 @@
-@use "sass:math";
 @use "./../../styles" as styles;
 
-$grid-columns: 12;
+:root {
+  --grid-background-color: #{styles.$pink-500};
+}
+
+:global :root .dark {
+  --grid-background-color: #{styles.$indigo-500};
+}
 
 .Grid {
   @include styles.styles-reset;
-  display: flex;
-  width: 100%;
-}
+  @include styles.text-wrapping;
 
-.Grid--gap-sm {
-  gap: 1rem;
-}
-.Grid--gap-md {
-  gap: 1.5rem;
-}
-.Grid--gap-lg {
-  gap: 2rem;
-}
-.Grid--gap-none {
-  gap: 0;
-}
+  background: var(--grid-background-color);
 
-.Container {
-}
+  font-size: 1rem;
 
-.Item {
-}
-
-/* Columns */
-@for $i from 1 to $grid-columns + 1 {
-  .Columns--#{$i} {
-    flex-basis: math.div($i, 12) * 100%;
+  @include styles.respond-to("md") {
+    font-size: 1.5rem;
+  }
+  @include styles.respond-to("lg") {
+    font-size: 2rem;
+  }
+  @include styles.feature-to("hover") {
+    &:hover {
+      background-color: pink;
+    }
   }
 }

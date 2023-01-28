@@ -6,13 +6,15 @@ export interface TagsProps {
   children?: React.ReactNode;
 }
 
-export function Tags(props: TagsProps) {
-  return (
-    <div {...props} className={classnames(css.Tags)}>
-      <p>Tags component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Tags = React.forwardRef<HTMLDivElement, TagsProps>(
+  (props: TagsProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Tags)} ref={ref}>
+        <p>Tags component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Tags.displayName = "Tags";

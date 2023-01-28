@@ -6,13 +6,15 @@ export interface BarChartProps {
   children?: React.ReactNode;
 }
 
-export function BarChart(props: BarChartProps) {
-  return (
-    <div {...props} className={classnames(css.BarChart)}>
-      <p>BarChart component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>(
+  (props: BarChartProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.BarChart)} ref={ref}>
+        <p>BarChart component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 BarChart.displayName = "BarChart";

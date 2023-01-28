@@ -6,13 +6,15 @@ export interface ChipProps {
   children?: React.ReactNode;
 }
 
-export function Chip(props: ChipProps) {
-  return (
-    <div {...props} className={classnames(css.Chip)}>
-      <p>Chip component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
+  (props: ChipProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Chip)} ref={ref}>
+        <p>Chip component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Chip.displayName = "Chip";

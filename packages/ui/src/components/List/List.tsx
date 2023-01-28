@@ -6,13 +6,15 @@ export interface ListProps {
   children?: React.ReactNode;
 }
 
-export function List(props: ListProps) {
-  return (
-    <div {...props} className={classnames(css.List)}>
-      <p>List component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const List = React.forwardRef<HTMLDivElement, ListProps>(
+  (props: ListProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.List)} ref={ref}>
+        <p>List component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 List.displayName = "List";

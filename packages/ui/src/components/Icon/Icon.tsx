@@ -6,13 +6,15 @@ export interface IconProps {
   children?: React.ReactNode;
 }
 
-export function Icon(props: IconProps) {
-  return (
-    <div {...props} className={classnames(css.Icon)}>
-      <p>Icon component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Icon = React.forwardRef<HTMLDivElement, IconProps>(
+  (props: IconProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Icon)} ref={ref}>
+        <p>Icon component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Icon.displayName = "Icon";

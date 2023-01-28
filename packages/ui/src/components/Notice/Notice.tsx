@@ -6,13 +6,15 @@ export interface NoticeProps {
   children?: React.ReactNode;
 }
 
-export function Notice(props: NoticeProps) {
-  return (
-    <div {...props} className={classnames(css.Notice)}>
-      <p>Notice component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Notice = React.forwardRef<HTMLDivElement, NoticeProps>(
+  (props: NoticeProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Notice)} ref={ref}>
+        <p>Notice component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Notice.displayName = "Notice";

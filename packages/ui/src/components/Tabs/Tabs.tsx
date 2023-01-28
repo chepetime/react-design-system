@@ -6,13 +6,15 @@ export interface TabsProps {
   children?: React.ReactNode;
 }
 
-export function Tabs(props: TabsProps) {
-  return (
-    <div {...props} className={classnames(css.Tabs)}>
-      <p>Tabs component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Tabs = React.forwardRef<HTMLDivElement, TabsProps>(
+  (props: TabsProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Tabs)} ref={ref}>
+        <p>Tabs component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Tabs.displayName = "Tabs";

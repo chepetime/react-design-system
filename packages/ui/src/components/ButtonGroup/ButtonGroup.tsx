@@ -6,13 +6,15 @@ export interface ButtonGroupProps {
   children?: React.ReactNode;
 }
 
-export function ButtonGroup(props: ButtonGroupProps) {
-  return (
-    <div {...props} className={classnames(css.ButtonGroup)}>
-      <p>ButtonGroup component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const ButtonGroup = React.forwardRef<HTMLDivElement, ButtonGroupProps>(
+  (props: ButtonGroupProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.ButtonGroup)} ref={ref}>
+        <p>ButtonGroup component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 ButtonGroup.displayName = "ButtonGroup";

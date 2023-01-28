@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { generateTemplateFilesCommandLine } from "generate-template-files";
 
-const UI_PROJECT_DIR_NAME = "chepe/ui";
+const UI_PROJECT_DIR_NAME = "ui";
 const BASE_DIR = "./../..";
 const COMPONENT_NAME = "__componentName__(pascalCase)";
 const STORY_OUT = `${BASE_DIR}/apps/docs/stories`;

@@ -6,13 +6,15 @@ export interface DividerProps {
   children?: React.ReactNode;
 }
 
-export function Divider(props: DividerProps) {
-  return (
-    <div {...props} className={classnames(css.Divider)}>
-      <p>Divider component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Divider = React.forwardRef<HTMLDivElement, DividerProps>(
+  (props: DividerProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Divider)} ref={ref}>
+        <p>Divider component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Divider.displayName = "Divider";

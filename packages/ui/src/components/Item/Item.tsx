@@ -6,13 +6,15 @@ export interface ItemProps {
   children?: React.ReactNode;
 }
 
-export function Item(props: ItemProps) {
-  return (
-    <div {...props} className={classnames(css.Item)}>
-      <p>Item component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Item = React.forwardRef<HTMLDivElement, ItemProps>(
+  (props: ItemProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Item)} ref={ref}>
+        <p>Item component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Item.displayName = "Item";

@@ -6,13 +6,15 @@ export interface AlertProps {
   children?: React.ReactNode;
 }
 
-export function Alert(props: AlertProps) {
-  return (
-    <div {...props} className={classnames(css.Alert)}>
-      <p>Alert component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Alert = React.forwardRef<HTMLDivElement, AlertProps>(
+  (props: AlertProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Alert)} ref={ref}>
+        <p>Alert component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Alert.displayName = "Alert";

@@ -6,13 +6,15 @@ export interface LoadingProps {
   children?: React.ReactNode;
 }
 
-export function Loading(props: LoadingProps) {
-  return (
-    <div {...props} className={classnames(css.Loading)}>
-      <p>Loading component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Loading = React.forwardRef<HTMLDivElement, LoadingProps>(
+  (props: LoadingProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Loading)} ref={ref}>
+        <p>Loading component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Loading.displayName = "Loading";

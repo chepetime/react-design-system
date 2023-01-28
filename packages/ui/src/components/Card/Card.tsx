@@ -6,13 +6,15 @@ export interface CardProps {
   children?: React.ReactNode;
 }
 
-export function Card(props: CardProps) {
-  return (
-    <div {...props} className={classnames(css.Card)}>
-      <p>Card component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Card = React.forwardRef<HTMLDivElement, CardProps>(
+  (props: CardProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Card)} ref={ref}>
+        <p>Card component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Card.displayName = "Card";

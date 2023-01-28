@@ -6,13 +6,15 @@ export interface AvatarProps {
   children?: React.ReactNode;
 }
 
-export function Avatar(props: AvatarProps) {
-  return (
-    <div {...props} className={classnames(css.Avatar)}>
-      <p>Avatar component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+  (props: AvatarProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Avatar)} ref={ref}>
+        <p>Avatar component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Avatar.displayName = "Avatar";

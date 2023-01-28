@@ -6,8 +6,10 @@ export interface SpacerProps {
   children?: React.ReactNode;
 }
 
-export function Spacer(props: SpacerProps) {
-  return <div {...props} className={classnames(css.Spacer)} />;
-}
+export const Spacer = React.forwardRef<HTMLDivElement, SpacerProps>(
+  (props: SpacerProps, ref: React.Ref<HTMLDivElement>) => {
+    return <div {...props} className={classnames(css.Spacer)} ref={ref} />;
+  }
+);
 
 Spacer.displayName = "Spacer";

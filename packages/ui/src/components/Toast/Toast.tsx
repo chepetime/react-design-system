@@ -6,13 +6,15 @@ export interface ToastProps {
   children?: React.ReactNode;
 }
 
-export function Toast(props: ToastProps) {
-  return (
-    <div {...props} className={classnames(css.Toast)}>
-      <p>Toast component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Toast = React.forwardRef<HTMLDivElement, ToastProps>(
+  (props: ToastProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Toast)} ref={ref}>
+        <p>Toast component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Toast.displayName = "Toast";

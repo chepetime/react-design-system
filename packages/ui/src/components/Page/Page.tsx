@@ -6,8 +6,14 @@ export interface PageProps {
   children?: React.ReactNode;
 }
 
-export function Page(props: PageProps) {
-  return <div className={classnames(css.Page)}>{props.children}</div>;
-}
+export const Page = React.forwardRef<HTMLDivElement, PageProps>(
+  (props: PageProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Page)} ref={ref}>
+        {props.children}
+      </div>
+    );
+  }
+);
 
 Page.displayName = "Page";

@@ -6,13 +6,15 @@ export interface AccordionProps {
   children?: React.ReactNode;
 }
 
-export function Accordion(props: AccordionProps) {
-  return (
-    <div {...props} className={classnames(css.Accordion)}>
-      <p>Accordion component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const Accordion = React.forwardRef<HTMLDivElement, AccordionProps>(
+  (props: AccordionProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.Accordion)} ref={ref}>
+        <p>Accordion component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 Accordion.displayName = "Accordion";

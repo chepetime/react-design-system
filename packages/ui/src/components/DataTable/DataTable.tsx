@@ -6,13 +6,15 @@ export interface DataTableProps {
   children?: React.ReactNode;
 }
 
-export function DataTable(props: DataTableProps) {
-  return (
-    <div {...props} className={classnames(css.DataTable)}>
-      <p>DataTable component working!</p>
-      <div>{props.children}</div>
-    </div>
-  );
-}
+export const DataTable = React.forwardRef<HTMLDivElement, DataTableProps>(
+  (props: DataTableProps, ref: React.Ref<HTMLDivElement>) => {
+    return (
+      <div className={classnames(css.DataTable)} ref={ref}>
+        <p>DataTable component working!</p>
+        <div>{props.children}</div>
+      </div>
+    );
+  }
+)
 
 DataTable.displayName = "DataTable";

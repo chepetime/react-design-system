@@ -1,10 +1,10 @@
 <div align="center">
-  <a href="https://github.com/chepetime/react-turborepo-dls-ops">
+  <a href="https://github.com/chepetime/react-design-system">
     <img src="./docs/logo@2x.png" alt="Logo" width="400" height="233">
   </a>
-  <h2 align="center"><strong>Design Language System</strong></h2>
+  <h2 align="center"><strong>React Design System</strong></h2>
   <p align="center">
-    Implementation of chepe's Design Language System using React and Turborepo
+    Component Library for a Design System using React and Turborepo
   </p>
 
 [![Build UI](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml) [![Storybook Tests](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml)

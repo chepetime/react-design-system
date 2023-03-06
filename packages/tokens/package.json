@@ -16,8 +16,14 @@
     "tokens/tokens.ts",
     "tokens/tokensMap.scss"
   ],
+  "scripts": {
+    "fetch": "figma-token-engine"
+  },
+  "dependencies": {
+    "figma-token-engine": "^0.0.3"
+  },
   "devDependencies": {
-    "token-transformer": "^0.0.29"
+    "token-transformer": "^0.0.30"
   },
   "keywords": []
 }

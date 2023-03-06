@@ -12,8 +12,7 @@
     "preview-storybook": "serve storybook-static",
     "storybook": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
     "storybook-build": "export NODE_OPTIONS=--openssl-legacy-provider && build-storybook --docs",
-    "storybook-test": "export NODE_OPTIONS=--openssl-legacy-provider && test-storybook --no-cache --verbose --url http://127.0.0.1:6006",
-    "chromatic": "npx chromatic --project-token=f1583d1c3fe8"
+    "storybook-test": "export NODE_OPTIONS=--openssl-legacy-provider && test-storybook --no-cache --verbose --url http://127.0.0.1:6006"
   },
   "dependencies": {
     "@chepe/icons": "*",

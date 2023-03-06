@@ -12,7 +12,8 @@
     "preview-storybook": "serve storybook-static",
     "storybook": "export NODE_OPTIONS=--openssl-legacy-provider && start-storybook -p 6006",
     "storybook-build": "export NODE_OPTIONS=--openssl-legacy-provider && build-storybook --docs",
-    "storybook-test": "export NODE_OPTIONS=--openssl-legacy-provider && test-storybook --no-cache --verbose --url http://127.0.0.1:6006"
+    "storybook-test": "export NODE_OPTIONS=--openssl-legacy-provider && test-storybook --no-cache --verbose --url http://127.0.0.1:6006",
+    "chromatic": "npx chromatic --project-token=f1583d1c3fe8"
   },
   "dependencies": {
     "@chepe/icons": "*",
@@ -42,6 +43,7 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "axe-playwright": "^1.2.3",
+    "chromatic": "^6.17.1",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.0.2",
     "serve": "^14.2.0",
@@ -54,5 +56,7 @@
     "typescript-plugin-css-modules": "^4.2.2",
     "vite": "^4.1.4"
   },
-  "keywords": []
+  "keywords": [],
+  "readme": "ERROR: No README data found!",
+  "_id": "docs@0.0.0"
 }

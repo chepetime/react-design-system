@@ -1,0 +1,56 @@
+@use "./../../styles" as styles;
+
+:root {
+  --inputupload-background-color: #{styles.$pink-500};
+}
+
+:global :root .dark {
+  --inputupload-background-color: #{styles.$indigo-500};
+}
+
+.InputUpload {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.input {
+}

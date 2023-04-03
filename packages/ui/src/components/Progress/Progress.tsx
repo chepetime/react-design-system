@@ -3,18 +3,20 @@ import classnames from "classnames";
 import css from "./Progress.module.scss";
 
 export interface ProgressProps {
-  children?: React.ReactNode;
+  /** The value of the progress bar. Must be between 0 and 100. */
+  value: number;
 }
 
 export const Progress = React.forwardRef<HTMLDivElement, ProgressProps>(
-  (props: ProgressProps, ref: React.Ref<HTMLDivElement>) => {
+  ({ value, ...props }: ProgressProps, ref: React.Ref<HTMLDivElement>) => {
+    const percent = `${value}%`;
+
     return (
-      <div className={classnames(css.Progress)} ref={ref}>
-        <p>Progress component working!</p>
-        <div>{props.children}</div>
+      <div {...props} className={classnames(css.Progress)} ref={ref}>
+        <div className={css.Bar} style={{ width: percent }}></div>
       </div>
     );
   }
-)
+);
 
 Progress.displayName = "Progress";

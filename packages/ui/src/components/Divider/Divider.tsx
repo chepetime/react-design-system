@@ -1,20 +1,10 @@
 import * as React from "react";
-import classnames from "classnames";
 import css from "./Divider.module.scss";
 
-export interface DividerProps {
-  children?: React.ReactNode;
-}
-
-export const Divider = React.forwardRef<HTMLDivElement, DividerProps>(
-  (props: DividerProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Divider)} ref={ref}>
-        <p>Divider component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
+export const Divider = React.forwardRef<HTMLHRElement>(
+  (_props, ref: React.Ref<HTMLHRElement>) => {
+    return <hr ref={ref} className={css.Divider} />;
   }
-)
+);
 
 Divider.displayName = "Divider";

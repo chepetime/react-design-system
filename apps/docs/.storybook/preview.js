@@ -1,10 +1,12 @@
+/** @type { import('@storybook/react').Preview } */
 import React from "react";
-import { themes } from "@storybook/theming";
-import logo from "./logos/logo-light.svg";
-import logoDark from "./logos/logo-dark.svg";
-import { DocsContainer } from "./DocsContainer";
 
-const brandTitle = "chepe-dls";
+import { themes } from "@storybook/theming";
+import logo from "./logos/logo.svg";
+import logoDark from "./logos/logo-dark.svg";
+// import { DocsContainer } from "./DocsContainer";
+
+const brandTitle = "Chepe Design System";
 
 const darkMode = {
   darkClass: "dark",
@@ -25,16 +27,19 @@ const darkMode = {
   },
 };
 
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
+const preview = {
+  parameters: {
+    backgrounds: {},
+    actions: { argTypesRegex: "^on[A-Z].*" },
+    controls: {
+      matchers: {
+        color: /(background|color)$/i,
+        date: /Date$/,
+      },
     },
-  },
-  darkMode,
-  docs: {
-    container: DocsContainer,
+    darkMode,
+    docs: {},
   },
 };
+
+export default preview;

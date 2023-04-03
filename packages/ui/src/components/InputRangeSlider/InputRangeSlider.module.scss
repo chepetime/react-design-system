@@ -2,6 +2,13 @@
 
 :root {
   --inputrangeslider-background-color: #{styles.$pink-500};
+
+  --inputrange-track-color: #{styles.$pink-500};
+  --inputrange-track-color: #{styles.$pink-500};
+  --inputrange-thumb-color: #{styles.$pink-500};
+  --inputrange-thumb-color: #{styles.$pink-500};
+  --inputrange-focus-color: #{styles.$pink-500};
+  --inputrange-focus-color: #{styles.$pink-500};
 }
 
 :global :root .dark {
@@ -10,21 +17,51 @@
 
 .InputRangeSlider {
   @include styles.styles-reset;
-  @include styles.text-wrapping;
 
-  background: var(--inputrangeslider-background-color);
+  width: 100%;
 
-  font-size: 1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
+  &::-webkit-slider-runnable-track {
+    height: 4px;
+    background-color: var(--inputrange-track-color);
+    border-radius: 2px;
   }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
+
+  &::-moz-range-track {
+    height: 4px;
+    background-color: var(--inputrange-track-color);
+    border-radius: 2px;
   }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: var(--inputrange-thumb-color);
+    border-radius: 50%;
+    margin-top: -6px;
+  }
+
+  &::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background-color: var(--inputrange-thumb-color);
+    border-radius: 50%;
+    margin-top: -6px;
+  }
+
+  &:focus {
+    outline: none;
+
+    &::-webkit-slider-thumb {
+      box-shadow: 0px 0px 0px 2px var(--inputrange-focus-color);
+    }
+
+    &::-moz-range-thumb {
+      box-shadow: 0px 0px 0px 2px var(--inputrange-focus-color);
     }
   }
 }

@@ -12,19 +12,18 @@
   @include styles.styles-reset;
   @include styles.text-wrapping;
 
-  background: var(--codeblock-background-color);
+  position: relative;
+}
 
-  font-size: 1rem;
-
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
-  }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
-  }
+.Language {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  text-align: right;
+  color: #fff;
+  background: #5d5f7b;
+  padding: 0.25rem 0.5rem;
+  border-radius: 2px;
+  font-size: 0.65rem;
+  user-select: none;
 }

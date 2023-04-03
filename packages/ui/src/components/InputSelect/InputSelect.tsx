@@ -1,18 +1,37 @@
-import * as React from "react";
+import React from "react";
 import classnames from "classnames";
 import css from "./InputSelect.module.scss";
 
-export interface InputSelectProps {
-  children?: React.ReactNode;
+/**
+ * Props for the InputSelect component
+ */
+export interface InputSelectProps
+  extends React.SelectHTMLAttributes<HTMLSelectElement> {
+  label: string;
+  options: Array<{
+    label: string;
+    value: string;
+    disabled?: boolean;
+  }>;
 }
 
-export function InputSelect(props: InputSelectProps) {
+/**
+ * A functional React component for a select input
+ */
+
+export const InputSelect = React.forwardRef<
+  HTMLSelectElement,
+  InputSelectProps
+>(({ options, ...props }: InputSelectProps, ref) => {
   return (
-    <div {...props} className={classnames(css.InputSelect)}>
-      <p>InputSelect component working!</p>
-      <div>{props.children}</div>
-    </div>
+    <select className={classnames(css.InputSelect)} {...props} ref={ref}>
+      {options.map(({ label, value, disabled }, index) => (
+        <option key={index} value={value} disabled={disabled}>
+          {label}
+        </option>
+      ))}
+    </select>
   );
-}
+});
 
 InputSelect.displayName = "InputSelect";

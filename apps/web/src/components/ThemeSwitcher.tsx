@@ -21,8 +21,8 @@ export default function ThemeSwitcher() {
       <div>
         <div className="ThemeSwitcher__Content">
           <h1 className="ThemeSwitcher__Title">
-            <ReactIcon fill="#fff" />
-            Design System Demo
+            <ReactIcon fill="#fff" />{" "}
+            <span style={{ marginLeft: "1rem" }}>Chepe DS Demo</span>
           </h1>
           <div>
             <span>Change theme to</span>

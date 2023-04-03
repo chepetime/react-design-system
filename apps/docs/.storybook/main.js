@@ -1,64 +1,61 @@
-const path = require("path");
+/** @type { import('@storybook/react-vite').StorybookConfig } */
 
-const stories = ["../stories/**/*.stories.mdx", "../stories/**/*.stories.tsx"];
+import { mergeConfig } from "vite";
 
-const addons = [
-  { name: "@storybook/addon-links" },
-  { name: "@storybook/addon-essentials" },
-  { name: "@storybook/addon-a11y" },
-  { name: "@storybook/addon-storysource" },
-  { name: "storybook-addon-designs" },
-  {
-    name: "storybook-addon-turbo-build",
-    options: {
-      optimizationLevel: 2,
+const config = {
+  stories: ["./../stories/**/*.mdx", "./../stories/**/*.stories.tsx"],
+  addons: [
+    {
+      name: "@storybook/addon-mdx-gfm",
     },
+    {
+      name: "@storybook/addon-links",
+    },
+    {
+      name: "@storybook/addon-essentials",
+    },
+    {
+      name: "@storybook/addon-a11y",
+    },
+    {
+      name: "@storybook/addon-storysource",
+    },
+    {
+      name: "storybook-addon-designs",
+    },
+    {
+      name: "storybook-dark-mode",
+    },
+    {
+      name: "@storybook/preset-scss",
+    },
+    {
+      name: "@storybook/addon-coverage",
+    },
+    "@storybook/addon-mdx-gfm",
+  ],
+  framework: {
+    name: "@storybook/react-vite",
+    options: {},
   },
-  { name: "storybook-dark-mode" },
-  { name: "@storybook/preset-scss" },
-];
-
-module.exports = {
-  stories,
-  addons,
-  framework: "@storybook/react",
-  core: {
-    builder: "@storybook/builder-vite",
-  },
-  async viteFinal(config, { configType }) {
-    // customize the Vite config here
-    return {
-      ...config,
+  features: { storyStoreV7: true, buildStoriesJson: true },
+  async viteFinal(config) {
+    return mergeConfig(config, {
+      define: {
+        "process.env.NODE_DEBUG": false,
+      },
       resolve: {
         alias: [
           {
-            find: "@chepe/ui",
-            replacement: path.resolve(
-              __dirname,
-              "./../../../packages/ui/"
-            ),
-          },
-          {
-            find: "@chepe/icons",
-            replacement: path.resolve(
-              __dirname,
-              "./../../../packages/icons/"
-            ),
-          },
-          {
-            find: "@chepe/tokens",
-            replacement: path.resolve(
-              __dirname,
-              "./../../../packages/tokens/"
-            ),
-          },
-          {
-            // this is required for the SCSS modules
             find: /^~(.*)$/,
             replacement: "$1",
           },
         ],
       },
-    };
+    });
+  },
+  docs: {
+    autodocs: true,
   },
 };
+export default config;

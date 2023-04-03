@@ -1,0 +1,53 @@
+@use "./../../styles" as styles;
+
+:root {
+  --stack-background-color: #{styles.$pink-500};
+}
+
+:global :root .dark {
+  --stack-background-color: #{styles.$indigo-500};
+}
+
+.Stack {
+  flex-direction: column;
+  display: inline-flex;
+
+  &.horizontal {
+    flex-direction: row;
+    .divider {
+      width: 1px;
+      height: auto;
+    }
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: 1px;
+
+    background-color: #111;
+
+    margin-top: var(--stack-space);
+    margin-left: var(--stack-space);
+
+    &:first-child {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
+  .child {
+    flex-shrink: 0;
+  }
+
+  .verticalChild {
+    margin-top: var(--stack-space);
+  }
+
+  .horizontalChild {
+    margin-left: var(--stack-space);
+  }
+}

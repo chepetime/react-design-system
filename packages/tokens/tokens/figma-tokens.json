@@ -741,7 +741,19 @@
     "button": {
       "primary": {
         "background": {
-          "value": "{colors.blue.400}",
+          "value": "{colors.green.700}",
+          "type": "color"
+        },
+        "background-hover": {
+          "value": "{colors.green.900}",
+          "type": "color"
+        },
+        "background-disabled": {
+          "value": "{colors.gray.500}",
+          "type": "color"
+        },
+        "text": {
+          "value": "{colors.green.900}",
           "type": "color"
         }
       },

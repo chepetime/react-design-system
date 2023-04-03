@@ -1,10 +1,36 @@
 @use "./../../styles" as styles;
+@use "~@chepe/tokens/tokens/tokens.scss" as tokens;
 
 .InputHint {
   @include styles.styles-reset;
   @include styles.text-wrapping;
 
-  color: red;
+  display: inline-block;
+
+  // color: tokens.$colors-gray-800;
+
   line-height: 1;
-  padding: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+
+  &.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  &.warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
+  }
+  &.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  &.info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+  }
 }

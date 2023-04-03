@@ -20,10 +20,10 @@
     "fetch": "figma-token-engine"
   },
   "dependencies": {
-    "figma-token-engine": "^0.0.3"
+    "figma-token-engine": "^0.1.0"
   },
   "devDependencies": {
-    "token-transformer": "^0.0.30"
+    "token-transformer": "^0.0.32"
   },
   "keywords": []
 }

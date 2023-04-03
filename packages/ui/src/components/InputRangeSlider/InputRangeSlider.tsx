@@ -1,18 +1,41 @@
-import * as React from "react";
+import React from "react";
 import classnames from "classnames";
 import css from "./InputRangeSlider.module.scss";
 
-export interface InputRangeSliderProps {
-  children?: React.ReactNode;
+/**
+ * Props for the InputRangeSlider component
+ * Extends React.ComponentPropsWithRef<"input"> to include all the standard input props
+ */
+export interface InputRangeSliderProps
+  extends React.ComponentPropsWithRef<"input"> {
+  min?: number;
+  max?: number;
+  step?: number;
+  value?: number;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export function InputRangeSlider(props: InputRangeSliderProps) {
+/**
+ * A functional React component for a range slider input
+ */
+export const InputRangeSlider = React.forwardRef<
+  HTMLInputElement,
+  InputRangeSliderProps
+>(({ min = 0, max = 100, step = 1, onChange, ...props }, ref) => {
   return (
-    <div {...props} className={classnames(css.InputRangeSlider)}>
-      <p>InputRangeSlider component working!</p>
-      <div>{props.children}</div>
-    </div>
+    <input
+      ref={ref}
+      {...props}
+      className={classnames(css.InputRangeSlider)}
+      type="range"
+      min={min}
+      max={max}
+      step={step}
+      onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+        onChange && onChange(e)
+      }
+    />
   );
-}
+});
 
 InputRangeSlider.displayName = "InputRangeSlider";

@@ -1,0 +1,22 @@
+@use "./../../styles" as styles;
+
+:root {
+}
+
+:global :root .dark {
+}
+
+.InputRadio {
+  @include styles.styles-reset;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.InputRadioButtonLabel {
+  font-size: 1rem;
+  color: #222;
+  user-select: none;
+  cursor: pointer;
+}

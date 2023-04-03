@@ -1,20 +1,43 @@
-import * as React from "react";
+import React from "react";
 import classnames from "classnames";
 import css from "./Stepper.module.scss";
 
 export interface StepperProps {
-  children?: React.ReactNode;
+  steps: string[];
+  currentStep: number;
+  onStepChange: (step: number) => void;
 }
 
-export const Stepper = React.forwardRef<HTMLDivElement, StepperProps>(
-  (props: StepperProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Stepper)} ref={ref}>
-        <p>Stepper component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
-  }
-)
+export const Stepper: React.FC<StepperProps> = ({
+  steps = [],
+  currentStep = 0,
+  onStepChange,
+}) => {
+  const handleStepClick = (step: number) => {
+    onStepChange(step);
+  };
+
+  return (
+    <div className={css.Stepper}>
+      {steps.map((step, index) => {
+        const stepClasses = classnames(css.Step, {
+          [css.Completed]: index < currentStep,
+          [css.Current]: index === currentStep,
+        });
+
+        return (
+          <div
+            className={stepClasses}
+            key={step}
+            onClick={() => handleStepClick(index)}
+          >
+            <div className={css.Circle}>{index + 1}</div>
+            <div className={css.Label}>{step}</div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 Stepper.displayName = "Stepper";

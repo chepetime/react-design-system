@@ -1,30 +1,90 @@
 @use "./../../styles" as styles;
 
-:root {
-  --notification-background-color: #{styles.$pink-500};
-}
-
-:global :root .dark {
-  --notification-background-color: #{styles.$indigo-500};
-}
-
 .Notification {
   @include styles.styles-reset;
   @include styles.text-wrapping;
 
-  background: var(--notification-background-color);
-
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
   font-size: 1rem;
+  line-height: 1.5;
+  justify-content: space-between;
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
+  &.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
   }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
+
+  &.warning {
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    color: #856404;
   }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
+
+  &.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+
+  &.info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+  }
+
+  &.Closing {
+    animation: closeNotification 0.5s forwards;
+  }
+
+  @keyframes closeNotification {
+    0% {
+      opacity: 1;
+      height: auto;
+      margin: 0;
+    }
+    50% {
+      opacity: 0.5;
+      height: 0;
+      margin: 0;
+    }
+    100% {
+      opacity: 0;
+      height: 0;
+      margin: 0;
     }
   }
+}
+
+.CloseButton {
+  @include styles.button-reset;
+
+  font-weight: bold;
+  margin-left: 1rem;
+  border: none;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  color: inherit;
+  span {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.CloseButton:hover {
+  color: #000;
+}
+
+.NotificationText {
+  flex: 1;
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
 }

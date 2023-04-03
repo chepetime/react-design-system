@@ -3,18 +3,34 @@ import classnames from "classnames";
 import css from "./Grid.module.scss";
 
 export interface GridProps {
-  children?: React.ReactNode;
+  className?: string;
+  columns?: number;
+  rows?: number;
+  gap?: number;
+  debug?: boolean;
+  children: React.ReactNode;
 }
 
-export const Grid = React.forwardRef<HTMLDivElement, GridProps>(
-  (props: GridProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Grid)} ref={ref}>
-        <p>Grid component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
-  }
-)
+export const Grid: React.FC<GridProps> = ({
+  className,
+  columns = 1,
+  rows = 1,
+  gap = 0,
+  debug = false,
+  children,
+}) => {
+  const gridTemplateColumns = `repeat(${columns}, 1fr)`;
+  const gridTemplateRows = `repeat(${rows}, 1fr)`;
+  const gridGap = `${gap}px`;
 
-Grid.displayName = "Grid";
+  return (
+    <div
+      className={classnames(css.Grid, className, { [css.Debug]: debug })}
+      style={{ gridTemplateColumns, gridTemplateRows, gridGap }}
+    >
+      {children}
+    </div>
+  );
+};
+
+Grid.displayName = "Grid"; // sets the component's display name to "Grid" for debugging purposes

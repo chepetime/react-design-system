@@ -1,20 +1,34 @@
-import * as React from "react";
+import React from "react";
 import classnames from "classnames";
 import css from "./Breadcrumb.module.scss";
 
 export interface BreadcrumbProps {
+  className?: string;
   children?: React.ReactNode;
 }
 
-export const Breadcrumb = React.forwardRef<HTMLDivElement, BreadcrumbProps>(
-  (props: BreadcrumbProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Breadcrumb)} ref={ref}>
-        <p>Breadcrumb component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
-  }
-)
+export interface BreadcrumbElementProps {
+  className?: string;
+  children?: React.ReactNode;
+  href?: string;
+}
 
-Breadcrumb.displayName = "Breadcrumb";
+const Breadcrumb: React.FC<BreadcrumbProps> = ({ className, children }) => {
+  return (
+    <nav className={classnames(css.Breadcrumb, className)}>{children}</nav>
+  );
+};
+
+const BreadcrumbElement: React.FC<BreadcrumbElementProps> = ({
+  className,
+  children,
+  href,
+}) => {
+  return (
+    <span className={classnames(css.BreadcrumbElement, className)}>
+      {href ? <a href={href}>{children}</a> : children}
+    </span>
+  );
+};
+
+export { Breadcrumb, BreadcrumbElement };

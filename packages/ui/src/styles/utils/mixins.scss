@@ -52,3 +52,27 @@
     @content;
   }
 }
+
+@mixin box-shadow(
+  $x: 0,
+  $y: 0,
+  $blur: 0,
+  $spread: 0,
+  $color: rgba(0, 0, 0, 0.2)
+) {
+  box-shadow: $x $y $blur $spread $color;
+  -moz-box-shadow: $x $y $blur $spread $color;
+  -webkit-box-shadow: $x $y $blur $spread $color;
+}
+
+// Mixin for display:flex
+@mixin display-flex($direction: row, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+// Mixin for align-items:center
+@mixin align-items-center {
+  align-items: center;
+}

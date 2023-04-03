@@ -1,9 +1,11 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import { Wrapper, WrapperProps } from "@chepe/ui/src";
 
 export default {
-  title: "Components/Wrapper",
+  title: "Layout/Wrapper",
   component: Wrapper,
+  tags: ["autodocs"],
 };
 
 export const Default = {

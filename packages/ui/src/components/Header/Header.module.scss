@@ -1,30 +1,25 @@
 @use "./../../styles" as styles;
 
-:root {
-  --header-background-color: #{styles.$pink-500};
-}
-
-:global :root .dark {
-  --header-background-color: #{styles.$indigo-500};
-}
-
 .Header {
   @include styles.styles-reset;
-  @include styles.text-wrapping;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  height: 64px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
 
-  background: var(--header-background-color);
+.Logo {
+  @include styles.styles-reset;
+}
 
-  font-size: 1rem;
+.NavLinks {
+  @include styles.styles-reset;
+  display: flex;
+  align-items: center;
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
-  }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+  > * + * {
+    margin-left: 1.5rem;
   }
 }

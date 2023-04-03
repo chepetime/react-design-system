@@ -1,28 +1,21 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Page } from "@chepe/ui/src";
+import { Page, PageProps } from "@chepe/ui/src";
 
 export default {
   title: "Layout/Page",
   component: Page,
-} as ComponentMeta<typeof Page>;
-
-const design = [
-  {
-    type: "figma",
-    name: "UI",
-    url: "",
-  },
-];
-
-const Template: ComponentStory<typeof Page> = (args) => (
-  <Page>{args.children}</Page>
-);
-
-export const Default = Template.bind({});
-
-Default.args = {
-  children: "Page",
+  tags: ["autodocs"],
 };
 
-Default.parameters = { design };
+export const Default = {
+  render: (args: PageProps) => <Page>{args.children}</Page>,
+  args: {},
+  parameters: {
+    design: {
+      type: "figma",
+      name: "UI",
+      url: "",
+    },
+  },
+};

@@ -16,7 +16,7 @@
  * @include button-reset;
  */
 @mixin button-reset {
-  font: inherit;
+  @include typography.default-text-style;
   padding: 0;
   cursor: pointer;
   color: inherit;

@@ -1,30 +1,37 @@
 @use "./../../styles" as styles;
 
-:root {
-  --chip-background-color: #{styles.$pink-500};
-}
-
-:global :root .dark {
-  --chip-background-color: #{styles.$indigo-500};
-}
-
 .Chip {
-  @include styles.styles-reset;
-  @include styles.text-wrapping;
+  @include styles.button-reset;
 
-  background: var(--chip-background-color);
-
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
   font-size: 1rem;
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border: 1px solid transparent;
+
+  &.primary {
+    background-color: #0074d9;
+    color: #fff;
   }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
+
+  &.secondary {
+    background-color: #f0f0f0;
+    color: #333;
   }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+
+  &.tertiary {
+    background-color: #fff;
+    color: #333;
+    border-color: #f0f0f0;
+  }
+
+  &:hover {
+    @include styles.box-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
   }
 }

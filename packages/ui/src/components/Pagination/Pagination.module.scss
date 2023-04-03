@@ -1,30 +1,69 @@
 @use "./../../styles" as styles;
 
-:root {
-  --pagination-background-color: #{styles.$pink-500};
-}
-
-:global :root .dark {
-  --pagination-background-color: #{styles.$indigo-500};
-}
-
-.Pagination {
+.pagination {
   @include styles.styles-reset;
-  @include styles.text-wrapping;
+}
 
-  background: var(--pagination-background-color);
+.paginationList {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: stretch;
+}
 
+.pageItem {
+  @include styles.button-reset;
+
+  display: inline-block;
+  margin: 0 0.25rem;
+}
+
+.pageButton {
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
+  &:hover:not(:disabled) {
+    background-color: #f1f1f1;
+    cursor: pointer;
   }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
+
+  &:disabled {
+    cursor: default;
+    color: #bbb;
+    border-color: #bbb;
   }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+}
+
+.current .pageButton {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    color: #fff;
+  }
+}
+
+.ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabled {
+  cursor: default;
+  color: #bbb;
+  border-color: #bbb;
+
+  &:hover:not(:disabled) {
+    background-color: #fff;
+    cursor: default;
   }
 }

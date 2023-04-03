@@ -130,7 +130,28 @@
 		"body": [
 			"var(--button-primary-background)"
 		],
-		"description": "Value: #63b3ed\\nUnder button category."
+		"description": "Value: #2f855a\\nUnder button category."
+	},
+	"--button-primary-background-disabled": {
+		"prefix": "--button-primary-background-disabled",
+		"body": [
+			"var(--button-primary-background-disabled)"
+		],
+		"description": "Value: #a0aec0\\nUnder button category."
+	},
+	"--button-primary-background-hover": {
+		"prefix": "--button-primary-background-hover",
+		"body": [
+			"var(--button-primary-background-hover)"
+		],
+		"description": "Value: #22543d\\nUnder button category."
+	},
+	"--button-primary-text": {
+		"prefix": "--button-primary-text",
+		"body": [
+			"var(--button-primary-text)"
+		],
+		"description": "Value: #22543d\\nUnder button category."
 	},
 	"--colors-black": {
 		"prefix": "--colors-black",

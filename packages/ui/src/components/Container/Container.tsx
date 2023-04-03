@@ -2,19 +2,26 @@ import * as React from "react";
 import classnames from "classnames";
 import css from "./Container.module.scss";
 
-export interface ContainerProps {
+export type ContainerProps = {
+  className?: string;
+  size?: "sm" | "md" | "lg" | "xl";
+  fluid?: boolean;
   children?: React.ReactNode;
-}
+};
 
-export const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
-  (props: ContainerProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Container)} ref={ref}>
-        <p>Container component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
-  }
-)
+export const Container: React.FC<ContainerProps> = ({
+  className,
+  size = "md",
+  fluid = false,
+  children,
+}) => {
+  const containerClasses = classnames(css.Container, css[size], {
+    [css.Fluid]: fluid,
+  });
+
+  return (
+    <div className={classnames(containerClasses, className)}>{children}</div>
+  );
+};
 
 Container.displayName = "Container";

@@ -1,0 +1,6 @@
+@use "./../../styles" as styles;
+
+.Text {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+}

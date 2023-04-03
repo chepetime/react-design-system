@@ -3,18 +3,22 @@ import classnames from "classnames";
 import css from "./Header.module.scss";
 
 export interface HeaderProps {
-  children?: React.ReactNode;
+  logo: React.ReactNode;
+  navLinks: React.ReactNode;
+  className?: string;
 }
 
-export const Header = React.forwardRef<HTMLDivElement, HeaderProps>(
-  (props: HeaderProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Header)} ref={ref}>
-        <p>Header component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
-  }
-)
+export const Header: React.FC<HeaderProps> = ({
+  logo,
+  navLinks,
+  className,
+}) => {
+  return (
+    <header className={classnames(css.Header, className)}>
+      <div className={css.Logo}>{logo}</div>
+      <nav className={css.NavLinks}>{navLinks}</nav>
+    </header>
+  );
+};
 
 Header.displayName = "Header";

@@ -1,30 +1,23 @@
 @use "./../../styles" as styles;
 
-:root {
-  --quote-background-color: #{styles.$pink-500};
-}
-
-:global :root .dark {
-  --quote-background-color: #{styles.$indigo-500};
+.Figure {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
 }
 
 .Quote {
-  @include styles.styles-reset;
-  @include styles.text-wrapping;
+  color: #111827;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
 
-  background: var(--quote-background-color);
-
+.Author {
+  color: #111827;
   font-size: 1rem;
-
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
-  }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
-  }
+  line-height: 1.2;
+  font-weight: 600;
 }

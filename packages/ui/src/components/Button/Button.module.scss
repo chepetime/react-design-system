@@ -3,13 +3,13 @@
 
 :root {
   --button-background-color: #{tokens.$button-primary-background};
-  --button-background-color-hover: #{styles.$gray-800};
-  --button-disabled-background-color: #{styles.$gray-300};
+  --button-background-color-hover: #{tokens.$button-primary-background-hover};
+  --button-disabled-background-color: #{tokens.$button-primary-background-disabled};
 }
 
 :global :root .dark {
-  --button-background-color: #{styles.$pink-500};
-  --button-background-color-hover: #{styles.$pink-800};
+  --button-background-color: #{styles.$indigo-600};
+  --button-background-color-hover: #{styles.$indigo-300};
   --button-disabled-background-color: #{styles.$gray-500};
 }
 
@@ -25,7 +25,6 @@
   font-weight: 400;
   font-style: normal;
 
-  width: 100%;
   min-width: 5rem;
   min-height: 2.5rem;
   margin: 0;
@@ -34,7 +33,7 @@
   cursor: pointer;
   -webkit-user-select: none;
   user-select: none;
-  transition: color 100ms;
+
   text-align: center;
   vertical-align: baseline;
   text-decoration: none;
@@ -42,36 +41,149 @@
   text-align: center;
   white-space: nowrap;
 
-  color: inherit;
-  color: #000;
+  color: #fff;
   border: none;
   border-radius: 0.5rem;
+  border: solid 1px transparent;
   background: var(--button-background-color);
   box-shadow: none;
 
-  transition: background ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 
-  @include styles.respond-to("md") {
-    width: auto;
+  &,
+  * {
+    color: #fff;
+    fill: #fff;
   }
 
-  /* Hover only If device has hover capabilities */
+  /* Pseudo classes */
+
+  /* Hover (only If device has hover capabilities) */
   @include styles.feature-to("hover") {
     &:hover:not(:disabled) {
       background-color: var(--button-background-color-hover);
+      color: #fff;
     }
   }
 
+  /* Active (when a mouse or keyboard is pressing) */
+  &:active {
+    outline: solid 2px blue;
+    outline-offset: 2px;
+  }
+
   /* Focus */
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
   &:focus-visible {
     text-decoration: underline;
+    outline: solid 2px blue;
+    outline-offset: 2px;
   }
 
   /* Disabled */
   &:disabled,
   &[disabled] {
     background-color: var(--button-disabled-background-color);
-    color: #666666;
+    border-color: transparent;
+    color: #000;
     pointer-events: none;
   }
+}
+
+/*  */
+.Button--block {
+  width: 100%;
+}
+
+/*
+  ButtonVariantType
+  "normal" | "ghost" | "text" | "link"
+*/
+
+.Button--ghost {
+  border-color: var(--button-background-color);
+  color: var(--button-background-color);
+  background-color: transparent;
+
+  @include styles.feature-to("hover") {
+    &:hover:not(:disabled) {
+      color: #fff;
+      background: var(--button-background-color);
+    }
+  }
+}
+
+.Button--text {
+  border-color: transparent;
+  background-color: transparent;
+
+  color: var(--button-background-color);
+
+  @include styles.feature-to("hover") {
+    &:hover:not(:disabled) {
+      color: #fff;
+      background: var(--button-background-color);
+    }
+  }
+}
+
+.Button--link {
+  border-color: transparent;
+  background-color: transparent;
+  text-decoration: underline;
+
+  color: var(--button-background-color);
+
+  @include styles.feature-to("hover") {
+    &:hover:not(:disabled) {
+      color: #fff;
+      background: var(--button-background-color);
+    }
+  }
+}
+
+/*
+  ButtonVariantSize
+  "primary" | "secondary" | "warning" | "success" | "warning" | "error" | "info"
+*/
+
+.Button {
+}
+
+.Button--secondary {
+}
+.Button--error {
+  --button-background-color: red;
+}
+.Button--success {
+}
+.Button--warning {
+  --button-background-color: orange;
+}
+
+.Button--info {
+  --button-background-color: purple;
+}
+
+/*
+  ButtonVariantSize
+  "small" | "medium" | "large"
+*/
+.Button--small {
+  font-size: 0.75rem;
+
+  min-width: 4rem;
+  min-height: 2rem;
+  padding: 0 0.75rem;
+}
+
+.Button--large {
+  font-size: 1.25rem;
+  min-width: 6rem;
+  min-height: 3rem;
+  padding: 0 1.25rem;
+  // padding: 0 2rem;
 }

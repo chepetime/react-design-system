@@ -1,20 +1,47 @@
-import * as React from "react";
+import React, { useEffect } from "react";
 import classnames from "classnames";
 import css from "./Collapse.module.scss";
 
 export interface CollapseProps {
-  children?: React.ReactNode;
+  isOpen?: boolean;
+  label: string;
+  children: React.ReactNode;
 }
 
-export const Collapse = React.forwardRef<HTMLDivElement, CollapseProps>(
-  (props: CollapseProps, ref: React.Ref<HTMLDivElement>) => {
-    return (
-      <div className={classnames(css.Collapse)} ref={ref}>
-        <p>Collapse component working!</p>
-        <div>{props.children}</div>
-      </div>
-    );
-  }
-)
+export const Collapse: React.FC<CollapseProps> = ({
+  isOpen = false,
+  label,
+  children,
+}) => {
+  const [isOpenState, setIsOpenState] = React.useState(isOpen);
 
-Collapse.displayName = "Collapse";
+  const toggleOpen = () => {
+    setIsOpenState(!isOpenState);
+  };
+
+  useEffect(() => {
+    setIsOpenState((current) => (current !== isOpen ? isOpen : current));
+  }, [isOpen]);
+
+  return (
+    <div className={css.Collapse}>
+      <button
+        className={classnames(css.ToggleButton, { [css.isOpen]: isOpenState })}
+        onClick={toggleOpen}
+        aria-expanded={isOpenState}
+        aria-controls={`collapse-${label}`}
+      >
+        {label}
+        <span aria-hidden>+</span>
+      </button>
+      <div
+        className={classnames(css.Content, { [css.isOpen]: isOpenState })}
+        id={`collapse-${label}`}
+      >
+        {children}
+      </div>
+    </div>
+  );
+};
+
+Collapse.displayName = "Collapse"; // sets the component's display name to "Collapse" for debugging purposes

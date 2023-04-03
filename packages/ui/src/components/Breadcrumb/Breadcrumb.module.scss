@@ -12,19 +12,33 @@
   @include styles.styles-reset;
   @include styles.text-wrapping;
 
-  background: var(--breadcrumb-background-color);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  font-size: 1rem;
+.BreadcrumbElement {
+  display: flex;
+  align-items: center;
+  color: #444;
+}
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
+.BreadcrumbElement a {
+  color: blue;
+  text-decoration: none;
+}
+
+.BreadcrumbElement {
+  &:before {
+    margin: 0 0.5rem;
+    color: #999;
+    content: "/";
   }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+  &:nth-child(1):before {
+    content: "";
+    margin: 0;
   }
 }

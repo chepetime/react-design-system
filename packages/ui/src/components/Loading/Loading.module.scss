@@ -1,7 +1,7 @@
 @use "./../../styles" as styles;
 
 :root {
-  --loading-background-color: #{styles.$pink-500};
+  --loading-background-color: #{styles.$indigo-500};
 }
 
 :global :root .dark {
@@ -11,20 +11,34 @@
 .Loading {
   @include styles.styles-reset;
   @include styles.text-wrapping;
+}
 
-  background: var(--loading-background-color);
+.Spinner {
+  margin-right: 0.5rem;
+  animation: spin 1s linear infinite;
 
-  font-size: 1rem;
-
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
-  }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
     }
   }
+  color: #e5e7eb;
+  width: 2rem;
+  height: 2rem;
+
+  fill: var(--loading-background-color);
+}
+
+.Hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
 }

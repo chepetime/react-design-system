@@ -11,20 +11,64 @@
 .Tabs {
   @include styles.styles-reset;
   @include styles.text-wrapping;
+}
 
-  background: var(--tabs-background-color);
+.TabsList {
+  display: flex;
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  align-items: center;
+  max-width: 1280px;
+  border-bottom-width: 1px;
+  column-gap: 0.75rem;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+}
 
-  font-size: 1rem;
+.TabsList__Element {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom-width: 2px;
+  color: #6b7280;
+  border-color: #ffffff;
 
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
+  border-bottom: solid 1px transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > * {
+    cursor: pointer;
   }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+}
+
+.TabsList__Element--selected {
+  color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.TabsList__Button {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition-duration: 150ms;
+  font-weight: 500;
+  border-radius: 0.5rem;
+
+  border: solid 1px transparent;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #dfebf6;
+    color: #4f46e5;
   }
 }

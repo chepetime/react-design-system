@@ -1,4 +1,4 @@
-import React, { useRef, MutableRefObject } from "react";
+import React from "react";
 import classnames from "classnames";
 import css from "./InputDatepicker.module.scss";
 

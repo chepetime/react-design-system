@@ -1,30 +1,18 @@
 @use "./../../styles" as styles;
 
-:root {
-  --card-background-color: #{styles.$pink-500};
-}
-
-:global :root .dark {
-  --card-background-color: #{styles.$indigo-500};
-}
-
 .Card {
   @include styles.styles-reset;
   @include styles.text-wrapping;
 
-  background: var(--card-background-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  transition: box-shadow 0.2s ease-in-out;
 
-  font-size: 1rem;
-
-  @include styles.respond-to("md") {
-    font-size: 1.5rem;
-  }
-  @include styles.respond-to("lg") {
-    font-size: 2rem;
-  }
-  @include styles.feature-to("hover") {
-    &:hover {
-      background-color: pink;
-    }
+  &:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   }
 }

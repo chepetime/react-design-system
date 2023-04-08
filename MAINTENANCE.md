@@ -21,17 +21,12 @@ npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
 
-cd ./apps/docs
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-cd ./../../
-
 cd ./config/eslint-config-custom
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
 
-cd ./config/ts-config-custom
+cd ./config/tsconfig
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
@@ -55,4 +50,8 @@ cd ./tools/generator
 npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
+
+cd ./apps/docs
+npx prettier-package-json --write ./package.json
+npx sb@next upgrade --prerelease
 ```

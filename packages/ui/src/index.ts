@@ -12,7 +12,7 @@ export { ButtonGroup, type ButtonGroupProps } from "./components/ButtonGroup/But
 export { Card, type CardProps } from "./components/Card/Card";
 
 export { Chip, type ChipProps } from "./components/Chip/Chip";
-// export { CodeBlock, type CodeBlockProps } from "./components/CodeBlock/CodeBlock";
+
 export { Collapse, type CollapseProps } from "./components/Collapse/Collapse";
 export { Container, type ContainerProps } from "./components/Container/Container";
 export { DataTable, type DataTableProps } from "./components/DataTable/DataTable";

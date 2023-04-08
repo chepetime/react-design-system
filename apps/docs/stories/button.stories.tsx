@@ -12,48 +12,74 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
+const getCaptionForLocale = (locale) => {
+  switch (locale) {
+    case "es":
+      return "¡Hola!";
+    case "fr":
+      return "Bonjour!";
+    case "kr":
+      return "안녕하세요!";
+    case "zh":
+      return "你好!";
+    default:
+      return "Hello!";
+  }
+};
 export const Default: Story = {
-  render: (args: ButtonProps) => <Button {...args}>{args.children}</Button>,
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
   args: {
-    children: "Click Me",
+    children: "",
   },
 };
 
 export const Ghost: Story = {
-  render: (args: ButtonProps) => <Button {...args}>{args.children}</Button>,
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
   args: {
-    children: "Click Me",
+    children: "",
   },
 };
 
 export const Text: Story = {
-  render: (args: ButtonProps) => <Button {...args}>{args.children}</Button>,
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
   args: {
-    children: "Click Me",
+    children: "",
     variant: "text",
   },
 };
 
 export const Link: Story = {
-  render: (args: ButtonProps) => <Button {...args}>{args.children}</Button>,
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
   args: {
-    children: "Click Me",
+    children: "",
     variant: "link",
   },
 };
 
 export const Large: Story = {
-  render: (args: ButtonProps) => <Button {...args}>{args.children}</Button>,
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
   args: {
-    children: "Click Me",
+    children: "",
     size: "large",
   },
 };
 
 export const Small: Story = {
-  render: (args: ButtonProps) => <Button {...args}>{args.children}</Button>,
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
   args: {
-    children: "Click Me",
+    children: "",
     size: "small",
   },
 };

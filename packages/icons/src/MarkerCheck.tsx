@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { SVGProps, Ref, forwardRef, memo } from "react";
 const SvgMarkerCheck = (
   props: SVGProps<SVGSVGElement>,

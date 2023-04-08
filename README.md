@@ -27,11 +27,11 @@ This monorepo contains multiple projects that work together to create an integra
 
 > Packages are reusable libraries available for packages and apps
 
-| Package directory       | Description                                                    |
-| ----------------------- | -------------------------------------------------------------- |
-| `packages/chepe-ui`     | React based component library with Typescript, Rollup and SASS |
-| `packages/chepe-tokens` | Design Tokens distributable package                            |
-| `packages/chepe-icons`  | React based icon library with SVGR and Rollup                  |
+| Package directory | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `packages/ui`     | React based component library with Typescript, Rollup and SASS |
+| `packages/tokens` | Design Tokens distributable package                            |
+| `packages/icons`  | React based icon library with SVGR and Rollup                  |
 
 ### Apps
 
@@ -46,10 +46,10 @@ This monorepo contains multiple projects that work together to create an integra
 
 > Config are reusable eslint and typescript configurations
 
-| Package directory               | Description                                      |
-| ------------------------------- | ------------------------------------------------ |
-| `packages/eslint-config-custom` | Shared Eslint configuration for all packages     |
-| `packages/ts-config-custom`     | Shared Typescript configuration for all packages |
+| Package directory             | Description                                      |
+| ----------------------------- | ------------------------------------------------ |
+| `config/eslint-config-custom` | Shared Eslint configuration for all packages     |
+| `config/tsconfig`             | Shared Typescript configuration for all packages |
 
 ### Tools
 
@@ -70,7 +70,7 @@ Make sure you have the LTS version of [Node](https://nodejs.dev/) (18.7) install
 This monorepository uses Turborepo to manage dependencies and scripts. The first step is to install the local node dependencies:
 
 ```sh
-npm install
+pnpm install
 ```
 
 There are two main ways to develop new components:
@@ -83,7 +83,7 @@ There are two main ways to develop new components:
 To watch changes in the React Library and start the Storybook App, just run:
 
 ```sh
-npm run storybook
+pnpm run storybook
 ```
 
 > This instance of Storybook uses the source code to compile the React Stories. It's faster than watching changes and reloading and it gets HMR. That's the reason components are imported using `@chepe/ui/src` instead of `@chepe/ui`.
@@ -93,7 +93,7 @@ npm run storybook
 To watch changes in the React Library and start the Next.Js App, just run:
 
 ```sh
-npm run web
+pnpm run web
 ```
 
 > Contrary to the Storybook instance, this React App uses the bundled code inside React. It should be really similar to the final package being used by product teams.
@@ -120,46 +120,9 @@ You can finds all the GitHub actions files inside `.github/workflows/`
 You can add a new Component Boilerplate using the Generator Tool.
 
 ```sh
-npm run generate:component --name=Heading
-npm run generate:component --name=InputField
+pnpm run generate:component --name=Heading
+pnpm run generate:component --name=InputField
 ```
-
-<br/>
-
-<!--
-
-## 🚀 Deployment
-
-<br/>
-
- ## 🥽 Tests
-
-Explain how to run the automated tests for this system
-
-<br/>
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-<br/>
-
-
-## 🧰 Developing (WIP)
-
-### Integration - React (WIP)
-
-### Browser Support (WIP)
-
-### Event Handling (WIP)
-
-### Testing (WIP)
-
--->
 
 ## Built With
 
@@ -167,34 +130,6 @@ Give an example
 - [Rollup](https://rollupjs.org/)
 - [Storybook](https://storybook.js.org/)
 - [Turborepo](https://turborepo.org/)
-
-<br/>
-
-<!-- ## 👥 Contributing
-
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
-
-<br/>
-
-## 🏷 Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
-<br/> -->
-
-## 🤺 Authors
-
-- [jose.lugo](mailto:me@joselugo.dev) - [GitHub](https://github.com/chepetimetime)
-
-<br/>
-
-<!-- ## 🎩 Acknowledgments
-
-> Template
-
-<br/>
-
- -->
 
 ---
 

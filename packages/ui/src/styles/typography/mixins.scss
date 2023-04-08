@@ -2,14 +2,6 @@
 
 /* Font Styles */
 
-:root {
-  --text-color: #000;
-}
-
-:global :root .dark {
-  --text-color: #fff;
-}
-
 /* Default paragraph */
 @mixin default-text-style {
   @include body;

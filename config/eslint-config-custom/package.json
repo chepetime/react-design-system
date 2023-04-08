@@ -1,27 +1,22 @@
 {
   "name": "eslint-config-custom",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
   "license": "MIT",
-  "author": "José M. Gulias Lugo <me@joselugo.dev>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf .next && rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "eslint": "^8.37.0",
-    "eslint-config-next": "^13.2.4",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "13.3.0",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-config-turbo": "latest",
     "eslint-plugin-react": "7.32.2"
   },
   "devDependencies": {
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   },
-  "keywords": [],
   "publishConfig": {
     "access": "public"
-  },
-  "script": {
-    "clean": "rm -rf .turbo && rm -rf node_modules"
   }
 }

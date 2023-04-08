@@ -1,4 +1,4 @@
-# chepe UI
+# Chepe UI
 
 > UI Component Library made in React
 
@@ -22,10 +22,6 @@ npm run build
 - StyleLint
 - Jest (WIP)
 
-## 🤺 Authors
-
-- [jose.lugo](mailto:me@joselugo.dev) - [GitHub](https://github.com/chepetime) (Sr. Design Technologist)
-
 ---
 
-Made by [@chepetime](https://github.com/chepetime)at  Mexico City 🇲🇽
+Made by [@chepetime](https://github.com/chepetime) at Mexico City 🇲🇽

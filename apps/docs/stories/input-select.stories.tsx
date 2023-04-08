@@ -12,7 +12,7 @@ export default {
 export const Default = {
   render: (args: InputSelectProps) => (
     <div>
-      <Label for={args.name}>Countries with a creative Studio</Label>
+      <Label for={args.name}>Countries with a cool design Studio</Label>
       <InputSelect name={args.name} id={args.name} {...args} />
     </div>
   ),

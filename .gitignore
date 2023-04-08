@@ -15,8 +15,8 @@ out/
 build
 
 # react library
-./packages/chepe-ui/dist
-./packages/chepe-ui/dist/*
+./packages/ui/dist
+./packages/ui/dist/*
 
 # misc
 .DS_Store

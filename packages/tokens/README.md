@@ -1,4 +1,4 @@
-# chepe Design Tokens
+# Design Tokens
 
 > UI Design Tokens in css, js, ts, json, sass and less
 
@@ -11,17 +11,16 @@ cp .env.example .env
 code .env
 ```
 
-Update the tokens
+Update the tookens
 
 ```sh
-npm run token-engine:fetch
+npm run fetch-tokens
 ```
 
+## Tools
 
-## 🤺 Authors
-
-- [jose.lugo](mailto:me@joselugo.dev) - [GitHub](https://github.com/chepetime)
+- Figma Token Engine
 
 ---
 
-Made by [@chepetime](https://github.com/chepetime)at  Mexico City 🇲🇽
+Made by [@chepetime](https://github.com/chepetime) at Mexico City 🇲🇽

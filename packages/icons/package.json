@@ -4,7 +4,6 @@
   "description": "> UI Component Library made in React",
   "license": "MIT",
   "author": "José Manuel Gulias Lugo",
-  "type": "module",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -13,7 +12,8 @@
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
-    "generate": "npx @svgr/cli -- ./raw_icons"
+    "generate": "npx @svgr/cli -- ./original_icons",
+    "icon:build": "npm run build"
   },
   "sideEffects": false,
   "types": "./dist/index.d.ts",
@@ -24,22 +24,22 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-json": "^6.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-terser": "^0.4.0",
-    "@rollup/plugin-typescript": "^11.0.0",
+    "@rollup/plugin-typescript": "^11.1.0",
     "@svgr/cli": "^7.0.0",
     "@svgr/plugin-jsx": "^7.0.0",
     "@svgr/plugin-prettier": "^7.0.0",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
-    "@types/react": "^18.0.32",
+    "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@types/rollup-plugin-peer-deps-external": "^2.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.57.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
     "css-loader": "^6.7.3",
-    "eslint": "^8.37.0",
+    "eslint": "^8.38.0",
     "eslint-config-custom": "*",
     "eslint-plugin-jest": "^27.2.1",
     "identity-obj-proxy": "^3.0.0",
@@ -51,8 +51,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sourcemaps": "^0.6.3",
-    "ts-config-custom": "*",
-    "typescript": "^5.0.3",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.0.4",
     "typescript-plugin-css-modules": "^5.0.0"
   }
 }

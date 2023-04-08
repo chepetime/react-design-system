@@ -4,6 +4,7 @@ import { __componentName__(pascalCase), __componentName__(pascalCase)Props } fro
 export default {
   title: "Components/__componentName__(pascalCase)",
   component: __componentName__(pascalCase),
+  tags: ["autodocs"],
 };
 
 export const Default = {

@@ -2,7 +2,6 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
-import sourcemaps from "rollup-plugin-sourcemaps";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -21,7 +20,7 @@ const ROLLUP_CONFIG = [
     input: "src/index.ts",
     output: outputConfig,
 
-    external: ["react", "react-dom"],
+    external: ["react", "react-dom", "react-syntax-highlighter"],
 
     plugins: [
       typescript({
@@ -36,7 +35,6 @@ const ROLLUP_CONFIG = [
         modules: true,
         use: ["sass"],
       }),
-      sourcemaps(),
     ],
   },
 ];

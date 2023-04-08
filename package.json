@@ -1,50 +1,35 @@
 {
-  "private": false,
-  "name": "react-turborepo-dls",
-  "version": "1.0.3",
-  "description": "Design System with React, Turborepo, Storybook and NextJs",
-  "license": "MIT",
-  "author": "José Manuel Gulias Lugo <me@joselugo.dev>",
-  "homepage": "https://github.com/chepetime/react-turborepo-dls-ops#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chepetime/react-turborepo-dls-ops.git"
-  },
-  "bugs": {
-    "url": "https://github.com/chepetime/react-turborepo-dls-ops/issues"
-  },
-  "main": ".eslintrc.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "private": true,
+  "name": "react-design-system",
+  "version": "0.0.0",
   "scripts": {
     "build": "turbo run build --filter=@chepe/ui --filter=@chepe/icons",
     "clean": "turbo run clean && rm -rf node_modules",
-    "dev": "npm run storybook",
+    "dev": "turbo run dev --filter=docs",
+    "fetch-tokens": "turbo run fetch-tokens",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "generate:component": "turbo run generate:component --filter=generator",
     "lint": "turbo run lint",
-    "storybook": "turbo run storybook --filter=docs",
-    "storybook-build": "turbo run storybook-build --filter=docs",
-    "storybook-test": "turbo run storybook-test --filter=docs",
-    "test": "turbo run test --parallel --filter=@chepe/ui",
-    "web": "turbo run dev --parallel --filter=web --filter=@chepe/ui--filter=@chepe/icons"
+    "storybook": "turbo run dev --filter=docs",
+    "storybook-build": "turbo run build --filter=docs",
+    "storybook-test": "npm run storybook-build && turbo run test --filter=docs --color",
+    "test": "turbo run test --filter=@chepe/ui",
+    "web": "turbo run dev --filter=web"
   },
   "workspaces": [
     "apps/*",
     "config/*",
-    "tools/*",
-    "packages/*"
+    "packages/*",
+    "tools/*"
   ],
+  "dependencies": {},
   "devDependencies": {
-    "eslint-config-custom": "*",
-    "prettier": "^2.8.7",
-    "turbo": "^1.8.8"
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
   },
-  "keywords": [],
   "engines": {
-    "node": ">=18.13.0",
-    "npm": ">=9.3.1"
+    "node": ">=18.0.0"
   },
-  "packageManager": "npm@9.3.1"
+  "packageManager": "pnpm@8.1.0"
 }

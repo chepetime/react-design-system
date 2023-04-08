@@ -1,57 +1,32 @@
 {
   "private": true,
   "name": "web",
-  "version": "0.1.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "license": "ISC",
-  "author": "",
-  "main": "index.js",
+  "version": "1.0.0",
   "scripts": {
-    "build": "react-scripts build",
-    "clean": "rm -rf .turbo && rm -rf build && rm -rf node_modules",
-    "dev": "react-scripts start",
-    "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "build": "next build",
+    "clean": "rm -rf .next && rm -rf .turbo && rm -rf node_modules",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
-    "@chepe/icons": "*",
-    "@chepe/tokens": "*",
-    "@chepe/ui": "*",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hook-form": "^7.43.9",
-    "web-vitals": "^3.3.0"
+    "@chepe/icons": "workspace:*",
+    "@chepe/tokens": "workspace:*",
+    "@chepe/ui": "workspace:*",
+    "next": "13.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.5.0",
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.32",
-    "@types/react-dom": "^18.0.11",
-    "react-scripts": "^5.0.1",
-    "typescript": "^5.0.3",
-    "typescript-plugin-css-modules": "^5.0.0"
-  },
-  "keywords": [],
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "@babel/core": "^7.21.4",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.38.0",
+    "eslint-config-custom": "workspace:*",
+    "eslint-config-next": "13.3.0",
+    "tsconfig": "workspace:*",
+    "typescript": "5.0.4"
   }
 }

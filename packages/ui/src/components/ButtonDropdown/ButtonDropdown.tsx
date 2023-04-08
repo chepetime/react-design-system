@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import classnames from "classnames";
 
-import { useOnClickOutside } from "usehooks-ts";
+import { useOnClickOutside } from "./../../hooks/useOnClickOutside";
 
 import css from "./ButtonDropdown.module.scss";
 

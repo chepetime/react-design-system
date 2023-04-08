@@ -1,7 +1,7 @@
 {
   "name": "generator",
   "version": "1.0.0",
-  "description": "## Available Commands",
+  "description": "Create React Components",
   "license": "ISC",
   "author": "",
   "main": "index.js",

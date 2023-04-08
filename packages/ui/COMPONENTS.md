@@ -30,7 +30,6 @@
 | Content   |                           |       |                                                                                                     |
 | Content   | `Audio`                   | ❌    |                                                                                                     |
 | Content   | `Caption`                 | ❌    |                                                                                                     |
-| Content   | `CodeBlock`               | ❌    |                                                                                                     |
 | Content   | `Heading`                 | ❌    |                                                                                                     |
 | Content   | `Icon`                    | ❌    |                                                                                                     |
 | Content   | `Link`                    | ❌    |                                                                                                     |
@@ -49,7 +48,7 @@
 | Form      | `InputDatepicker`         | ❌    |                                                                                                     |
 | Form      | `InputDateRangePicker`    | ❌    |                                                                                                     |
 | Form      | `InputHint`               | ❌    |                                                                                                     |
-| Form      | `InputRadioButton`        | ❌    |                                                                                                     |
+| Form      | `InputRadio`              | ❌    |                                                                                                     |
 | Form      | `InputRadioButtonGroup`   | ❌    |                                                                                                     |
 | Form      | `InputRangeSlider`        | ❌    |                                                                                                     |
 | Form      | `InputSearch`             | ❌    |                                                                                                     |

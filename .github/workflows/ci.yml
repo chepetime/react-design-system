@@ -1,11 +1,6 @@
-name: Build UI
+name: "CI"
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
+on: push
 
 env:
   COMMIT_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
@@ -19,48 +14,46 @@ jobs:
         os: ["ubuntu-latest"]
 
     name: Node ${{ matrix.node }} on ${{ matrix.os }}
-    if: github.event_name != 'pull_request' || !github.event.pull_request.draft
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Prepare repository
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           ref: ${{ env.BRANCH }}
           fetch-depth: 0
 
-      - name: Cache node_modules
-        id: cache-nodemodules
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-nodemodules
-        with:
-          path: |
-            node_modules
-            **/node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }}
-          restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-
-
-      - name: Cache turbo build setup
-        uses: actions/cache@v3
-        with:
-          path: |
-            .turbo
-            **/.turbo
-          key: ${{ runner.os }}-turbo-${{ github.sha }}
-          restore-keys: ${{ runner.os }}-turbo-
-
-      - name: Set up Node v${{ matrix.node-version }}
+      - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
 
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
       - name: Install dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: npm ci
+        run: pnpm install
 
       - name: Build Component Library
-        run: npm run build
+        run: pnpm run build
 
       - name: Test Component Library
-        run: npm run test
+        run: pnpm run test

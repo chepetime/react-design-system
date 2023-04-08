@@ -15,7 +15,6 @@
     "storybook": "storybook dev -p 6006",
     "storybook-build": "storybook build --docs",
     "storybook-test": "test-storybook --no-cache --verbose --url http://127.0.0.1:6006",
-    "chromatic": "npx chromatic --project-token=dede0d9cc810 --exit-zero-on-changes",
     "clean": "rm -rf .turbo && rm -rf storybook-static && rm -rf node_modules"
   },
   "dependencies": {

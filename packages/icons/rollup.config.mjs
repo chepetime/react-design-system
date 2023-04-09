@@ -57,7 +57,7 @@ const ROLLUP_CONFIG = [
     ],
   },
   {
-    input: "./dist/cjs/types/index.d.ts",
+    input: "./dist/esm/config/tsconfig/dist/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm", sourcemap: false }],
     plugins: [dts.default()],
     external: [/\.(css|scss)$/],

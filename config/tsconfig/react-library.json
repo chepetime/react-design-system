@@ -7,8 +7,6 @@
     "target": "es6",
     "jsx": "react-jsx",
     "module": "ESNext",
-    "declarationDir": "types",
-    "sourceMap": true,
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,

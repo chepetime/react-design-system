@@ -1,16 +1,17 @@
-//This plugin prevents packages listed in peerDependencies from being bundled with our component library
+// This plugin prevents packages listed in peerDependencies from being bundled with our component library
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
-//efficiently bundles third party dependencies we've installed and use in node_modules
+// efficiently bundles third party dependencies we've installed and use in node_modules
 import resolve from "@rollup/plugin-node-resolve";
 
-// //enables transpilation into CommonJS (CJS) format
+// enables transpilation into CommonJS (CJS) format
 import commonjs from "@rollup/plugin-commonjs";
 
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 import dts from "rollup-plugin-dts";
+import cleanup from "rollup-plugin-cleanup";
 
 import packageJson from "./package.json" assert { type: "json" };
 
@@ -20,12 +21,12 @@ const outputConfig = [
   {
     file: packageJson.main,
     format: "cjs",
-    sourcemap: !isProduction,
+    sourcemap: false,
   },
   {
     file: packageJson.module,
     format: "esm",
-    sourcemap: !isProduction,
+    sourcemap: false,
   },
 ];
 
@@ -34,14 +35,12 @@ const ROLLUP_CONFIG = [
     input: "src/index.ts",
     output: outputConfig,
 
-    external: ["react", "react-dom"],
+    external: ["react", "react/jsx-runtime"],
 
     plugins: [
       peerDepsExternal(),
       typescript({
         tsconfig: "./tsconfig.json",
-        sourceMap: !isProduction,
-        inlineSources: !isProduction,
       }),
 
       resolve(),
@@ -49,10 +48,16 @@ const ROLLUP_CONFIG = [
       postcss({
         extract: false,
         modules: true,
+        minimize: true,
         use: ["sass"],
       }),
-
-      terser(),
+      terser({
+        format: {
+          comments: false,
+        },
+        compress: true,
+      }),
+      cleanup({ comments: "istanbul", extensions: ["js", "ts", "jsx", "tsx"] }),
     ],
   },
   {

@@ -20,7 +20,7 @@ const ROLLUP_CONFIG = [
     input: "src/index.ts",
     output: outputConfig,
 
-    external: ["react", "react-dom", "react-syntax-highlighter"],
+    external: ["react"],
 
     plugins: [
       typescript({
@@ -29,7 +29,6 @@ const ROLLUP_CONFIG = [
         inlineSources: !isProduction,
       }),
       resolve(),
-      commonjs(),
       postcss({
         extract: false,
         modules: true,

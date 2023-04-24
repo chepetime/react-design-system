@@ -10,5 +10,6 @@
     ],
     "@babel/preset-react",
     "@babel/preset-typescript"
-  ]
+  ],
+  "plugins": ["istanbul", "@babel/plugin-syntax-import-assertions"]
 }

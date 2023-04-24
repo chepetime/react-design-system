@@ -14,7 +14,6 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "coverage": "nyc npm run test",
-    "dev": "rollup --config './rollup.config.dev.mjs' -w --no-treeshake --no-minifyInternalExports --no-indent",
     "lint": "TIMING=1 eslint src/**/*.ts* --fix",
     "lint:style": "TIMING=1 stylelint **/*.scss",
     "test": "jest"
@@ -56,6 +55,7 @@
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-visualizer": "^5.9.0",
     "stylelint": "^15.6.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-config-standard-scss": "^9.0.0",

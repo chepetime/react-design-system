@@ -17,9 +17,8 @@
   },
   "sideEffects": false,
   "types": "./dist/index.d.ts",
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "peerdependencies": {
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.1.0",
@@ -47,10 +46,12 @@
     "jest-environment-jsdom": "^29.5.0",
     "react": "^18.2.0",
     "rollup": "^3.21.0",
+    "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-dts": "^5.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-visualizer": "^5.9.0",
     "tsconfig": "workspace:*",
     "typescript": "^5.0.4",
     "typescript-plugin-css-modules": "^5.0.1"

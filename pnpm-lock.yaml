@@ -218,13 +218,6 @@ importers:
   config/tsconfig: {}
 
   packages/icons:
-    dependencies:
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
     devDependencies:
       '@rollup/plugin-commonjs':
         specifier: ^24.1.0
@@ -295,9 +288,15 @@ importers:
       jest-environment-jsdom:
         specifier: ^29.5.0
         version: 29.5.0
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
       rollup:
         specifier: ^3.21.0
         version: 3.21.0
+      rollup-plugin-cleanup:
+        specifier: ^3.2.1
+        version: 3.2.1(rollup@3.21.0)
       rollup-plugin-dts:
         specifier: ^5.3.0
         version: 5.3.0(rollup@3.21.0)(typescript@5.0.4)
@@ -310,6 +309,9 @@ importers:
       rollup-plugin-sourcemaps:
         specifier: ^0.6.3
         version: 0.6.3(@types/node@18.16.0)(rollup@3.21.0)
+      rollup-plugin-visualizer:
+        specifier: ^5.9.0
+        version: 5.9.0(rollup@3.21.0)
       tsconfig:
         specifier: workspace:*
         version: link:../../config/tsconfig
@@ -420,6 +422,9 @@ importers:
       rollup-plugin-postcss:
         specifier: ^4.0.2
         version: 4.0.2(postcss@8.4.23)
+      rollup-plugin-visualizer:
+        specifier: ^5.9.0
+        version: 5.9.0(rollup@3.21.0)
       stylelint:
         specifier: ^15.6.0
         version: 15.6.0
@@ -13419,6 +13424,23 @@ packages:
       '@types/node': 18.16.0
       rollup: 3.21.0
       source-map-resolve: 0.6.0
+    dev: true
+
+  /rollup-plugin-visualizer@5.9.0(rollup@3.21.0):
+    resolution: {integrity: sha512-bbDOv47+Bw4C/cgs0czZqfm8L82xOZssk4ayZjG40y9zbXclNk7YikrZTDao6p7+HDiGxrN0b65SgZiVm9k1Cg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    peerDependencies:
+      rollup: 2.x || 3.x
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      open: 8.4.2
+      picomatch: 2.3.1
+      rollup: 3.21.0
+      source-map: 0.7.4
+      yargs: 17.7.1
     dev: true
 
   /rollup-pluginutils@2.8.2:

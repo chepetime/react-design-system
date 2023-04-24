@@ -12,35 +12,35 @@ import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 import dts from "rollup-plugin-dts";
 import cleanup from "rollup-plugin-cleanup";
+import { visualizer } from "rollup-plugin-visualizer";
 
 import packageJson from "./package.json" assert { type: "json" };
-
-const isProduction = true;
-
-const outputConfig = [
-  {
-    file: packageJson.main,
-    format: "cjs",
-    sourcemap: false,
-  },
-  {
-    file: packageJson.module,
-    format: "esm",
-    sourcemap: false,
-  },
-];
 
 const ROLLUP_CONFIG = [
   {
     input: "src/index.ts",
-    output: outputConfig,
+    output: [
+      {
+        file: packageJson.main,
+        format: "cjs",
+        sourcemap: false,
+      },
+      {
+        file: packageJson.module,
+        format: "esm",
+        sourcemap: false,
+      },
+    ],
 
     external: ["react", "react/jsx-runtime"],
 
     plugins: [
       peerDepsExternal(),
+
       typescript({
         tsconfig: "./tsconfig.json",
+        sourceMap: false,
+        inlineSources: false,
       }),
 
       resolve(),
@@ -51,6 +51,7 @@ const ROLLUP_CONFIG = [
         minimize: true,
         use: ["sass"],
       }),
+
       terser({
         format: {
           comments: false,
@@ -58,6 +59,7 @@ const ROLLUP_CONFIG = [
         compress: true,
       }),
       cleanup({ comments: "istanbul", extensions: ["js", "ts", "jsx", "tsx"] }),
+      visualizer(),
     ],
   },
   {

@@ -56,7 +56,7 @@ jobs:
         run: npm i -g playwright
 
       - name: Install playwright browsers
-        run: npx playwright install chromium --with-deps
+        run: npx playwright install --with-deps
 
       - name: Test Component Library
         run: pnpm run storybook-test

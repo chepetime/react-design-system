@@ -54,6 +54,7 @@ cd ./../../
 cd ./apps/docs
 npx prettier-package-json --write ./package.json
 npx sb@next upgrade --prerelease
+cd ./../../
 
 pnpm run build
 pnpm run test

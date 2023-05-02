@@ -53,7 +53,10 @@ jobs:
         run: pnpm install
 
       - name: Install dependencies
-        run: pnpm i playwright
+        run: npm -g i playwright
+
+      - name: Install dependencies
+        run: pnpm i playwright -w
 
       - name: Install dependencies
         run: pnpm exec playwright install

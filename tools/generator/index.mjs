@@ -5,7 +5,7 @@ import { generateTemplateFilesCommandLine } from "generate-template-files";
 const UI_PROJECT_DIR_NAME = "ui";
 const BASE_DIR = "./../..";
 const COMPONENT_NAME = "__componentName__(pascalCase)";
-const STORY_OUT = `${BASE_DIR}/apps/docs/stories`;
+const STORY_OUT = `${BASE_DIR}/apps/storybook/stories`;
 const COMPONENTS_EXPORT = `${BASE_DIR}/packages/${UI_PROJECT_DIR_NAME}/src/index.ts`;
 const COMPONENTS_OUT = `${BASE_DIR}/packages/${UI_PROJECT_DIR_NAME}/src/components/${COMPONENT_NAME}`;
 

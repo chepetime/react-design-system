@@ -5,16 +5,18 @@
   "scripts": {
     "build": "turbo run build --filter=@chepe/ui --filter=@chepe/icons",
     "clean": "turbo run clean && rm -rf node_modules",
-    "dev": "turbo run dev --filter=docs",
+    "dev": "turbo run dev --filter=storybook",
     "fetch-tokens": "turbo run fetch-tokens",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "generate:component": "turbo run generate:component --filter=generator",
     "lint": "turbo run lint",
-    "storybook": "turbo run dev --filter=docs",
-    "storybook-build": "turbo run build --filter=docs",
-    "storybook-test": "npm run storybook-build && turbo run test --filter=docs --color",
+    "storybook": "turbo run dev --filter=storybook",
+    "storybook-build": "turbo run build --filter=storybook",
+    "storybook-test": "npm run storybook-build && turbo run test --filter=storybook --color",
     "test": "turbo run test --filter=@chepe/ui",
-    "web": "turbo run dev --filter=web"
+    "web": "turbo run dev --filter=web",
+    "docs": "turbo run dev --filter=documentation",
+    "docs:export": "turbo run build --filter=documentation"
   },
   "workspaces": [
     "apps/*",

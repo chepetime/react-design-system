@@ -51,7 +51,7 @@ npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
 
-cd ./apps/docs
+cd ./apps/storybook
 npx prettier-package-json --write ./package.json
 npx sb@next upgrade --prerelease
 cd ./../../

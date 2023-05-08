@@ -16,7 +16,7 @@
     "test": "turbo run test --filter=@chepe/ui",
     "web": "turbo run dev --filter=web",
     "docs": "turbo run dev --filter=documentation",
-    "docs:export": "turbo run build --filter=documentation"
+    "docs:build": "turbo run build --filter=documentation"
   },
   "workspaces": [
     "apps/*",

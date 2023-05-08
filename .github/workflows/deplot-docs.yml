@@ -2,7 +2,7 @@
 #
 # To get started with Next.js see: https://nextjs.org/docs/getting-started
 #
-name: Deploy Next.js site to Pages
+name: Deploy Nextra to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -69,6 +69,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Build Component Library
+        run: pnpm run docs:build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

@@ -17,6 +17,7 @@ const config: DocsThemeConfig = {
   useNextSeoProps() {
     return {
       titleTemplate: "%s – React Design System",
+      description: "A Design System built with React by José Lugo, @chepe",
     };
   },
 };

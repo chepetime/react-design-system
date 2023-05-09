@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/chepetime/react-design-system">
-    <img src="./docs/logo@2x.png" alt="Logo" width="400" height="233">
+    <img src="./apps/documentation/public/assets/logo@2x.png" alt="Logo" width="400" height="233">
   </a>
   <h2 align="center"><strong>React Design System</strong></h2>
   <p align="center">
@@ -20,7 +20,7 @@
 This monorepo contains multiple projects that work together to create an integrated Design Language System.
 
 <div align="center">
-  <img src="./docs/stack@2x.png" alt="chepe DLS" width="750">
+  <img src="./apps/documentation/public/assets/stack@2x.png" alt="chepe DLS" width="750">
 </div>
 
 ### Packages

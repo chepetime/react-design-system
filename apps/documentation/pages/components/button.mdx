@@ -44,12 +44,12 @@ export default function App() {
 
 `interface ButtonProps`
 
-| Prop    | Default | Options                                                                             |
-| ------- | ------- | ----------------------------------------------------------------------------------- |
-| block   | false   | boolean                                                                             |
-| variant | normal  | "normal", "ghost", "text", "link"                                                   |
-| color   | primary | "default", "primary", "secondary", "warning", "success", "warning", "error", "info" |
-| size    | medium  | "small", "medium", "large"                                                          |
+| Prop    | Default | Options                                                                  |
+| ------- | ------- | ------------------------------------------------------------------------ |
+| block   | false   | boolean                                                                  |
+| variant | normal  | "normal", "ghost", "text", "link"                                        |
+| color   | primary | "default", "primary", "secondary", "warning", "warning", "error", "info" |
+| size    | medium  | "small", "medium", "large"                                               |
 
 ## Best practices
 
@@ -130,5 +130,61 @@ export default function App() {
     <Button variant="ghost">Ghost</Button>
     <Button variant="text">Text</Button>
     <Button variant="link">Link</Button>
+  </Stack>
+</ComponentContainer>
+
+### Colors
+
+```tsx filename="app.tsx" copy
+import { Button, Stack } from "@chepe/ui";
+
+export default function App() {
+  return (
+    <Stack spacing={16} divider={false} horizontal={true}>
+      <Button color="default">default</Button>
+      <Button color="primary">primary</Button>
+      <Button color="secondary">secondary</Button>
+      <Button color="success">success</Button>
+      <Button color="warning">warning</Button>
+      <Button color="error">error</Button>
+      <Button color="info">info</Button>
+    </Stack>
+  );
+}
+```
+
+<ComponentContainer>
+  <Stack spacing={16} divider={false} horizontal={true}>
+    <Button color="default">default</Button>
+    <Button color="primary">primary</Button>
+    <Button color="secondary">secondary</Button>
+    <Button color="success">success</Button>
+    <Button color="warning">warning</Button>
+    <Button color="error">error</Button>
+    <Button color="info">info</Button>
+  </Stack>
+</ComponentContainer>
+
+### Sizes
+
+```tsx filename="app.tsx" copy
+import { Button, Stack } from "@chepe/ui";
+
+export default function App() {
+  return (
+    <Stack spacing={16} divider={false} horizontal={true}>
+      <Button size="small">Small</Button>
+      <Button size="medium">Medium</Button>
+      <Button size="large">Large</Button>
+    </Stack>
+  );
+}
+```
+
+<ComponentContainer>
+  <Stack spacing={16} divider={false} horizontal={true}>
+    <Button size="small">Small</Button>
+    <Button size="medium">Medium</Button>
+    <Button size="large">Large</Button>
   </Stack>
 </ComponentContainer>

@@ -9,9 +9,15 @@ const config: DocsThemeConfig = {
   chat: {
     link: "https://discord.gg/34XAxadpYp",
   },
-  docsRepositoryBase: "https://github.com/chepetime/react-design-system",
+  docsRepositoryBase:
+    "https://github.com/chepetime/react-design-system/apps/documentation/pages",
   footer: {
     text: "React Design System",
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s – React Design System",
+    };
   },
 };
 

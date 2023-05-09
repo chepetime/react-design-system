@@ -1,23 +1,161 @@
 import { Button } from "@chepe/ui";
+import { Jellyfish } from "@chepe/icons";
+import ComponentContainer from "./../components/ComponentContainer/ComponentContainer";
 
-# Introduction
+# React Design System
 
-Welcome to React Design System!
+This project is a boilerplate setup for creating complex Design Systems with React. The documentation is available at [https://github.com/chepetime/react-design-system](https://github.com/chepetime/react-design-system).
 
-## What is Nextra?
+## Installation
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+To use an example instance of this Design System, you can install `@chepe/ui` and `@chepe/icons` .
 
-## Documentation
+Start a new React App.
 
-The documentation is available at [https://github.com/chepetime/react-design-system](https://github.com/chepetime/react-design-system).
-
-```jsx
-import { Button } from "@chepe/ui";
-
-export default function App() {
-  return <Button>Hello world</Button>;
-}
+```sh
+npx create-react-app my-app
+cd my-app
 ```
 
-<Button>Hello world</Button>
+Install the `@chepe` ui and icons.
+
+```sh copy
+npm install @chepe/ui @chepe/icons
+```
+
+Now you can use the components of `@chepe/ui` in your react application:
+
+```tsx filename="src/App.js" {1,2,7,8,9,10} copy
+import { Button } from "@chepe/ui";
+import { Jellyfish } from "@chepe/icons";
+
+function App() {
+  return (
+    <div className="App">
+      <Button>
+        Hello World
+        <Jellyfish size={32} fill="#fff" />
+      </Button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+<ComponentContainer>
+  <Button>
+    Hi
+    <Jellyfish size={32} fill="#fff" />
+  </Button>
+</ComponentContainer>
+
+## Structure
+
+This monorepo contains multiple projects that work together to create an integrated Design Language System.
+
+**Packages**
+
+> Packages are reusable libraries available for packages and apps
+
+| Package directory | Description                                                    |
+| ----------------- | -------------------------------------------------------------- |
+| `packages/ui`     | React based component library with Typescript, Rollup and SASS |
+| `packages/tokens` | Design Tokens distributable package                            |
+| `packages/icons`  | React based icon library with SVGR and Rollup                  |
+
+**Apps**
+
+> Apps can use all the available packages
+
+| App directory        | Description                                            |
+| -------------------- | ------------------------------------------------------ |
+| `apps/documentation` | Nextra instance that contains documentation            |
+| `apps/storybook`     | Storybok instance that implements the React UI Library |
+| `apps/web`           | React web app that implements the React UI Library     |
+
+**Config**
+
+> Config are reusable eslint and typescript configurations
+
+| Package directory             | Description                                      |
+| ----------------------------- | ------------------------------------------------ |
+| `config/eslint-config-custom` | Shared Eslint configuration for all packages     |
+| `config/tsconfig`             | Shared Typescript configuration for all packages |
+
+**Tools**
+
+> Tools to generate Components or get Tokens
+
+| App directory     | Description                                               |
+| ----------------- | --------------------------------------------------------- |
+| `tools/generator` | CLI Tool that creates Components for the React UI Library |
+
+## Development
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+Make sure you have the LTS version of [Node](https://nodejs.dev/) (18.15) installed in your machine. We recommend to use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm).
+
+```sh
+node -v # 18.15
+```
+
+**pnpm**: Install the current version of the [pnpm](https://pnpm.io/).
+
+```sh
+pnpm -v # 8.4.0
+```
+
+Clone the project in your machine.
+
+```sh
+git clone https://github.com/chepetime/react-design-system.git
+cd react-design-system
+```
+
+This monorepository uses [Turborepo](https://turbo.build/) to manage dependencies and scripts. The first step is to install the local node dependencies.
+
+```sh
+git clone https://github.com/chepetime/react-design-system.git
+cd react-design-system
+pnpm i
+```
+
+There are two main ways to develop new components:
+
+- Storybook App (Vite)
+- Watch the React UI Library (Rollup) + NextJs
+
+### Development Tasks
+
+Start the **UI Development** environment with Storybook.
+
+```sh
+npm run dev
+```
+
+> This instance of Storybook uses the source code to compile the React Stories. It's faster than watching changes and then reloading, it also gets HMR. That's the reason components are imported using `@chepe/ui/src` instead of `@chepe/ui`.
+
+Start the **Web Development** environment with NextJs.
+
+```sh
+npm run web
+```
+
+> Contrary to the Storybook instance, this Next App uses the bundled code of the UU. It should be really similar to the final package being used by product teams.
+
+Start the **Documentation Development** environment with [Nextra](https://nextra.site/).
+
+```sh
+npm run docs
+```
+
+### Utils
+
+You can add a new Component Boilerplate using the Generator Tool inside the `tools/generator` directory. You can run this commands at the root of the project:
+
+```sh
+pnpm run generate:component --name=Heading
+pnpm run generate:component --name=InputField
+```

@@ -76,7 +76,7 @@ pnpm install
 There are two main ways to develop new components:
 
 - Storybook App (Vite)
-- Watch the React UI Library (Rollup) + Create React App
+- Watch the React UI Library (Rollup) + NextJs
 
 ### Development Storybook
 
@@ -88,7 +88,7 @@ pnpm run storybook
 
 > This instance of Storybook uses the source code to compile the React Stories. It's faster than watching changes and reloading and it gets HMR. That's the reason components are imported using `@chepe/ui/src` instead of `@chepe/ui`.
 
-### Development Create React App
+### Development NextJs
 
 To watch changes in the React Library and start the Next.Js App, just run:
 

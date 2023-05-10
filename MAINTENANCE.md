@@ -23,7 +23,8 @@ cd ./../../
 
 cd ./apps/storybook
 npx prettier-package-json --write ./package.json
-npx sb@next upgrade --prerelease
+npx sb@next upgrade
+npx npm-check-updates -u
 cd ./../../
 
 cd ./apps/documentation
@@ -61,6 +62,12 @@ npx prettier-package-json --write ./package.json
 npx npm-check-updates -u
 cd ./../../
 
+pnpm i
 pnpm run build
 pnpm run test
+
+
+cd ./packages/icons
+npm run generate
+
 ```

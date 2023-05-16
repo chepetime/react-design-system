@@ -6,6 +6,18 @@
     "type": "page"
   },
 
+  "get-started": {
+    "title": "Get Started"
+  },
+
+  "foundation": {
+    "title": "Foundation"
+  },
+
+  "components": {
+    "title": "Components "
+  },
+
   "contact": {
     "title": "Contact ↗",
     "type": "page",

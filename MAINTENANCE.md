@@ -69,5 +69,6 @@ pnpm run test
 
 cd ./packages/icons
 npm run generate
+cd ./../../
 
 ```

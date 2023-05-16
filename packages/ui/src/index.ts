@@ -79,3 +79,6 @@ export { Anchor, type AnchorProps } from "./components/Anchor/Anchor";
 
 export { Badge, type BadgeProps } from "./components/Badge/Badge";
 export { InputUpload, type InputUploadProps } from "./components/InputUpload/InputUpload";
+export { IllustrationA, type IllustrationAProps } from "./components/IllustrationA/IllustrationA";
+export { InputUpload, type InputUploadProps } from "./components/InputUpload/InputUpload";
+export { , type Props } from "./components//";

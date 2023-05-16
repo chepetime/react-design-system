@@ -120,8 +120,8 @@ You can finds all the GitHub actions files inside `.github/workflows/`
 You can add a new Component Boilerplate using the Generator Tool.
 
 ```sh
-pnpm run generate:component --name=Heading
-pnpm run generate:component --name=InputField
+npm run generate:component --name=Heading
+npm run generate:component --name=InputField
 ```
 
 ## Built With

@@ -5,8 +5,10 @@
 ### Generate Component (React)
 
 ```sh
-pnpm run generate:component --name=Paragraph
+npm run generate:component --name=Paragraph
 ```
+
+> You need to use npm, NOT pnpm
 
 ---
 

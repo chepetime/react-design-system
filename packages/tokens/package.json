@@ -23,7 +23,7 @@
     "figma-token-engine": "^0.1.1"
   },
   "devDependencies": {
-    "token-transformer": "^0.0.32"
+    "token-transformer": "^0.0.33"
   },
   "keywords": []
 }

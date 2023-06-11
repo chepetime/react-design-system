@@ -1,25 +1,25 @@
 
 import React from "react";
 import userEvent from "@testing-library/user-event";
-import '@testing-library/jest-dom/extend-expect'
-import { Button } from "./Button";
+import "@testing-library/jest-dom";
+import { [componentName](pascalCase) } from "./[componentName](pascalCase)";
 import { render, screen } from "@testing-library/react";
 
-describe("Button", () => {
+describe("[componentName](pascalCase)", () => {
   it("renders without errors", () => {
-    render(<Button />);
+    render(<[componentName](pascalCase) />);
     // Assert that the component renders without throwing any errors
   });
 
   it("renders with children", () => {
-    render(<Button>Some children</Button>);
+    render(<[componentName](pascalCase)>Some children</[componentName](pascalCase)>);
     // Assert that the component renders the provided children
     const childrenElement = screen.getByText("Some children");
     expect(childrenElement).toBeInTheDocument();
   });
 
   it("handles user interactions", () => {
-    render(<Button>Some children</Button>);
+    render(<[componentName](pascalCase)>Some children</[componentName](pascalCase)>);
     // Simulate user interactions with the component
     userEvent.click(screen.getByText("Some children"));
     // Assert the expected outcome of the user interaction
@@ -27,7 +27,7 @@ describe("Button", () => {
   });
 
   it("matches snapshot", () => {
-    const { container } = render(<Button />);
+    const { container } = render(<[componentName](pascalCase) />);
     // Assert that the rendered component matches a previously captured snapshot
     expect(container).toMatchSnapshot();
   });

@@ -2,7 +2,7 @@
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-import { Button, Spacer, Label, InputText, InputHint } from "@chepe/ui";
+// import { Button, Spacer, Label, InputText, InputHint } from "@chepe/ui";
 import { Jellyfish } from "@chepe/icons";
 
 interface IFormInput {
@@ -24,7 +24,7 @@ export default function FormLogin() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Spacer>
+        {/* <Spacer>
           <Label for="firstName">First Name</Label>
           <InputText {...register("firstName", { required: true })} />
           {errors.firstName && <InputHint>This field is required</InputHint>}
@@ -38,7 +38,7 @@ export default function FormLogin() {
           <Button type="submit">
             Click me <Jellyfish />
           </Button>
-        </Spacer>
+        </Spacer> */}
       </form>
     </>
   );

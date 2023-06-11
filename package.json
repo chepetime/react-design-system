@@ -12,6 +12,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "generate:component": "turbo run generate:component --filter=generator",
     "lint": "turbo run lint",
+    "maintenance": "turbo run start --filter=maintenance",
     "storybook": "turbo run dev --filter=storybook",
     "storybook-build": "turbo run build --filter=storybook",
     "storybook-test": "npm run storybook-build && turbo run test --filter=storybook --color",

@@ -1,31 +1,22 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-import { Page, Wrapper, Heading, Text, Spacer } from "@chepe/ui";
-
 import ThemeSwitcher from "./../components/ThemeSwitcher";
 import FormLogin from "./../examples/FormLogin";
 
-import styles from "./page.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
-    <Page>
+    <div>
       <ThemeSwitcher />
-      <Wrapper>
-        <Heading as="h1">UI Demo</Heading>
-        <Text>
+      <div>
+        <h1>UI Demo</h1>
+        <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus
           corporis aperiam ab, voluptatem quia iste deleniti quam aut illo,
           totam cumque nobis ipsam maiores, doloribus id consequatur laboriosam.
           Fugit, possimus?
-        </Text>
-      </Wrapper>
-      <Wrapper>
+        </p>
+      </div>
+      <div>
         <FormLogin />
-      </Wrapper>
-    </Page>
+      </div>
+    </div>
   );
 }

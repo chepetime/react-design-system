@@ -1,5 +1,6 @@
 {
   "extends": "tsconfig/react-library.json",
+  "compilerOptions": { "types": ["node", "jest", "@testing-library/jest-dom"] },
   "include": ["./src"],
   "exclude": ["node_modules"]
 }

@@ -1,16 +1,16 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { Button, ButtonProps } from "@chepe/ui/src/components/Button";
+import { [componentName](pascalCase), [componentName](pascalCase)Props } from "@chepe/ui/src/components/[componentName](pascalCase)";
 
-const meta: Meta<typeof Button> = {
-  title: "Components/Button",
-  component: Button,
+const meta: Meta<typeof [componentName](pascalCase)> = {
+  title: "Components/[componentName](pascalCase)",
+  component: [componentName](pascalCase),
   tags: ["autodocs"],
 };
 
 export default meta;
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof [componentName](pascalCase)>;
 
 const getCaptionForLocale = (locale) => {
   switch (locale) {
@@ -28,8 +28,8 @@ const getCaptionForLocale = (locale) => {
 };
 
 export const Default: Story = {
-  render: (args: ButtonProps, { globals: { locale } }) => (
-    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  render: (args: [componentName](pascalCase)Props, { globals: { locale } }) => (
+    <[componentName](pascalCase) {...args}>{args.children || getCaptionForLocale(locale)}</[componentName](pascalCase)>
   ),
   args: {
     children: "",

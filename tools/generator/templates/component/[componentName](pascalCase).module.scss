@@ -1,18 +1,18 @@
 @use "./../../styles" as styles;
 
-.Button {
-  --button-background-color: #{styles.$pink-500};
+.[componentName](pascalCase) {
+  --[componentName](lowerCase)-background-color: #{styles.$pink-500};
 }
 
-.dark .Button {
-  --button-background-color: #{styles.$indigo-500};
+.dark .[componentName](pascalCase) {
+  --[componentName](lowerCase)-background-color: #{styles.$indigo-500};
 }
 
-.Button {
+.[componentName](pascalCase) {
   @include styles.styles-reset;
   @include styles.text-wrapping;
 
-  background: var(--button-background-color);
+  background: var(--[componentName](lowerCase)-background-color);
 
   font-size: 1rem;
 

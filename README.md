@@ -134,3 +134,21 @@ npm run generate:component --name=InputField
 ---
 
 Made by [@chepetime](https://github.com/chepetimetime) at Mexico City 🇲🇽
+
+<div align="center">
+  <a href="https://github.com/chepe/figma-token-engine">
+    <img src=".docs/logo.svg" alt="Logo" alt="Logo" width="256" height="256">
+  </a>
+
+  <h3 align="center"><strong>Figma Tokens Engine</strong></h3>
+  <p align="center">
+    Transform Figma Tokens into usable styles
+  </p>
+
+<br/>
+
+Deprecated in favor of the Open Source version
+<br/>
+[https://www.npmjs.com/package/figma-token-engine](<[figma-token-engine](https://www.npmjs.com/package/figma-token-engine)>)
+
+  </div>

@@ -5,11 +5,13 @@
 ### Generate Component (React)
 
 ```sh
-npm run generate:component --name=Paragraph
+pnpm run generate:component --name=Paragraph
 ```
 
-> You need to use npm, NOT pnpm
+## 🤺 Authors
+
+- [jose.lugo](mailto:jose.lugo@chepe.co) - [GitHub](https://github.com/chepetime) (Associate Technology Director)
 
 ---
 
-Made by [@chepetime](https://github.com/chepetime) at Mexico City 🇲🇽
+Made by [@chepetime](https://github.com/chepetime) at chepe 🐸 Mexico City 🇲🇽

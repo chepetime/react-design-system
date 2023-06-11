@@ -1,0 +1,12 @@
+{
+  "name": "maintenance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./bin/maintenance.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

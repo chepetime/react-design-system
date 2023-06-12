@@ -7,7 +7,7 @@
     Component Library for a Design System using React and Turborepo
   </p>
 
-[![Build UI](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml) [![Storybook Tests](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml)[![Docs](https://github.com/chepetime/react-design-system/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/chepetime/react-design-system/actions/workflows/deploy-docs.yml)
+[![Build UI](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/ci.yml) [![Storybook Tests](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml/badge.svg)](https://github.com/chepetime/react-turborepo-dls/actions/workflows/storybook-tests.yml) [![Docs](https://github.com/chepetime/react-design-system/actions/workflows/deploy-docs.yml/badge.svg)](https://github.com/chepetime/react-design-system/actions/workflows/deploy-docs.yml)
 [![Storyboook](https://img.shields.io/badge/Storybook-main-ff69b4)](https://main--640570a127fec98c46084e16.chromatic.com/)
 
 </div>

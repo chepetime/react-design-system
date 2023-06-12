@@ -142,6 +142,9 @@ importers:
       chromatic:
         specifier: ^6.18.2
         version: 6.18.2
+      concurrently:
+        specifier: ^8.2.0
+        version: 8.2.0
       http-server:
         specifier: ^14.1.1
         version: 14.1.1

@@ -48,6 +48,7 @@
     "@types/react-dom": "^18.2.4",
     "axe-playwright": "^1.2.3",
     "chromatic": "^6.18.2",
+    "concurrently": "^8.2.0",
     "http-server": "^14.1.1",
     "playwright": "^1.35.0",
     "postcss": "^8.4.24",

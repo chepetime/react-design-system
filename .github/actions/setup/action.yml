@@ -9,12 +9,10 @@ runs:
       with:
         node-version-file: .nvmrc
 
-    - uses: pnpm/action-setup@v2
-      name: Install pnpm
+    - name: Install pnpm
       id: pnpm-install
-      with:
-        version: 7
-        run_install: false
+      shell: bash
+      run: npm install -g pnpm
 
     - name: Get pnpm store directory
       id: pnpm-cache
@@ -31,5 +29,5 @@ runs:
           ${{ runner.os }}-pnpm-store-
 
     - name: Install dependencies
-      run: pnpm install
+      run: pnpm install --no-frozen-lockfile
       shell: bash

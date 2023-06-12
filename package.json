@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "react-design-system",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "build": "turbo run build --filter=@chepe/ui --filter=@chepe/icons",
     "clean": "turbo run clean && rm -rf node_modules",

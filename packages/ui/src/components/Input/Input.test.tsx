@@ -1,29 +1,33 @@
-
 import React from "react";
 import userEvent from "@testing-library/user-event";
 import "@testing-library/jest-dom";
 import { Input } from "./Input";
+import type { InputProps } from "./Input";
 import { render, screen } from "@testing-library/react";
 
 describe("Input", () => {
+  const defaultProps: InputProps = {
+    error: false,
+  };
+
   it("renders without errors", () => {
-    render(<Input />);
-    // Assert that the component renders without throwing any errors
+    render(<Input {...defaultProps} />);
+    expect(screen.getByRole("textbox")).toBeInTheDocument();
   });
 
-  it("renders with children", () => {
-    render(<Input>Some children</Input>);
-    // Assert that the component renders the provided children
-    const childrenElement = screen.getByText("Some children");
-    expect(childrenElement).toBeInTheDocument();
+  it("renders with error class when error prop is true", () => {
+    render(<Input {...defaultProps} error={true} />);
+    expect(screen.getByRole("textbox")).toHaveClass("Input--error");
   });
 
-  it("handles user interactions", () => {
-    render(<Input>Some children</Input>);
-    // Simulate user interactions with the component
-    userEvent.click(screen.getByText("Some children"));
-    // Assert the expected outcome of the user interaction
-    // For example, check if a certain state has changed or an event handler has been called
+  it("triggers onChange event", async () => {
+    const handleChange = jest.fn();
+    render(<Input {...defaultProps} onChange={handleChange} />);
+    const input = screen.getByRole("textbox");
+    const value = "Test value";
+    await userEvent.type(input, value);
+    expect(handleChange).toHaveBeenCalledWith(expect.anything());
+    expect(input).toHaveValue(value);
   });
 
   it("matches snapshot", () => {

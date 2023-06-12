@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input matches snapshot 1`] = `
+<div>
+  <input
+    autocomplete="off"
+    class="Input"
+    inputmode="text"
+    type="text"
+  />
+</div>
+`;

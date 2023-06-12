@@ -12,6 +12,14 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
+const styleParams = {
+  design: {
+    type: "figma",
+    name: "UI",
+    url: "",
+  },
+};
+
 const getCaptionForLocale = (locale) => {
   switch (locale) {
     case "es":
@@ -35,10 +43,96 @@ export const Default: Story = {
     children: "",
   },
   parameters: {
-    design: {
-      type: "figma",
-      name: "UI",
-      url: "",
-    },
+    ...styleParams,
+  },
+};
+
+export const Primary: Story = {
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
+  args: {
+    children: "Primary Button",
+    variant: "default",
+    color: "primary",
+    size: "default",
+  },
+  parameters: {
+    ...styleParams,
+  },
+};
+
+export const Ghost: Story = {
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
+  args: {
+    children: "Ghost Button",
+    variant: "ghost",
+    color: "primary",
+    size: "default",
+  },
+  parameters: {
+    ...styleParams,
+  },
+};
+
+export const Text: Story = {
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
+  args: {
+    children: "Text Button",
+    variant: "text",
+    color: "primary",
+    size: "default",
+  },
+  parameters: {
+    ...styleParams,
+  },
+};
+
+export const Link: Story = {
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
+  args: {
+    children: "Link Button",
+    variant: "link",
+    color: "primary",
+    size: "default",
+  },
+  parameters: {
+    ...styleParams,
+  },
+};
+
+export const Small: Story = {
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
+  args: {
+    children: "Small Button",
+    variant: "default",
+    color: "primary",
+    size: "small",
+  },
+  parameters: {
+    ...styleParams,
+  },
+};
+
+export const Large: Story = {
+  render: (args: ButtonProps, { globals: { locale } }) => (
+    <Button {...args}>{args.children || getCaptionForLocale(locale)}</Button>
+  ),
+  args: {
+    children: "Large Button",
+    variant: "default",
+    color: "primary",
+    size: "large",
+  },
+  parameters: {
+    ...styleParams,
   },
 };

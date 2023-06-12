@@ -2,13 +2,8 @@
 
 exports[`Button matches snapshot 1`] = `
 <div>
-  <div
-    class="Button"
-  >
-    <p>
-      Button component working!
-    </p>
-    <div />
-  </div>
+  <button
+    class="Button Button--default Button--primary Button--default"
+  />
 </div>
 `;

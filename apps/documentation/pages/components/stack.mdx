@@ -1,14 +1,35 @@
-import { Stack } from "@chepe/ui";
+import { Stack, Button } from "@chepe/ui";
 
-import ComponentContainer from "./../../components/ComponentContainer/ComponentContainer";
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
 
 # Stack
 
 Stack are used primarily for
 
-<ComponentContainer>
-  <Stack>Stack works</Stack>
-</ComponentContainer>
+<ComponentShowcase component={
+    <Stack horizontal>
+      <Button>Add</Button>
+      <Button>Remove</Button>
+    </Stack>
+    }
+     seed={5}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,5,8} copy
+      import { Stack, Button } from "@chepe/ui";
+
+      export default function App() {
+        return (
+          <Stack horizontal>
+            <Button>Add</Button>
+            <Button>Remove</Button>
+          </Stack>)
+        ;
+      }
+    ```
+
+  </div>
+</ComponentShowcase>
 
 ## How to use / Install
 

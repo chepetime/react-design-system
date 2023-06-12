@@ -1,4 +1,4 @@
-import { Input } from "@chepe/ui";
+import { Label, Input } from "@chepe/ui";
 import { Callout } from "nextra/components";
 
 import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
@@ -12,16 +12,25 @@ import ComponentContainer from "./../../components/ComponentContainer/ComponentC
 
 Input are used primarily for
 
-<ComponentShowcase component={<Input />}>
-  <div>
+<ComponentShowcase component={
+    <div>
+      <Label for="first_name">Fist Name</Label>
+      <Input name="first_name" />
+    </div>
+    } seed={3}>
+   <div>
 
-    ```tsx filename="app.tsx" {1,4} copy
-      import { Input } from "@chepe/ui";
+    ```tsx filename="app.tsx" {1,7} copy
+      import { Label } from "@chepe/ui";
 
-    export default function App() {
-      return <Input />;
-    }
-
+      export default function App() {
+        return (
+          <>
+            <Label for="first_name">Fist Name</Label>
+            <Input name="first_name" />
+          </ >
+        );
+      }
     ```
 
   </div>

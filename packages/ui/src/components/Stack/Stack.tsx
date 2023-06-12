@@ -18,7 +18,7 @@ export interface StackProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const Stack: React.FC<StackProps> = ({
-  spacing = 0,
+  spacing = 16,
   divider = null,
   horizontal = false,
   className,

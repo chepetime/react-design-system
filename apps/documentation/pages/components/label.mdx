@@ -1,14 +1,34 @@
-import { Label } from "@chepe/ui";
+import { Label, Input } from "@chepe/ui";
 
-import ComponentContainer from "./../../components/ComponentContainer/ComponentContainer";
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
 
 # Label
 
 Label are used primarily for
 
-<ComponentContainer>
-  <Label>Label works</Label>
-</ComponentContainer>
+<ComponentShowcase component={
+    <div>
+      <Label for="first_name">Fist Name</Label>
+      <Input name="first_name" />
+    </div>
+    } seed={4}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,6} copy
+      import { Label } from "@chepe/ui";
+
+      export default function App() {
+        return (
+          <>
+            <Label for="first_name">Fist Name</Label>
+            <Input name="first_name" />
+          </>
+        );
+      }
+    ```
+
+  </div>
+</ComponentShowcase>
 
 ## How to use / Install
 

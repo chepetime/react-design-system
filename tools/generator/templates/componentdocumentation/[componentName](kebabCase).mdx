@@ -6,9 +6,20 @@ import ComponentContainer from "./../../components/ComponentContainer/ComponentC
 
 [componentName](pascalCase) are used primarily for
 
-<ComponentContainer>
-  <[componentName](pascalCase)>[componentName](pascalCase) works</[componentName](pascalCase)>
-</ComponentContainer>
+<ComponentShowcase component={<[componentName](pascalCase)>[componentName](pascalCase) works</[componentName](pascalCase)>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { [componentName](pascalCase) } from "@chepe/ui";
+
+    export default function App() {
+      return <[componentName](pascalCase)>[componentName](pascalCase) works</[componentName](pascalCase)>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
 
 ## How to use / Install
 

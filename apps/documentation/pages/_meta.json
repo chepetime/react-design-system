@@ -1,18 +1,10 @@
 {
   "index": "Introduction",
-
   "about": {
     "title": "About",
     "type": "page"
   },
-
-  "get-started": {
-    "title": "Get Started",
-    "design-resources": "Design Resources",
-    "development-resources": "Development Resources",
-    "how-to-use": "How to use"
-  },
-
+  "get-started": "Get Started",
   "design-language": "Design Language",
   "components": "Components",
   "guidelines": "Guidelines",
@@ -24,6 +16,7 @@
   "contact": {
     "title": "Contact ↗",
     "href": "https://twitter.com/chepe",
-    "newWindow": true
+    "newWindow": true,
+    "type": "page"
   }
 }

@@ -24,14 +24,14 @@ import ComponentContainer from "./../../components/ComponentContainer/ComponentC
 
 Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
 
-<ComponentShowcase component={<Button>Add</Button>} seed={0}>
+<ComponentShowcase component={<Button>Hello world!</Button>} seed={0}>
    <div>
 
     ```tsx filename="app.tsx" {1,4} copy
       import { Button } from "@chepe/ui";
 
       export default function App() {
-        return <Button>Hello world</Button>;
+        return <Button>Hello world!</Button>;
       }
     ```
 
@@ -40,98 +40,18 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
 
 ## Anatomy
 
-## Comments
+## Features
 
-It's important to make a distinction here: when people talk about buttons on the web, they're probably talking about one of three things:
+- Focus is fully managed.
+- Full keyboard navigation.
 
-1. A `<button>` element which, depending on its type attribute (submit, reset or button), triggers some kind of action: submitting a form, clearing a form, or triggering a JavaScript function.
-2. An `<input>` element with one of the three types: submit, reset or button. These are functionally almost identical to a `<button>` element with the same type attribute.
-3. Any other interactive HTML element that looks like a button, but isn’t a `<button>` element. This category includes ‘call-to-action’ links designed to look like buttons.
+## Types
 
-In most cases, it’s preferable to use a `<button>` instead of the corresponding `<input>`: With a `<button>` the label text goes between opening and closing tags, allowing you to include other HTML elements inside the label; with `<input>` you’re restricted to using the value attribute which only has support for text strings.
+Buttons have three different types:
 
-## How to use
-
-```tsx filename="app.tsx" {1,4} copy
-import { Button } from "@chepe/ui";
-
-export default function App() {
-  return <Button>Hello world</Button>;
-}
-```
-
-<br />
-
-<Button>Hello world</Button>
-
-<br />
-
-## Props
-
-`interface ButtonProps`
-
-| Prop    | Default | Options                                                                  |
-| ------- | ------- | ------------------------------------------------------------------------ |
-| block   | false   | boolean                                                                  |
-| variant | normal  | "normal", "ghost", "text", "link"                                        |
-| color   | primary | "default", "primary", "secondary", "warning", "warning", "error", "info" |
-| size    | medium  | "small", "medium", "large"                                               |
-
-## Best practices
-
-Buttons should:
-
-- Be clearly and accurately labeled.
-- Lead with a strong, actionable verb.
-- Use established button colors appropriately. For example, only use a red button for an action that’s difficult or impossible to undo.
-- Prioritize the most important actions. Too many calls to action can cause confusion and make merchants unsure of what to do next.
-- Be positioned in consistent locations in the interface.
-
-### Buttons versus links
-
-Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
-
-Links are used primarily for navigation, and usually appear within or directly following a sentence.
-
-The HTML that renders for the Button and Link components carries meaning. Using these components intentionally and consistently results in:
-
-- a more inclusive experience for assistive technology users
-- a more cohesive visual experience for sighted users
-- products that are easier to maintain at scale
-
-## Content guidelines
-
-[TBD]
-
-## Related components
-
-- Button Group
-- Link
-- Form Elements
-
-## Accessibility
-
-Buttons can have different states that are visually and programmatically conveyed to merchants.
-
-- Use the ariaControls prop to add an aria-controls attribute to the button. Use the attribute to point to the unique id of the content that the button manages.
-- If a button expands or collapses adjacent content, then use the ariaExpanded prop to add the aria-expanded attribute to the button. Set the value to convey the current expanded (true) or collapsed (false) state of the content.
-- Use the disabled prop to set the disabled state of the button. This prevents merchants from being able to interact with the button, and conveys its inactive state to assistive technologies.
-- Use the pressed prop to add an aria-pressed attribute to the button.
-
-### Keyboard support
-
-Buttons use browser defaults for keyboard interactions.
-
-Give buttons keyboard focus with the tab key (or shift + tab when tabbing backwards)
-Activate buttons with the enter/return key or the space key
-
-#### Custom key events
-
-Use the `onKeyDown`, `onKeyPress`, and `onKeyUp` props to create custom events for buttons. With these props, you can use buttons to create complex, custom interactions like drag-and-drop interfaces.
-
-Since these props introduce non-standard features to buttons, make sure to include accessible instructions so that merchants can understand how to use these features.
-
-## Examples
+- Types
+- Colors
+- Size
 
 ### Variants
 
@@ -212,3 +132,84 @@ export default function App() {
     <Button size="large">Large</Button>
   </Stack>
 </ComponentContainer>
+
+### API Reference
+
+`interface ButtonProps`
+
+| Prop       | Default | Options                                                                  |
+| ---------- | ------- | ------------------------------------------------------------------------ |
+| block      | false   | boolean                                                                  |
+| variant    | normal  | "normal", "ghost", "text", "link"                                        |
+| color      | primary | "default", "primary", "secondary", "warning", "warning", "error", "info" |
+| size       | medium  | "small", "medium", "large"                                               |
+| onClick    | void    | callback function                                                        |
+| onKeyDown  | void    | callback function                                                        |
+| onKeyPress | void    | callback function                                                        |
+| onKeyUp    | void    | callback function                                                        |
+
+## Behaviors
+
+## Accessibility
+
+Buttons can have different states that are visually and programmatically conveyed to merchants.
+
+- Use the ariaControls prop to add an aria-controls attribute to the button. Use the attribute to point to the unique id of the content that the button manages.
+- If a button expands or collapses adjacent content, then use the ariaExpanded prop to add the aria-expanded attribute to the button. Set the value to convey the current expanded (true) or collapsed (false) state of the content.
+- Use the disabled prop to set the disabled state of the button. This prevents merchants from being able to interact with the button, and conveys its inactive state to assistive technologies.
+- Use the pressed prop to add an aria-pressed attribute to the button.
+
+### Keyboard support
+
+Buttons use browser defaults for keyboard interactions.
+
+Give buttons keyboard focus with the tab key (or shift + tab when tabbing backwards)
+Activate buttons with the enter/return key or the space key
+
+#### Custom key events
+
+Use the `onKeyDown`, `onKeyPress`, and `onKeyUp` props to create custom events for buttons. With these props, you can use buttons to create complex, custom interactions like drag-and-drop interfaces.
+
+Since these props introduce non-standard features to buttons, make sure to include accessible instructions so that merchants can understand how to use these features.
+
+## Guidelines
+
+Buttons should:
+
+- Be clearly and accurately labeled.
+- Lead with a strong, actionable verb.
+- Use established button colors appropriately. For example, only use a red button for an action that’s difficult or impossible to undo.
+- Prioritize the most important actions. Too many calls to action can cause confusion and make merchants unsure of what to do next.
+- Be positioned in consistent locations in the interface.
+
+### Buttons versus links
+
+Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
+
+Links are used primarily for navigation, and usually appear within or directly following a sentence.
+
+The HTML that renders for the Button and Link components carries meaning. Using these components intentionally and consistently results in:
+
+- a more inclusive experience for assistive technology users
+- a more cohesive visual experience for sighted users
+- products that are easier to maintain at scale
+
+### Types of buttons
+
+It's important to make a distinction here: when people talk about buttons on the web, they're probably talking about one of three things:
+
+1. A `<button>` element which, depending on its type attribute (submit, reset or button), triggers some kind of action: submitting a form, clearing a form, or triggering a JavaScript function.
+2. An `<input>` element with one of the three types: submit, reset or button. These are functionally almost identical to a `<button>` element with the same type attribute.
+3. Any other interactive HTML element that looks like a button, but isn’t a `<button>` element. This category includes ‘call-to-action’ links designed to look like buttons.
+
+In most cases, it’s preferable to use a `<button>` instead of the corresponding `<input>`: With a `<button>` the label text goes between opening and closing tags, allowing you to include other HTML elements inside the label; with `<input>` you’re restricted to using the value attribute which only has support for text strings.
+
+## Related Content
+
+### Pattern
+
+### Related Components
+
+- Button Group
+- Link
+- Form Elements

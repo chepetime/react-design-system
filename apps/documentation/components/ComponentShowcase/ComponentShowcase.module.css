@@ -5,6 +5,7 @@
 .code {
   margin: 2rem 0;
 }
+
 .component {
   margin: 2rem 0;
   padding: 2rem;
@@ -15,87 +16,72 @@
 
   border-radius: 16px;
   background-color: #ccc;
+
+  --gradient-from-0: #ccc;
+  --gradient-to-0: #ccc;
+
+  background: var(--gradient-from-0);
+  background: linear-gradient(
+    to right,
+    var(--gradient-from-0),
+    var(--gradient-to-0)
+  );
 }
 
 .component--0 {
-  background: #f7971e;
-  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
-  background: linear-gradient(to right, #ffd200, #f7971e);
+  --gradient-from-0: #ffd200;
+  --gradient-to-0: #f7971e;
+}
+
+:global(.dark) .component--0 {
+  --gradient-from-0: #333333;
+  --gradient-to-0: #494949;
 }
 
 .component--1 {
-  background: #4568dc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #b06ab3,
-    #4568dc
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #b06ab3,
-    #4568dc
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient-from-0: #b06ab3;
+  --gradient-to-0: #4568dc;
 }
 
+:global(.dark) .component--1 {
+  --gradient-from-0: #333333;
+  --gradient-to-0: #494949;
+}
 .component--2 {
-  background: #43c6ac; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f8ffae,
-    #43c6ac
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f8ffae,
-    #43c6ac
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient-from-0: #f8ffae;
+  --gradient-to-0: #43c6ac;
+}
+
+:global(.dark) .component--2 {
+  --gradient-from-0: #333333;
+  --gradient-to-0: #494949;
 }
 .component--3 {
-  background: #ffafbd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffc3a0,
-    #ffafbd
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffc3a0,
-    #ffafbd
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient-from-0: #ffc3a0;
+  --gradient-to-0: #ffafbd;
+}
+
+:global(.dark) .component--3 {
+  --gradient-from-0: #333;
+  --gradient-to-0: #111;
+  border: solid 1px #333;
 }
 .component--4 {
-  background: #e8cbc0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #636fa4,
-    #e8cbc0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #636fa4,
-    #e8cbc0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient-from-0: #636fa4;
+  --gradient-to-0: #e8cbc0;
+}
+
+:global(.dark) .component--4 {
+  --gradient-from-0: #333;
+  --gradient-to-0: #111;
+  border: solid 1px #333;
 }
 .component--5 {
-  background: #dce35b; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #45b649,
-    #dce35b
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #45b649,
-    #dce35b
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  --gradient-from-0: #45b649;
+  --gradient-to-0: #dce35b;
 }
-.component--6 {
-}
-.component--7 {
-}
-.component--8 {
-}
-.component--9 {
-}
-.component--10 {
+
+:global(.dark) .component--5 {
+  --gradient-from-0: #333333;
+  --gradient-to-0: #494949;
 }

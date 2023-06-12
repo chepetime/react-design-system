@@ -2,7 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>React Desgn System</span>,
+  logo: <span>React Design System</span>,
   project: {
     link: "https://github.com/chepetime/react-design-system",
   },

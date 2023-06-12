@@ -1,23 +1,43 @@
+import { Callout } from "nextra/components";
 import Image from "next/image";
 import { Button } from "@chepe/ui";
 import { Jellyfish } from "@chepe/icons";
 import ComponentContainer from "./../../components/ComponentContainer/ComponentContainer";
 
-# Resources
+<Callout emoji="⚠️" type="warning">
+  WIP - Dummy content
+</Callout>
 
-## Design Resources
+# Development Resources
 
-### Figma Design Library
+<Callout emoji="💡" type="info">
+  **Purpose:** The Development Resources section provides essential information
+  and documentation for developers working with the design system, including
+  details about supported platforms and development guidelines.
+</Callout>
 
-### Tokens
+> **Recommendations:**
+>
+> - Provide an overview of the development resources available in your design system.
+> - Include information about the development process and how the design system fits into it.
+> - Mention any coding standards, conventions, or guidelines specific to your design system.
+> - Consider including links or references to additional resources that developers might find helpful, such as coding style guides or documentation on design patterns.
 
-## Development Resources
+## Platforms (React, React Native, Swift, Kotlin)
 
-### GitHub
+<Callout emoji="💡" type="info">
+  **Purpose:** The Platforms section highlights the supported platforms for
+  development within the design system, such as React, React Native, Swift,
+  Kotlin, or any other platforms your team uses.
+</Callout>
 
-### NPM
+### React
 
-## Installation
+<Callout emoji="💡" type="info">
+  **Purpose:** The Install and App Setup section provides instructions and
+  guidelines for installing the necessary dependencies and setting up the
+  development environment to work with the design system.
+</Callout>
 
 To use an example instance of this project, you can install `@chepe/ui` and `@chepe/icons`.
 
@@ -61,50 +81,15 @@ export default App;
   </Button>
 </ComponentContainer>
 
-## Structure
+### React Native
 
-This monorepo contains multiple projects that work together to create an integrated Design Language System.
+### Swift
 
-<Image src="assets/stack.png" alt="Hello" width={700} height={1800} />
+### Kotlin
 
-**Packages**
+### Other Platforms
 
-> Packages are reusable libraries available for packages and apps
-
-| Package directory | Description                                                    |
-| ----------------- | -------------------------------------------------------------- |
-| `packages/ui`     | React based component library with Typescript, Rollup and SASS |
-| `packages/tokens` | Design Tokens distributable package                            |
-| `packages/icons`  | React based icon library with SVGR and Rollup                  |
-
-**Apps**
-
-> Apps can use all the available packages
-
-| App directory        | Description                                            |
-| -------------------- | ------------------------------------------------------ |
-| `apps/documentation` | Nextra instance that contains documentation            |
-| `apps/storybook`     | Storybok instance that implements the React UI Library |
-| `apps/web`           | React web app that implements the React UI Library     |
-
-**Config**
-
-> Config are reusable eslint and typescript configurations
-
-| Package directory             | Description                                      |
-| ----------------------------- | ------------------------------------------------ |
-| `config/eslint-config-custom` | Shared Eslint configuration for all packages     |
-| `config/tsconfig`             | Shared Typescript configuration for all packages |
-
-**Tools**
-
-> Tools to generate Components or get Tokens
-
-| App directory     | Description                                               |
-| ----------------- | --------------------------------------------------------- |
-| `tools/generator` | CLI Tool that creates Components for the React UI Library |
-
-## Development
+## Design System Development
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -166,9 +151,20 @@ npm run docs
 
 ### Utils
 
+#### Component Generator
+
 You can add a new Component Boilerplate using the Generator Tool inside the `tools/generator` directory. You can run this commands at the root of the project:
 
 ```sh
 npm run generate:component --name=Heading
 npm run generate:component --name=InputField
+```
+
+#### Dependency maintenance
+
+You can update dependencies using the maintenance command:
+
+```sh
+npm run maintenance
+
 ```

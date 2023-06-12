@@ -7,20 +7,22 @@
   },
 
   "get-started": {
-    "title": "Get Started"
+    "title": "Get Started",
+    "design-resources": "Design Resources",
+    "development-resources": "Development Resources",
+    "how-to-use": "How to use"
   },
 
-  "foundation": {
-    "title": "Foundation"
-  },
-
-  "components": {
-    "title": "Components "
-  },
+  "design-language": "Design Language",
+  "components": "Components",
+  "guidelines": "Guidelines",
+  "glossary": "Glossary",
+  "themes": "Themes",
+  "contribute": "Contribute",
+  "how-to-write": "How to Write",
 
   "contact": {
     "title": "Contact ↗",
-    "type": "page",
     "href": "https://twitter.com/chepe",
     "newWindow": true
   }

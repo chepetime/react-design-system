@@ -1,18 +1,26 @@
 import { Button } from "@chepe/ui";
 
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
 import ComponentContainer from "./../../components/ComponentContainer/ComponentContainer";
 
 # Button
 
 Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
 
-<ComponentContainer>
-  <div>
-    <Button>Add</Button>
-    <Button variant="ghost">Cancel</Button>
-    <Button color="error">Delete</Button>
+<ComponentShowcase component={<Button>Add</Button>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Button } from "@chepe/ui";
+
+    export default function App() {
+      return <Button>Hello world</Button>;
+    }
+
+    ```
+
   </div>
-</ComponentContainer>
+</ComponentShowcase>
 
 ## Description
 

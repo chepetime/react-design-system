@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import css from "./[componentName](pascalCase).module.scss";
 
-export interface [componentName](pascalCase)Props {
+export interface [componentName](pascalCase)Props extends React.ComponentPropsWithRef<"div"> {
   children?: React.ReactNode;
 }
 

@@ -22,6 +22,7 @@
     "@chepe/icons": "workspace:*",
     "@chepe/tokens": "workspace:*",
     "@chepe/ui": "workspace:*",
+    "classnames": "^2.3.2",
     "next": "^13.4.5",
     "nextra": "latest",
     "nextra-theme-docs": "latest",

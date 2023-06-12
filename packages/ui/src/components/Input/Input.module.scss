@@ -1,0 +1,18 @@
+@use "./../../styles" as styles;
+
+.Input {
+  --input-background-color: #{styles.$pink-500};
+}
+
+.dark .Input {
+  --input-background-color: #{styles.$indigo-500};
+}
+
+.Input {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+}
+
+.Input--error {
+  border: solid 1px red;
+}

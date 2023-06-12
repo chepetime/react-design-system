@@ -1,4 +1,4 @@
-import { Button } from "@chepe/ui";
+import { Button, Stack } from "@chepe/ui";
 import { Callout } from "nextra/components";
 
 import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
@@ -9,6 +9,18 @@ import ComponentContainer from "./../../components/ComponentContainer/ComponentC
 </Callout>
 
 # Button
+
+<Stack horizontal spacing={4}>
+  <div>
+    [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/VgZTsIrH0uIGxTgAHFmlja/DLS-Tokens-(Demo)?type=design&node-id=400%3A5232&t=WHk0gga6VhOrKVEk-1)
+  </div>
+  <div>
+    [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/chepetime/react-design-system/tree/main/packages/ui/src/components/Button)
+  </div>
+  <div>
+    [![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)](https://main--640570a127fec98c46084e16.chromatic.com/?path=/docs/components-button--docs)
+  </div>
+</Stack>
 
 Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
 
@@ -26,7 +38,9 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
   </div>
 </ComponentShowcase>
 
-## Description
+## Anatomy
+
+## Comments
 
 It's important to make a distinction here: when people talk about buttons on the web, they're probably talking about one of three things:
 
@@ -126,23 +140,23 @@ import { Button } from "@chepe/ui";
 
 export default function App() {
   return (
-    <div>
+    <Stack horizontal>
       <Button>Normal</Button>
       <Button variant="ghost">Ghost</Button>
       <Button variant="text">Text</Button>
       <Button variant="link">Link</Button>
-    </div>
+    </Stack>
   );
 }
 ```
 
 <ComponentContainer>
-  <div>
+  <Stack horizontal>
     <Button>Normal</Button>
     <Button variant="ghost">Ghost</Button>
     <Button variant="text">Text</Button>
     <Button variant="link">Link</Button>
-  </div>
+  </Stack>
 </ComponentContainer>
 
 ### Colors
@@ -152,29 +166,27 @@ import { Button } from "@chepe/ui";
 
 export default function App() {
   return (
-    <div>
+    <Stack horizontal>
       <Button color="default">default</Button>
-      <Button color="primary">primary</Button>
       <Button color="secondary">secondary</Button>
       <Button color="success">success</Button>
       <Button color="warning">warning</Button>
       <Button color="error">error</Button>
       <Button color="info">info</Button>
-    </div>
+    </Stack>
   );
 }
 ```
 
 <ComponentContainer>
-  <div>
+  <Stack horizontal>
     <Button color="default">default</Button>
-    <Button color="primary">primary</Button>
     <Button color="secondary">secondary</Button>
     <Button color="success">success</Button>
     <Button color="warning">warning</Button>
     <Button color="error">error</Button>
     <Button color="info">info</Button>
-  </div>
+  </Stack>
 </ComponentContainer>
 
 ### Sizes
@@ -184,19 +196,19 @@ import { Button, div } from "@chepe/ui";
 
 export default function App() {
   return (
-    <div>
+    <Stack horizontal>
       <Button size="small">Small</Button>
       <Button size="medium">Medium</Button>
       <Button size="large">Large</Button>
-    </div>
+    </Stack>
   );
 }
 ```
 
 <ComponentContainer>
-  <div>
+  <Stack horizontal>
     <Button size="small">Small</Button>
     <Button size="medium">Medium</Button>
     <Button size="large">Large</Button>
-  </div>
+  </Stack>
 </ComponentContainer>

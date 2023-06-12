@@ -4,11 +4,11 @@
   --[componentName](lowerCase)-background-color: #{styles.$pink-500};
 }
 
-.dark .[componentName](pascalCase) {
+:global .dark {
   --[componentName](lowerCase)-background-color: #{styles.$indigo-500};
 }
 
-.[componentName](pascalCase) {
+.[componentName"undefined(pascalCase)"] {
   @include styles.styles-reset;
   @include styles.text-wrapping;
 

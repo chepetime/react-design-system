@@ -8,7 +8,7 @@
   --button-disabled-background-color: #{tokens.$base-gray-800};
 }
 
-:global :root .dark {
+:global .dark {
   --button-color: #{tokens.$base-green-800};
   --button-background-color: #{tokens.$base-green-400};
   --button-background-color-hover: #{tokens.$base-green-500};
@@ -161,18 +161,25 @@
 }
 
 .Button--secondary {
+  --button-color: white;
+  --button-background-color: black;
 }
 .Button--error {
-  --button-background-color: red;
+  --button-color: #{tokens.$base-red-100};
+  --button-background-color: #{tokens.$base-red-600};
 }
 .Button--success {
+  --button-color: #{tokens.$base-green-100};
+  --button-background-color: #{tokens.$base-green-600};
 }
 .Button--warning {
-  --button-background-color: orange;
+  --button-color: #{tokens.$base-yellow-100};
+  --button-background-color: #{tokens.$base-yellow-600};
 }
 
 .Button--info {
-  --button-background-color: purple;
+  --button-color: #{tokens.$base-blue-600};
+  --button-background-color: #{tokens.$base-blue-200};
 }
 
 /*

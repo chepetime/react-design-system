@@ -6,7 +6,7 @@
   --input-color: #000;
 }
 
-.dark .Input {
+:global .dark {
   --input-background-color: #fff;
   --input-color: #000;
 }

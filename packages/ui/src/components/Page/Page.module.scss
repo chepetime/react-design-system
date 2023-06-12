@@ -6,7 +6,7 @@
   --page-text-color: #{tokens.$base-gray-900};
 }
 
-:global :root .dark {
+:global .dark {
   --page-background-color: #{tokens.$base-gray-900};
   --page-text-color: #{tokens.$base-gray-100};
 }

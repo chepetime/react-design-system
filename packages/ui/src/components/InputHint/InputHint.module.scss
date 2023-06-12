@@ -1,0 +1,44 @@
+@use "./../../styles" as styles;
+@use "~@chepe/tokens/tokens/tokens.scss" as tokens;
+
+:root {
+  --inputhint-color: #000;
+}
+
+:global :root .dark {
+  --inputhint-color: #fff;
+}
+
+.InputHint {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+
+  display: inline-block;
+
+  line-height: 1;
+  border: solid 1px transparent;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--inputhint-color);
+
+  &.success {
+    background-color: tokens.$base-green-200;
+    border-color: tokens.$base-green-500;
+    color: tokens.$base-green-800;
+  }
+  &.warning {
+    background-color: tokens.$base-yellow-200;
+    border-color: tokens.$base-yellow-500;
+    color: tokens.$base-yellow-800;
+  }
+  &.error {
+    background-color: tokens.$base-red-200;
+    border-color: tokens.$base-red-500;
+    color: tokens.$base-red-800;
+  }
+  &.info {
+    background-color: tokens.$base-blue-200;
+    border-color: tokens.$base-blue-500;
+    color: tokens.$base-blue-800;
+  }
+}

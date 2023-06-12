@@ -1,0 +1,23 @@
+@use "./../../styles" as styles;
+@use "~@chepe/tokens/tokens/tokens.scss" as tokens;
+
+:root {
+  --page-background-color: #{tokens.$base-gray-100};
+  --page-text-color: #{tokens.$base-gray-900};
+}
+
+:global :root .dark {
+  --page-background-color: #{tokens.$base-gray-900};
+  --page-text-color: #{tokens.$base-gray-100};
+}
+
+.Page {
+  @include styles.styles-reset;
+
+  min-height: 100vh;
+
+  overflow: auto;
+
+  background-color: var(--page-background-color);
+  color: var(--page-text-color);
+}

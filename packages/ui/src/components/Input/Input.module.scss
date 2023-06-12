@@ -1,18 +1,34 @@
 @use "./../../styles" as styles;
+@use "~@chepe/tokens/tokens/tokens.scss" as tokens;
 
-.Input {
-  --input-background-color: #{styles.$pink-500};
+:root {
+  --input-background-color: #fff;
+  --input-color: #000;
 }
 
 .dark .Input {
-  --input-background-color: #{styles.$indigo-500};
+  --input-background-color: #fff;
+  --input-color: #000;
 }
 
-.Input {
+.InputText {
   @include styles.styles-reset;
   @include styles.text-wrapping;
+
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: solid 1px transparent;
+  background-color: var(--input-background-color);
+
+  &.error {
+    background-color: tokens.$base-red-200;
+    border-color: tokens.$base-red-500;
+    color: tokens.$base-red-800;
+  }
 }
 
-.Input--error {
-  border: solid 1px red;
+.error {
+  background-color: tokens.$base-red-200;
+  border-color: tokens.$base-red-500;
+  color: tokens.$base-red-800;
 }

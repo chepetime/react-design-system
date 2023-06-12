@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label matches snapshot 1`] = `
+<div>
+  <label
+    class="Label"
+    for=""
+  />
+</div>
+`;

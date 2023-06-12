@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stack matches snapshot 1`] = `
+<div>
+  <div
+    class="Stack"
+    style="gap: 0;"
+  />
+</div>
+`;

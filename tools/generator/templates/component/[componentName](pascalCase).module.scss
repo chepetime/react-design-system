@@ -1,6 +1,6 @@
 @use "./../../styles" as styles;
 
-.[componentName](pascalCase) {
+:root {
   --[componentName](lowerCase)-background-color: #{styles.$pink-500};
 }
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import type { SVGProps } from "react";
 import { Ref, forwardRef, memo } from "react";
 const SvgCoffin = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => (

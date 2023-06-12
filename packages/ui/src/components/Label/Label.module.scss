@@ -1,0 +1,24 @@
+@use "./../../styles" as styles;
+@use "~@chepe/tokens/tokens/tokens.scss" as tokens;
+
+:root {
+  --label-color: #000;
+}
+
+:global :root .dark {
+  --label-color: #fff;
+}
+
+.Label {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+
+  color: var(--label-color);
+
+  user-select: none;
+  cursor: pointer;
+}

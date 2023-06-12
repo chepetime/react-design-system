@@ -17,7 +17,7 @@ describe("Input", () => {
 
   it("renders with error class when error prop is true", () => {
     render(<Input {...defaultProps} error={true} />);
-    expect(screen.getByRole("textbox")).toHaveClass("Input--error");
+    expect(screen.getByRole("textbox")).toHaveClass("error");
   });
 
   it("triggers onChange event", async () => {

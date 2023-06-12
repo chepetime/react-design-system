@@ -47,14 +47,12 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
     }: InputProps,
     ref: React.Ref<HTMLInputElement>
   ) => {
-    const inputClasses = classnames(css.Input, {
-      [css[`Input--error`]]: error,
-    });
-
     return (
       <input
         ref={ref}
-        className={inputClasses}
+        className={classnames(css.Input, {
+          [css[`error`]]: error,
+        })}
         id={name}
         name={name}
         type={type}

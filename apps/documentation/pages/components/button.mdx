@@ -1,5 +1,6 @@
-import { Button, Stack } from "@chepe/ui";
+import Image from "next/image";
 import { Callout } from "nextra/components";
+import { Button, Stack } from "@chepe/ui";
 
 import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
 import ComponentContainer from "./../../components/ComponentContainer/ComponentContainer";
@@ -8,10 +9,12 @@ import ButtonA11Y from "./../../shared/button-a11y.mdx";
 import ButtonGuidelines from "./../../shared/button-guidelines.mdx";
 
 <Callout emoji="⚠️" type="warning">
-  WIP - Dummy content
+  Work in Progress
 </Callout>
 
 # Button
+
+{/* Section: Links */}
 
 <Stack horizontal spacing={4}>
   <div>
@@ -25,7 +28,10 @@ import ButtonGuidelines from "./../../shared/button-guidelines.mdx";
   </div>
 </Stack>
 
+{/* Section: General Description */}
 Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
+
+{/* Section: Live Example with Code */}
 
 <ComponentShowcase component={<Button>Hello world!</Button>} seed={0}>
    <div>
@@ -41,22 +47,69 @@ Buttons are used primarily for actions, such as “Add”, “Close”, “Cance
   </div>
 </ComponentShowcase>
 
-## Anatomy
+{/* Section: Features */}
 
 ## Features
 
-- Focus is fully managed.
-- Full keyboard navigation.
+- ✅ Focus is fully managed.
+- ✅ Full keyboard navigation.
+
+{/* Section: Anatomy */}
+
+## Anatomy
+
+### Roles
+
+User Interactive, Focusable, Disableable, Hoverable
+
+### Layout
+
+Only use one primary button in a layout for the most important action. If there are more than two buttons with equal priority, all buttons should have neutral backgrounds.
+
+When there are many available minor actions, use the outline, subtle, or transparent appearances on all buttons to avoid a busy layout.
+
+<Image
+  src="https://placehold.co/600x400"
+  alt="Demo"
+  width={600}
+  height={400}
+  style={{ margin: "2rem auto" }}
+/>
+
+Always give the primary button action prominent placement, either on top of or to the left of other actions. In right-to-left languages, primary button placement will be on the right
+
+### Elements
+
+<Image
+  src="https://placehold.co/600x400"
+  alt="Demo"
+  width={600}
+  height={400}
+  style={{ margin: "2rem auto" }}
+/>
+
+1. Label text
+2. Container
+3. Icon (optional)
 
 ## Types
 
 Buttons have three different types:
 
-- Types
-- Colors
+- Variant
+- Color
 - Size
 
 ### Variants
+
+<ComponentContainer>
+  <Stack horizontal>
+    <Button>Normal</Button>
+    <Button variant="ghost">Ghost</Button>
+    <Button variant="text">Text</Button>
+    <Button variant="link">Link</Button>
+  </Stack>
+</ComponentContainer>
 
 ```tsx filename="app.tsx" copy
 import { Button } from "@chepe/ui";
@@ -73,16 +126,18 @@ export default function App() {
 }
 ```
 
+### Colors
+
 <ComponentContainer>
   <Stack horizontal>
-    <Button>Normal</Button>
-    <Button variant="ghost">Ghost</Button>
-    <Button variant="text">Text</Button>
-    <Button variant="link">Link</Button>
+    <Button color="default">default</Button>
+    <Button color="secondary">secondary</Button>
+    <Button color="success">success</Button>
+    <Button color="warning">warning</Button>
+    <Button color="error">error</Button>
+    <Button color="info">info</Button>
   </Stack>
 </ComponentContainer>
-
-### Colors
 
 ```tsx filename="app.tsx" copy
 import { Button } from "@chepe/ui";
@@ -101,18 +156,15 @@ export default function App() {
 }
 ```
 
+### Sizes
+
 <ComponentContainer>
   <Stack horizontal>
-    <Button color="default">default</Button>
-    <Button color="secondary">secondary</Button>
-    <Button color="success">success</Button>
-    <Button color="warning">warning</Button>
-    <Button color="error">error</Button>
-    <Button color="info">info</Button>
+    <Button size="small">Small</Button>
+    <Button size="medium">Medium</Button>
+    <Button size="large">Large</Button>
   </Stack>
 </ComponentContainer>
-
-### Sizes
 
 ```tsx filename="app.tsx" copy
 import { Button, div } from "@chepe/ui";
@@ -128,15 +180,7 @@ export default function App() {
 }
 ```
 
-<ComponentContainer>
-  <Stack horizontal>
-    <Button size="small">Small</Button>
-    <Button size="medium">Medium</Button>
-    <Button size="large">Large</Button>
-  </Stack>
-</ComponentContainer>
-
-### API Reference
+## API Reference
 
 `interface ButtonProps`
 
@@ -151,12 +195,47 @@ export default function App() {
 | onKeyPress | void    | callback function                                                        |
 | onKeyUp    | void    | callback function                                                        |
 
+## Behaviors
+
+States:
+For each button action type and emphasis style there are five button states — enabled, hover, active, focus and disabled.
+
+<Image
+  src="https://placehold.co/600x400"
+  alt="Demo"
+  width={600}
+  height={400}
+  style={{ margin: "2rem auto" }}
+/>
+
 <ButtonA11Y />
 <ButtonGuidelines />
 
 ## Related Content
 
-### Pattern
+### Appears on Patterns
+
+<Image
+  src="https://placehold.co/300x200"
+  alt="Demo"
+  width={300}
+  height={200}
+  style={{ margin: "2rem 0" }}
+/>
+
+**Menu button**
+A menu button shows a menu of options. Unlike the split button, the menu button does not surface a primary action. It is often styled as a typical button with a downward pointing arrow or triangle to hint that activating the button will display a menu.
+
+<Image
+  src="https://placehold.co/300x200"
+  alt="Demo"
+  width={300}
+  height={200}
+  style={{ margin: "2rem 0" }}
+/>
+
+**Toggle button**
+A toggle button is a two-state behavior that switches a state between on and off. A button’s rest state indicates “off” while the selected state indicates “on.” The button and compound button types can have toggle behavior.
 
 ### Related Components
 

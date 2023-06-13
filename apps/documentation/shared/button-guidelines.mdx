@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Callout } from "nextra/components";
 
 ## Guidelines
@@ -7,13 +8,17 @@ import { Callout } from "nextra/components";
   the Web and Mobile component pages.
 </Callout>
 
-Buttons should:
+### Usage
 
-- Be clearly and accurately labeled.
-- Lead with a strong, actionable verb.
-- Use established button colors appropriately. For example, only use a red button for an action that’s difficult or impossible to undo.
-- Prioritize the most important actions. Too many calls to action can cause confusion and make merchants unsure of what to do next.
-- Be positioned in consistent locations in the interface.
+Buttons are clickable elements that allow users to take action.
+
+Use buttons for taking important actions in the UI like submitting a response, moving to the next step or committing a change. For navigating to another place, use a link instead.
+
+### Content
+
+Buttons need to be clear and predictable. Users should be able to anticipate what will happen when they select a button. Never mislead someone by mislabeling a button.
+
+Buttons should always lead with a strong verb that encourages action. To provide enough context to users use a “verb” + “noun” on buttons except in the case of common actions like “done”, “cancel” or “ok”
 
 ### Buttons versus links
 

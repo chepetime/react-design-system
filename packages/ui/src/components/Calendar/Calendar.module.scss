@@ -1,0 +1,30 @@
+@use "./../../styles" as styles;
+
+:root {
+  --calendar-background-color: #{styles.$pink-500};
+}
+
+:global .dark {
+  --calendar-background-color: #{styles.$indigo-500};
+}
+
+.Calendar {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+
+  background: var(--calendar-background-color);
+
+  font-size: 1rem;
+
+  @include styles.respond-to("md") {
+    font-size: 1.5rem;
+  }
+  @include styles.respond-to("lg") {
+    font-size: 2rem;
+  }
+  @include styles.feature-to("hover") {
+    &:hover {
+      background-color: pink;
+    }
+  }
+}

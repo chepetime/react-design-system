@@ -1,0 +1,27 @@
+import { Badge } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# Badge
+
+Badge are used primarily for
+
+<ComponentShowcase component={<Badge>Badge works</Badge>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Badge } from "@chepe/ui";
+
+    export default function App() {
+      return <Badge>Badge works</Badge>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

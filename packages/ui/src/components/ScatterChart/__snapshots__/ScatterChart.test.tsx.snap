@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScatterChart matches snapshot 1`] = `
+<div>
+  <div
+    class="ScatterChart"
+  >
+    <p>
+      ScatterChart component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

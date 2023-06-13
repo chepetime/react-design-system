@@ -1,0 +1,27 @@
+import { Paragraph } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# Paragraph
+
+Paragraph are used primarily for
+
+<ComponentShowcase component={<Paragraph>Paragraph works</Paragraph>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Paragraph } from "@chepe/ui";
+
+    export default function App() {
+      return <Paragraph>Paragraph works</Paragraph>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

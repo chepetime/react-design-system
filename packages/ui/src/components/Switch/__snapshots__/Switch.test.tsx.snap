@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch matches snapshot 1`] = `
+<div>
+  <div
+    class="Switch"
+  >
+    <p>
+      Switch component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

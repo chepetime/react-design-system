@@ -1,17 +1,23 @@
+import { Callout } from "nextra/components";
 import { Label, Input } from "@chepe/ui";
 
 import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+import ComponentContainer from "./../../components/ComponentContainer/ComponentContainer";
+
+<Callout emoji="⚠️" type="warning">
+  WIP - Dummy content
+</Callout>
 
 # Label
 
-Label are used primarily for
+Labels are used primarily for
 
 <ComponentShowcase component={
     <div>
       <Label for="first_name">First Name</Label>
       <Input name="first_name" />
     </div>
-    } seed={4}>
+    } seed={3}>
    <div>
 
     ```tsx filename="app.tsx" {1,6} copy
@@ -22,7 +28,7 @@ Label are used primarily for
           <>
             <Label for="first_name">First Name</Label>
             <Input name="first_name" />
-          </>
+          </ >
         );
       }
     ```
@@ -30,26 +36,6 @@ Label are used primarily for
   </div>
 </ComponentShowcase>
 
-## How to use / Install
-
-## Props / API
-
-`interface ButtonProps`
-
-| Prop | Default | Options                               |
-| ---- | ------- | ------------------------------------- |
-| for  | null    | Must match the name of an input field |
-
-## Best practices
-
-Label should:
-
-## Content guidelines
-
-## Accessibility
-
-## i18n
-
-## Examples (Component in different scenarios)
-
-## Related components
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

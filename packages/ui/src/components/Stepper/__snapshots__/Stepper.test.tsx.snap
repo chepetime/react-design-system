@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper matches snapshot 1`] = `
+<div>
+  <div
+    class="Stepper"
+  >
+    <p>
+      Stepper component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

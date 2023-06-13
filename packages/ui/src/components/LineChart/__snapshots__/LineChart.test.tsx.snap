@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineChart matches snapshot 1`] = `
+<div>
+  <div
+    class="LineChart"
+  >
+    <p>
+      LineChart component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

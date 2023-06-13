@@ -1,0 +1,27 @@
+import { AudioPlayer } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# AudioPlayer
+
+AudioPlayer are used primarily for
+
+<ComponentShowcase component={<AudioPlayer>AudioPlayer works</AudioPlayer>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { AudioPlayer } from "@chepe/ui";
+
+    export default function App() {
+      return <AudioPlayer>AudioPlayer works</AudioPlayer>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

@@ -3,9 +3,7 @@
 exports[`InputHint matches snapshot 1`] = `
 <div>
   <div
-    class="InputHint default"
-  >
-    <span />
-  </div>
+    class="InputHint"
+  />
 </div>
 `;

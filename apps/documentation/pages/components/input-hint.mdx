@@ -1,4 +1,5 @@
 import { InputHint } from "@chepe/ui";
+import { Callout } from "nextra/components";
 
 import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
 
@@ -6,30 +7,21 @@ import ComponentShowcase from "./../../components/ComponentShowcase/ComponentSho
 
 InputHint are used primarily for
 
-<ComponentShowcase>
-  <InputHint>InputHint works</InputHint>
+<ComponentShowcase component={<InputHint>InputHint works</InputHint>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { InputHint } from "@chepe/ui";
+
+    export default function App() {
+      return <InputHint>InputHint works</InputHint>;
+    }
+
+    ```
+
+  </div>
 </ComponentShowcase>
 
-## How to use / Install
-
-## Props / API
-
-`interface ButtonProps`
-
-| Prop | Default | Options                    |
-| ---- | ------- | -------------------------- |
-| size | medium  | "small", "medium", "large" |
-
-## Best practices
-
-InputHint should:
-
-## Content guidelines
-
-## Accessibility
-
-## i18n
-
-## Examples (Component in different scenarios)
-
-## Related components
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

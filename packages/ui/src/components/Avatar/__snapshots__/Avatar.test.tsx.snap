@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar matches snapshot 1`] = `
+<div>
+  <div
+    class="Avatar"
+  >
+    <p>
+      Avatar component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

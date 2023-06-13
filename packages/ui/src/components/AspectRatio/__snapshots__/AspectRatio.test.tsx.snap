@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AspectRatio matches snapshot 1`] = `
+<div>
+  <div
+    class="AspectRatio"
+  >
+    <p>
+      AspectRatio component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

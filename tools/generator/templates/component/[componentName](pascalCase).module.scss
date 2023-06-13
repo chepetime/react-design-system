@@ -8,7 +8,7 @@
   --[componentName](lowerCase)-background-color: #{styles.$indigo-500};
 }
 
-.[componentName"undefined(pascalCase)"] {
+.[componentName](pascalCase) {
   @include styles.styles-reset;
   @include styles.text-wrapping;
 

@@ -1,0 +1,27 @@
+import { Alert } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# Alert
+
+Alert are used primarily for
+
+<ComponentShowcase component={<Alert>Alert works</Alert>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Alert } from "@chepe/ui";
+
+    export default function App() {
+      return <Alert>Alert works</Alert>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

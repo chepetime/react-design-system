@@ -1,0 +1,27 @@
+import { Progress } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# Progress
+
+Progress are used primarily for
+
+<ComponentShowcase component={<Progress>Progress works</Progress>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Progress } from "@chepe/ui";
+
+    export default function App() {
+      return <Progress>Progress works</Progress>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menubar matches snapshot 1`] = `
+<div>
+  <div
+    class="Menubar"
+  >
+    <p>
+      Menubar component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

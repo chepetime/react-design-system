@@ -10,11 +10,13 @@ const config: DocsThemeConfig = {
     link: "https://discord.gg/34XAxadpYp",
   },
   docsRepositoryBase:
-    "https://github.com/chepetime/react-design-system/blob/main/apps/documentation/pages",
+    "https://github.com/chepetime/react-design-system/blob/main/apps/documentation/",
   footer: {
     text: "React Design System",
   },
-  sidebar: { defaultMenuCollapseLevel: 0 },
+  sidebar: {
+    defaultMenuCollapseLevel: 0,
+  },
   useNextSeoProps() {
     return {
       titleTemplate: "%s – React Design System",

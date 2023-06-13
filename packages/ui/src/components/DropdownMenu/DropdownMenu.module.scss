@@ -1,0 +1,30 @@
+@use "./../../styles" as styles;
+
+:root {
+  --dropdownmenu-background-color: #{styles.$pink-500};
+}
+
+:global .dark {
+  --dropdownmenu-background-color: #{styles.$indigo-500};
+}
+
+.DropdownMenu {
+  @include styles.styles-reset;
+  @include styles.text-wrapping;
+
+  background: var(--dropdownmenu-background-color);
+
+  font-size: 1rem;
+
+  @include styles.respond-to("md") {
+    font-size: 1.5rem;
+  }
+  @include styles.respond-to("lg") {
+    font-size: 2rem;
+  }
+  @include styles.feature-to("hover") {
+    &:hover {
+      background-color: pink;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calendar matches snapshot 1`] = `
+<div>
+  <div
+    class="Calendar"
+  >
+    <p>
+      Calendar component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

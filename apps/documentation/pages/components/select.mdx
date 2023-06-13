@@ -1,0 +1,27 @@
+import { Select } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# Select
+
+Select are used primarily for
+
+<ComponentShowcase component={<Select>Select works</Select>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Select } from "@chepe/ui";
+
+    export default function App() {
+      return <Select>Select works</Select>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

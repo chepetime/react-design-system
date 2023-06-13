@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast matches snapshot 1`] = `
+<div>
+  <div
+    class="Toast"
+  >
+    <p>
+      Toast component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

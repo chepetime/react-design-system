@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContextMenu matches snapshot 1`] = `
+<div>
+  <div
+    class="ContextMenu"
+  >
+    <p>
+      ContextMenu component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

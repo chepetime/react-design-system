@@ -1,0 +1,27 @@
+import { Heading } from "@chepe/ui";
+import { Callout } from "nextra/components";
+
+import ComponentShowcase from "./../../components/ComponentShowcase/ComponentShowcase";
+
+# Heading
+
+Heading are used primarily for
+
+<ComponentShowcase component={<Heading>Heading works</Heading>} seed={0}>
+   <div>
+
+    ```tsx filename="app.tsx" {1,4} copy
+      import { Heading } from "@chepe/ui";
+
+    export default function App() {
+      return <Heading>Heading works</Heading>;
+    }
+
+    ```
+
+  </div>
+</ComponentShowcase>
+
+<Callout emoji="⚠️" type="warning">
+  Work in Progress
+</Callout>

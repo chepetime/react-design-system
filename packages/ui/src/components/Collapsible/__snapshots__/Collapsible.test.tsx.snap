@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Collapsible matches snapshot 1`] = `
+<div>
+  <div
+    class="Collapsible"
+  >
+    <p>
+      Collapsible component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

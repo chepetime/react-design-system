@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chips matches snapshot 1`] = `
+<div>
+  <div
+    class="Chips"
+  >
+    <p>
+      Chips component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

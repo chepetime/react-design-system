@@ -57,8 +57,9 @@
   --gradient-to-0: #494949;
 }
 .component--3 {
-  --gradient-from-0: #ffc3a0;
-  --gradient-to-0: #ffafbd;
+  --gradient-from-0: #ececec;
+  --gradient-to-0: #ececec;
+  border: solid 1px #ddd;
 }
 
 :global(.dark) .component--3 {

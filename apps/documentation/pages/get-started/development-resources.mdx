@@ -23,6 +23,29 @@ import ComponentContainer from "./../../components/ComponentContainer/ComponentC
 > - Mention any coding standards, conventions, or guidelines specific to your design system.
 > - Consider including links or references to additional resources that developers might find helpful, such as coding style guides or documentation on design patterns.
 
+## Architecture
+
+```mermaid
+graph TD;
+subgraph AA [Consumers]
+A[Web app];
+B[iOS app];
+C[Android app];
+end
+subgraph BB [Component Libraries]
+E[React];
+F[SwiftUI];
+G[Kotlin];
+end
+Z[Package Registry];
+Z --> A;
+Z --> B;
+Z --> C;
+E --> Z;
+F --> Z;
+G --> Z;
+```
+
 ## Platforms (React, React Native, Swift, Kotlin)
 
 <Callout emoji="💡" type="info">

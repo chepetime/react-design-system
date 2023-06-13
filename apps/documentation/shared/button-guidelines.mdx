@@ -1,0 +1,38 @@
+import { Callout } from "nextra/components";
+
+## Guidelines
+
+<Callout type="info">
+  This Section is a Partial that be reused in multiple pages. For example, in
+  the Web and Mobile component pages.
+</Callout>
+
+Buttons should:
+
+- Be clearly and accurately labeled.
+- Lead with a strong, actionable verb.
+- Use established button colors appropriately. For example, only use a red button for an action that’s difficult or impossible to undo.
+- Prioritize the most important actions. Too many calls to action can cause confusion and make merchants unsure of what to do next.
+- Be positioned in consistent locations in the interface.
+
+### Buttons versus links
+
+Buttons are used primarily for actions, such as “Add”, “Close”, “Cancel”, or “Save”. Plain buttons, which look similar to links, are used for less important or less commonly used actions, such as “view shipping settings”.
+
+Links are used primarily for navigation, and usually appear within or directly following a sentence.
+
+The HTML that renders for the Button and Link components carries meaning. Using these components intentionally and consistently results in:
+
+- a more inclusive experience for assistive technology users
+- a more cohesive visual experience for sighted users
+- products that are easier to maintain at scale
+
+### Types of buttons
+
+It's important to make a distinction here: when people talk about buttons on the web, they're probably talking about one of three things:
+
+1. A `<button>` element which, depending on its type attribute (submit, reset or button), triggers some kind of action: submitting a form, clearing a form, or triggering a JavaScript function.
+2. An `<input>` element with one of the three types: submit, reset or button. These are functionally almost identical to a `<button>` element with the same type attribute.
+3. Any other interactive HTML element that looks like a button, but isn’t a `<button>` element. This category includes ‘call-to-action’ links designed to look like buttons.
+
+In most cases, it’s preferable to use a `<button>` instead of the corresponding `<input>`: With a `<button>` the label text goes between opening and closing tags, allowing you to include other HTML elements inside the label; with `<input>` you’re restricted to using the value attribute which only has support for text strings.

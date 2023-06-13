@@ -1,0 +1,9 @@
+{
+  "button": "Button",
+  "input": "Input",
+  "label": "Label",
+  "input-hint": "InputHint",
+  "wrapper": "Wrapper",
+  "stack": "Stack",
+  "page": "Page"
+}

@@ -29,6 +29,7 @@
   "tabs": "⚠️ Tabs",
   "tag": "⚠️ Tag",
   "toast": "⚠️ Toast",
+  "tooltip": "⚠️ Tooltip",
 
   "---Separator Base Form Control": { "type": "separator" },
 
@@ -61,16 +62,15 @@
 
   "card": "⚠️ Card",
   "modal": "⚠️ Modal",
-  "page": "⚠️ Page",
   "stack": "✅ Stack",
   "wrapper": "⚠️ Wrapper",
+  "page": "⚠️ Page",
 
   "---Separator Utils": { "type": "separator" },
   "aspect-ratio": "⚠️ Aspect Ratio",
   "command": "⚠️ Command",
   "scrollarea": "⚠️ Scroll-area",
   "toggle": "⚠️ Toggle",
-  "tooltip": "⚠️ Tooltip",
 
   "---Separator Data Viz": { "type": "separator" },
   "data-table": "⚠️ Data Table",

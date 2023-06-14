@@ -1,7 +1,4 @@
 {
-  "button": "✅ Button",
-
-  "---Separator Content": { "type": "separator" },
   "heading": "⚠️ Heading",
   "anchor": "⚠️ Anchor",
   "paragraph": "⚠️ Paragraph",
@@ -35,6 +32,7 @@
 
   "---Separator Base Form Control": { "type": "separator" },
 
+  "button": "✅ Button",
   "label": "⚠️ Label",
   "input": " Input",
   "input-hint": "⚠️ Input Hint",
@@ -46,13 +44,13 @@
   "---Separator Advance Form Control": { "type": "separator" },
 
   "button-dropdown": "⚠️ Button Dropdown",
-  "input-password": "⚠️ Input Password",
-  "slider": "⚠️ Slider",
   "combobox": "⚠️ Combobox",
-  "upload": "⚠️ Upload",
   "date-picker": "⚠️ Date Picker",
   "time-picker": "⚠️ Time-picker",
+  "input-password": "⚠️ Input Password",
+  "slider": "⚠️ Slider",
   "switch": "⚠️ Switch",
+  "upload": "⚠️ Upload",
 
   "---Separator Media": { "type": "separator" },
 

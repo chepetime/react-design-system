@@ -13,7 +13,7 @@
     "@chepe/icons": "workspace:*",
     "@chepe/tokens": "workspace:*",
     "@chepe/ui": "workspace:*",
-    "next": "13.4.5",
+    "next": "13.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.44.3"
@@ -25,7 +25,7 @@
     "@types/react-dom": "18.2.5",
     "eslint": "8.42.0",
     "eslint-config-custom": "workspace:*",
-    "eslint-config-next": "13.4.5",
+    "eslint-config-next": "13.4.6",
     "tsconfig": "workspace:*",
     "typescript": "5.1.3"
   }

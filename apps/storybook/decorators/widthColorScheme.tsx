@@ -32,6 +32,10 @@ function Flex(props) {
 export function withColorScheme(Story, context) {
   let { scheme } = context.globals;
 
+  if (isChromatic()) {
+    scheme = "both";
+  }
+
   if (scheme === "light" || scheme === "dark" || scheme === "fireworks") {
     return (
       <Flex className={`color-scheme--${scheme} ${scheme}`} data-theme={scheme}>

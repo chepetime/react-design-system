@@ -47,7 +47,7 @@
     "@types/react": "^18.2.12",
     "@types/react-dom": "^18.2.5",
     "axe-playwright": "^1.2.3",
-    "chromatic": "^6.19.7",
+    "chromatic": "^6.19.8",
     "concurrently": "^8.2.0",
     "http-server": "^14.1.1",
     "playwright": "^1.35.1",

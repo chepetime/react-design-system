@@ -1,0 +1,61 @@
+---
+title: Install
+description: Install instructions
+---
+
+# Install
+
+## Library
+
+To use a working example of this library, you can install the UI using:
+
+```sh
+npm i @chepe/ui
+```
+
+And then add it to your project:
+
+```tsx filename="app.tsx" {1,4} copy
+import { Button } from "@chepe/ui";
+
+export default function App() {
+  return <Button>Hello world!</Button>;
+}
+```
+
+## Development
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+Make sure you have the LTS version of [Node](https://nodejs.dev/) (18.7) installed in your machine. We recommend to use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm).
+
+This monorepository uses Turborepo to manage dependencies and scripts. The first step is to install the local node dependencies:
+
+```sh
+pnpm install
+```
+
+There are two main ways to develop new components:
+
+- Storybook App (Vite)
+- Watch the React UI Library (Rollup) + NextJs
+
+### Development with Storybook
+
+To watch changes in the React Library and start the Storybook App, just run:
+
+```sh
+pnpm run storybook
+```
+
+> This instance of Storybook uses the source code to compile the React Stories. It's faster than watching changes and reloading and it gets HMR. That's the reason components are imported using `@chepe/ui/src` instead of `@chepe/ui`.
+
+### Testign with NextJs
+
+To watch changes in the React Library and start the Next.Js App, just run:
+
+```sh
+pnpm run web
+```
+
+> Contrary to the Storybook instance, this React App uses the bundled code inside React. It should be really similar to the final package being used by product teams.

@@ -4,20 +4,8 @@
     "title": "About",
     "type": "page"
   },
-  "get-started": "Get Started",
-  "design-language": "Design Language",
-  "components": "Components (Web)",
-  "components-mobile": "Components (Mobile)",
-
-  "----": {
-    "type": "separator"
-  },
-
-  "guidelines": "Guidelines",
-  "glossary": "Glossary",
-  "themes": "Themes",
-  "contribute": "Contribute",
-  "how-to-write": "How to Write",
+  "install": "Install",
+  "components": "Components",
 
   "contact": {
     "title": "Contact ↗",

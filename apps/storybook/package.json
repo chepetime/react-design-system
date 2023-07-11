@@ -42,8 +42,8 @@
     "@storybook/test-runner": "^0.11.0",
     "@storybook/testing-library": "^0.2.0",
     "@storybook/theming": "^7.0.26",
-    "@types/jest": "^29.5.2",
-    "@types/node": "^20.4.0",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.1",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "axe-playwright": "^1.2.3",
@@ -60,7 +60,7 @@
     "storybook": "^7.0.26",
     "storybook-addon-designs": "^7.0.0-beta.2",
     "typescript-plugin-css-modules": "^5.0.1",
-    "vite": "^4.4.1",
+    "vite": "^4.4.2",
     "wait-on": "^7.0.1"
   },
   "keywords": []

@@ -27,7 +27,7 @@
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
     "@storybook/addon-a11y": "^7.1.0",
-    "@storybook/addon-coverage": "^0.0.8",
+    "@storybook/addon-coverage": "^0.0.9",
     "@storybook/addon-essentials": "^7.1.0",
     "@storybook/addon-interactions": "^7.1.0",
     "@storybook/addon-links": "^7.1.0",
@@ -60,7 +60,7 @@
     "storybook": "^7.1.0",
     "storybook-addon-designs": "^7.0.0-beta.2",
     "typescript-plugin-css-modules": "^5.0.1",
-    "vite": "^4.4.4",
+    "vite": "^4.4.5",
     "wait-on": "^7.0.1"
   },
   "keywords": []

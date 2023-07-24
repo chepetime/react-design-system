@@ -13,6 +13,7 @@
     "@chepe/icons": "workspace:*",
     "@chepe/tokens": "workspace:*",
     "@chepe/ui": "workspace:*",
+    "stellarkit": "workspace:*",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",

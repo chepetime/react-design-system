@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Paragraph, ParagraphProps } from "@chepe/ui/src/components/Paragraph";
 
 const meta: Meta<typeof Paragraph> = {
-  title: "Components/Paragraph",
+  title: "Typography/Paragraph",
   component: Paragraph,
   tags: ["autodocs"],
 };
@@ -29,7 +29,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: ParagraphProps, { globals: { locale } }) => (
-    <Paragraph {...args}>{args.children || getCaptionForLocale(locale)}</Paragraph>
+    <Paragraph {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </Paragraph>
   ),
   args: {
     children: "",

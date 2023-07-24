@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Heading, HeadingProps } from "@chepe/ui/src/components/Heading";
 
 const meta: Meta<typeof Heading> = {
-  title: "Components/Heading",
+  title: "Typography/Heading",
   component: Heading,
   tags: ["autodocs"],
 };

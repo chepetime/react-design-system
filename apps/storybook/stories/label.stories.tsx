@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Label, LabelProps } from "@chepe/ui/src/components/Label";
 
 const meta: Meta<typeof Label> = {
-  title: "Components/Label",
+  title: "Form/Label",
   component: Label,
   tags: ["autodocs"],
 };

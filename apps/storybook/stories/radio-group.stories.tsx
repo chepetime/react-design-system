@@ -1,10 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { RadioGroup, RadioGroupProps } from "@chepe/ui/src/components/RadioGroup";
+import {
+  RadioGroup,
+  RadioGroupProps,
+} from "@chepe/ui/src/components/RadioGroup";
 
 const meta: Meta<typeof RadioGroup> = {
-  title: "Components/RadioGroup",
+  title: "Form/RadioGroup",
   component: RadioGroup,
   tags: ["autodocs"],
 };
@@ -29,7 +32,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: RadioGroupProps, { globals: { locale } }) => (
-    <RadioGroup {...args}>{args.children || getCaptionForLocale(locale)}</RadioGroup>
+    <RadioGroup {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </RadioGroup>
   ),
   args: {
     children: "",

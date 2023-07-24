@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { InputHint, InputHintProps } from "@chepe/ui/src/components/InputHint";
 
 const meta: Meta<typeof InputHint> = {
-  title: "Components/InputHint",
+  title: "Form/InputHint",
   component: InputHint,
   argTypes: {
     type: {

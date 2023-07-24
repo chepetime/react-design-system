@@ -1,10 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { InputPassword, InputPasswordProps } from "@chepe/ui/src/components/InputPassword";
+import {
+  InputPassword,
+  InputPasswordProps,
+} from "@chepe/ui/src/components/InputPassword";
 
 const meta: Meta<typeof InputPassword> = {
-  title: "Components/InputPassword",
+  title: "Form/InputPassword",
   component: InputPassword,
   tags: ["autodocs"],
 };
@@ -29,7 +32,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: InputPasswordProps, { globals: { locale } }) => (
-    <InputPassword {...args}>{args.children || getCaptionForLocale(locale)}</InputPassword>
+    <InputPassword {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </InputPassword>
   ),
   args: {
     children: "",

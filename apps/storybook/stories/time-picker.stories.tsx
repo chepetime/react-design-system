@@ -1,10 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { TimePicker, TimePickerProps } from "@chepe/ui/src/components/TimePicker";
+import {
+  TimePicker,
+  TimePickerProps,
+} from "@chepe/ui/src/components/TimePicker";
 
 const meta: Meta<typeof TimePicker> = {
-  title: "Components/TimePicker",
+  title: "Form/TimePicker",
   component: TimePicker,
   tags: ["autodocs"],
 };
@@ -29,7 +32,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: TimePickerProps, { globals: { locale } }) => (
-    <TimePicker {...args}>{args.children || getCaptionForLocale(locale)}</TimePicker>
+    <TimePicker {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </TimePicker>
   ),
   args: {
     children: "",

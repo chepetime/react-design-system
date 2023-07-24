@@ -1,10 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { ScatterChart, ScatterChartProps } from "@chepe/ui/src/components/ScatterChart";
+import {
+  ScatterChart,
+  ScatterChartProps,
+} from "@chepe/ui/src/components/ScatterChart";
 
 const meta: Meta<typeof ScatterChart> = {
-  title: "Components/ScatterChart",
+  title: "Chart/ScatterChart",
   component: ScatterChart,
   tags: ["autodocs"],
 };
@@ -29,7 +32,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: ScatterChartProps, { globals: { locale } }) => (
-    <ScatterChart {...args}>{args.children || getCaptionForLocale(locale)}</ScatterChart>
+    <ScatterChart {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </ScatterChart>
   ),
   args: {
     children: "",

@@ -1,10 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { DonutChart, DonutChartProps } from "@chepe/ui/src/components/DonutChart";
+import {
+  DonutChart,
+  DonutChartProps,
+} from "@chepe/ui/src/components/DonutChart";
 
 const meta: Meta<typeof DonutChart> = {
-  title: "Components/DonutChart",
+  title: "Chart/DonutChart",
   component: DonutChart,
   tags: ["autodocs"],
 };
@@ -29,7 +32,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: DonutChartProps, { globals: { locale } }) => (
-    <DonutChart {...args}>{args.children || getCaptionForLocale(locale)}</DonutChart>
+    <DonutChart {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </DonutChart>
   ),
   args: {
     children: "",

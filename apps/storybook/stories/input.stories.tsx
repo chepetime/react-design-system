@@ -5,7 +5,7 @@ import { Input, InputProps } from "@chepe/ui/src/components/Input";
 import { Label } from "@chepe/ui/src/components/Label";
 
 const meta: Meta<typeof Input> = {
-  title: "Components/Input",
+  title: "Form/Input",
   component: Input,
   tags: ["autodocs"],
 };

@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { BarChart, BarChartProps } from "@chepe/ui/src/components/BarChart";
 
 const meta: Meta<typeof BarChart> = {
-  title: "Components/BarChart",
+  title: "Chart/BarChart",
   component: BarChart,
   tags: ["autodocs"],
 };
@@ -29,7 +29,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: BarChartProps, { globals: { locale } }) => (
-    <BarChart {...args}>{args.children || getCaptionForLocale(locale)}</BarChart>
+    <BarChart {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </BarChart>
   ),
   args: {
     children: "",

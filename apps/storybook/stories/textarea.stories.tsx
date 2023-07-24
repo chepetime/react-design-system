@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Textarea, TextareaProps } from "@chepe/ui/src/components/Textarea";
 
 const meta: Meta<typeof Textarea> = {
-  title: "Components/Textarea",
+  title: "Form/Textarea",
   component: Textarea,
   tags: ["autodocs"],
 };
@@ -29,7 +29,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: TextareaProps, { globals: { locale } }) => (
-    <Textarea {...args}>{args.children || getCaptionForLocale(locale)}</Textarea>
+    <Textarea {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </Textarea>
   ),
   args: {
     children: "",

@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { LineChart, LineChartProps } from "@chepe/ui/src/components/LineChart";
 
 const meta: Meta<typeof LineChart> = {
-  title: "Components/LineChart",
+  title: "Chart/LineChart",
   component: LineChart,
   tags: ["autodocs"],
 };
@@ -29,7 +29,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: LineChartProps, { globals: { locale } }) => (
-    <LineChart {...args}>{args.children || getCaptionForLocale(locale)}</LineChart>
+    <LineChart {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </LineChart>
   ),
   args: {
     children: "",

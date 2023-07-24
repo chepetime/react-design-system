@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Checkbox, CheckboxProps } from "@chepe/ui/src/components/Checkbox";
 
 const meta: Meta<typeof Checkbox> = {
-  title: "Components/Checkbox",
+  title: "Form/Checkbox",
   component: Checkbox,
   tags: ["autodocs"],
 };
@@ -29,7 +29,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: CheckboxProps, { globals: { locale } }) => (
-    <Checkbox {...args}>{args.children || getCaptionForLocale(locale)}</Checkbox>
+    <Checkbox {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </Checkbox>
   ),
   args: {
     children: "",

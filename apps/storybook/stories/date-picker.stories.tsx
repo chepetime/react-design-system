@@ -1,10 +1,13 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import { DatePicker, DatePickerProps } from "@chepe/ui/src/components/DatePicker";
+import {
+  DatePicker,
+  DatePickerProps,
+} from "@chepe/ui/src/components/DatePicker";
 
 const meta: Meta<typeof DatePicker> = {
-  title: "Components/DatePicker",
+  title: "Form/DatePicker",
   component: DatePicker,
   tags: ["autodocs"],
 };
@@ -29,7 +32,9 @@ const getCaptionForLocale = (locale) => {
 
 export const Default: Story = {
   render: (args: DatePickerProps, { globals: { locale } }) => (
-    <DatePicker {...args}>{args.children || getCaptionForLocale(locale)}</DatePicker>
+    <DatePicker {...args}>
+      {args.children || getCaptionForLocale(locale)}
+    </DatePicker>
   ),
   args: {
     children: "",

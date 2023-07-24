@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Upload, UploadProps } from "@chepe/ui/src/components/Upload";
 
 const meta: Meta<typeof Upload> = {
-  title: "Components/Upload",
+  title: "Form/Upload",
   component: Upload,
   tags: ["autodocs"],
 };

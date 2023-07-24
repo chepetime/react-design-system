@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hr matches snapshot 1`] = `
+<div>
+  <div
+    class="Hr"
+  >
+    <p>
+      Hr component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyState matches snapshot 1`] = `
+<div>
+  <div
+    class="EmptyState"
+  >
+    <p>
+      EmptyState component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

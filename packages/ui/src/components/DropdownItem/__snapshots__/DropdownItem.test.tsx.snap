@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownItem matches snapshot 1`] = `
+<div>
+  <div
+    class="DropdownItem"
+  >
+    <p>
+      DropdownItem component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

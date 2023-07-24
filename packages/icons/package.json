@@ -28,7 +28,7 @@
     "@svgr/plugin-prettier": "^8.0.1",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
-    "@types/node": "^20.4.2",
+    "@types/node": "^20.4.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/rollup-plugin-peer-deps-external": "^2.2.1",

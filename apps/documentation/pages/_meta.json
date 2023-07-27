@@ -4,8 +4,15 @@
     "title": "About",
     "type": "page"
   },
-  "install": "Install",
-  "components": "Components",
+  "get-started": "Get Started",
+  "design-language": "Design Language",
+  "components": "Components (Web)",
+
+  "guidelines": "Guidelines",
+  "glossary": "Glossary",
+  "themes": "Themes",
+  "contribute": "Contribute",
+  "how-to-write": "How to Write",
 
   "contact": {
     "title": "Contact ↗",

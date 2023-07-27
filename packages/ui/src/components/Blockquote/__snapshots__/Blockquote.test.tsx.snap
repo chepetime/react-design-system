@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blockquote matches snapshot 1`] = `
+<div>
+  <div
+    class="Blockquote"
+  >
+    <p>
+      Blockquote component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

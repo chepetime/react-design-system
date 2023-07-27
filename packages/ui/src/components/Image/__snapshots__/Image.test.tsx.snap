@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image matches snapshot 1`] = `
+<div>
+  <div
+    class="Image"
+  >
+    <p>
+      Image component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup matches snapshot 1`] = `
+<div>
+  <div
+    class="ButtonGroup"
+  >
+    <p>
+      ButtonGroup component working!
+    </p>
+    <div />
+  </div>
+</div>
+`;

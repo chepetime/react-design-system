@@ -20,7 +20,7 @@
     "fetch": "figma-token-engine"
   },
   "dependencies": {
-    "figma-token-engine": "^0.1.1"
+    "figma-token-engine": "^0.1.2"
   },
   "devDependencies": {
     "token-transformer": "^0.0.33"

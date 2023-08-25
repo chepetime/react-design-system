@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Nextra docs template",
   "license": "MIT",
-  "author": "Shu Ding <g@shud.in>",
+  "author": {
+    "name": "Shu Ding",
+    "email": "g@shud.in"
+  },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "repository": {
     "type": "git",
@@ -23,14 +26,14 @@
     "@chepe/tokens": "workspace:*",
     "@chepe/ui": "workspace:*",
     "classnames": "^2.3.2",
-    "next": "^13.4.12",
+    "next": "^13.4.19",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "20.4.7",
-    "typescript": "^5.1.6"
+    "@types/node": "20.5.6",
+    "typescript": "^5.2.2"
   }
 }

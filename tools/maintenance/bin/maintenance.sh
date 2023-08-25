@@ -3,90 +3,68 @@
 # Set the -e option
 set -e
 
+# Function to check if a file or directory exists
+file_exists() {
+  if [ -e "$1" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
 
-pwd
-cd ./../..
-echo "Start maintenance service"
-pwd
+# Traverse directories upwards until one of the target files or directories is found
+current_dir=$(pwd)
+parent_dir=$(dirname "$current_dir")
+root="$(pwd)"
 
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
+while [ "$parent_dir" != "$current_dir" ]; do
+  if file_exists "$parent_dir/package.json" || \
+    file_exists "$parent_dir/package-lock.json" || \
+     file_exists "$parent_dir/.git" || \
+     file_exists "$parent_dir/pnpm-workspace.yaml" || \
+     file_exists "$parent_dir/pnpm-lock.yaml"; then
+    root=$parent_dir
+  fi
+  current_dir="$parent_dir"
+  parent_dir=$(dirname "$current_dir")
+done
 
-cd ./apps/web
-echo "Start apps/web"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with apps/web"
-cd ./../../
+echo $root
 
-cd ./apps/storybook
-echo "Start apps/storybook"
-npx prettier-package-json --write ./package.json
-npx sb@next upgrade
-npx npm-check-updates -u
-echo "Done with apps/storybook"
-cd ./../../
+# Start at Root
+cd $root
 
-cd ./apps/documentation
-echo "Start apps/documentation"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with apps/documentation"
-cd ./../../
+# Check updates
+# Removed npm-check-updates from the loop because it has better performance
+npx npm-check-updates -u --cacheClear --silent --workspaces --root
 
-cd ./config/eslint-config-custom
-echo "Start config/eslint-config-custom"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with config/eslint-config-custom"
-cd ./../../
+# Find all directories containing package.json files within two levels above the current directory (excluding node_modules)
+directories=$(find $root -maxdepth 3 -type d -name "node_modules" -prune -o -type f -name "package.json" -exec dirname {} \;)
 
-cd ./config/tsconfig
-echo "Start config/tsconfig"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with config/tsconfig"
-cd ./../../
+# Sort the directories based on path length
+sorted_directories=$(echo "$directories" | awk '{print length, $0}' | sort -n -s | cut -d' ' -f2-)
 
-cd ./packages/icons
-echo "Start packages/icons"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with packages/icons"
-cd ./../../
+# Loop through the directories and print the contents using ls
+for dir in $sorted_directories; do
+  # echo "$dir"
+  ## Specify the path to the package.json file
+  package_json_path="$dir/package.json"
+  name="$(node -e "console.log(require('$package_json_path')['name']) || ''")"
+  version="$(node -e "console.log(require('$package_json_path')['version']) || ''")"
+  echo "$name (v$version)"
+  cd $dir
+  npx prettier-package-json --write ./package.json --expand-users
+  # Run any command you need inside every repository
+  #
+  #
+  #
+done
 
-cd ./packages/tokens
-echo "Start packages/tokens"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with packages/tokens"
-cd ./../../
+# Go back to root
+cd $root
 
-cd ./packages/ui
-echo "Start packages/ui"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with packages/ui"
-cd ./../../
-
-cd ./tools/generator
-echo "Start tools/generator"
-npx prettier-package-json --write ./package.json
-npx npm-check-updates -u
-echo "Done with tools/generator"
-cd ./../../
-
-
-echo "Intalling dependencies"
+# Install updated dependencies
 pnpm i
-echo "Build library"
+
+# Build packages and apps
 pnpm run build
-echo "Testing library"
-pnpm run test
-
-cd ./packages/icons
-echo "Generate icons"
-npm run generate
-cd ./../..
-
-echo "Completed"

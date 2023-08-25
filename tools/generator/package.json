@@ -13,7 +13,7 @@
     "generate:component": "concurrently --hide --raw --kill-others \"npm:g:*\""
   },
   "devDependencies": {
-    "concurrently": "^8.2.0",
+    "concurrently": "^8.2.1",
     "generate-template-files": "^3.2.1"
   },
   "keywords": []

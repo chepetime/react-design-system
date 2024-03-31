@@ -25,15 +25,15 @@
     "@chepe/icons": "workspace:*",
     "@chepe/tokens": "workspace:*",
     "@chepe/ui": "workspace:*",
-    "classnames": "^2.3.2",
-    "next": "^14.0.2",
+    "classnames": "^2.5.1",
+    "next": "^14.1.4",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "20.9.0",
-    "typescript": "^5.2.2"
+    "@types/node": "20.12.2",
+    "typescript": "^5.4.3"
   }
 }

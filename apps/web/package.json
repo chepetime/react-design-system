@@ -13,20 +13,20 @@
     "@chepe/icons": "workspace:*",
     "@chepe/tokens": "workspace:*",
     "@chepe/ui": "workspace:*",
-    "next": "14.0.2",
+    "next": "14.1.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.48.2"
+    "react-hook-form": "^7.51.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@types/node": "20.9.0",
-    "@types/react": "18.2.37",
-    "@types/react-dom": "18.2.15",
-    "eslint": "8.53.0",
+    "@babel/core": "^7.24.3",
+    "@types/node": "20.12.2",
+    "@types/react": "18.2.73",
+    "@types/react-dom": "18.2.23",
+    "eslint": "8.57.0",
     "eslint-config-custom": "workspace:*",
-    "eslint-config-next": "14.0.2",
+    "eslint-config-next": "14.1.4",
     "tsconfig": "workspace:*",
-    "typescript": "5.2.2"
+    "typescript": "5.4.3"
   }
 }
